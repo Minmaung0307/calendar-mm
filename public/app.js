@@ -1,9 +1,22 @@
 import {
-  lunarAge,
-  myanmarMonthYearLunar,
-  mmLunarInfoWithLength,
-  monthLengthFor
+  lunarAge, myanmarMonthYearLunar as myanmarMonthYear,
+  mmLunarInfoWithLength, monthLengthFor
 } from './myanmarCalendar.js';
+
+/* Local YYYY-MM-DD to avoid timezone drift */
+function ymdLocal(d){
+  const y=d.getFullYear();
+  const m=String(d.getMonth()+1).padStart(2,'0');
+  const dd=String(d.getDate()).padStart(2,'0');
+  return `${y}-${m}-${dd}`;
+}
+function normalizeYMD(s){
+  if(!s) return s;
+  const m = s.trim().match(/^(\d{4})[-\/.](\d{1,2})[-\/.](\d{1,2})$/);
+  if(!m) return s;
+  const y=m[1], mo=String(+m[2]).padStart(2,'0'), dd=String(+m[3]).padStart(2,'0');
+  return `${y}-${mo}-${dd}`;
+}
 
 /* Today bar zodiac only */
 const ZODIAC_BY_MM = {
@@ -33,8 +46,15 @@ function computeEaster(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(
 function nthWeekdayOfMonth(year, monthIndex, weekday, n){let count=0;for(let d=1; d<=31; d++){const dt=new Date(year, monthIndex, d);if(dt.getMonth()!==monthIndex) break; if(dt.getDay()===weekday){count++; if(count===n) return d;}} return null;}
 function usMovables(year){const easter=computeEaster(year); const thanks=nthWeekdayOfMonth(year, 10, 4, 4); const res={}; res[`${String(easter.month).padStart(2,'0')}-${String(easter.day).padStart(2,'0')}`]="Easter (Western)"; res[`11-${String(thanks).padStart(2,'0')}`]="Thanksgiving (US)"; return res;}
 
-const LS_CUSTOM = "myanmar_calendar_custom_v2";
-const getCustom = ()=>JSON.parse(localStorage.getItem(LS_CUSTOM)||"[]");
+/* LocalStorage (custom events) */
+const LS_CUSTOM = "myanmar_calendar_custom_v4";
+const getCustom = ()=>{
+  try{
+    const raw = localStorage.getItem(LS_CUSTOM);
+    const arr = raw ? JSON.parse(raw) : [];
+    return arr.map(x=>({...x, date: normalizeYMD(x.date)}));
+  }catch(e){ return []; }
+};
 const setCustom = (arr)=>localStorage.setItem(LS_CUSTOM, JSON.stringify(arr));
 
 /* View */
@@ -63,35 +83,38 @@ $("#themeBtn").onclick=()=>{
 };
 $("#fontBtn").onclick=()=>{ document.documentElement.classList.toggle("serif"); };
 
-/* Backend loader */
+/* Backend Loader (local YYYY-MM-DD keys) */
 async function loadBackendEvents(year){
   const map={};
+  const add = (ymd, rec)=>{
+    const k = normalizeYMD(ymd);
+    if(!k) return;
+    map[k] = (map[k]||[]).concat([rec]);
+  };
+
   for(const k of Object.keys(SOLAR_MM)){
     const [m,d]=k.split("-").map(Number);
-    map[`${year}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`]=[{type:"holiday",title:SOLAR_MM[k],region:"MM"}];
+    add(`${year}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`, {type:"holiday", title:SOLAR_MM[k], region:"MM"});
   }
   for(const k of Object.keys(SOLAR_US_FIXED)){
     const [m,d]=k.split("-").map(Number);
-    const key=`${year}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
-    map[key]=(map[key]||[]).concat([{type:"holiday",title:SOLAR_US_FIXED[k],region:"US"}]);
+    add(`${year}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`, {type:"holiday", title:SOLAR_US_FIXED[k], region:"US"});
   }
   const mv=usMovables(year);
   for(const k of Object.keys(mv)){
-    const [m,d]=k.split("-");
-    const key=`${year}-${m}-${d}`;
-    map[key]=(map[key]||[]).concat([{type:"festival",title:mv[k],region:"US"}]);
+    add(`${year}-${k}`, {type:"festival", title:mv[k], region:"US"});
   }
   getCustom().forEach(ev=>{
-    if(ev.date.startsWith(String(year))){
-      map[ev.date]=(map[ev.date]||[]).concat([{type:ev.type==="holiday"?"holiday":"festival",title:ev.title,region:"custom"}]);
+    if(ev?.date?.startsWith(String(year))){
+      add(ev.date, {type: ev.type==="holiday"?"holiday":"festival", title: ev.title, region:"custom"});
     }
   });
   try{
     const res=await fetch(`data/holidays.json`,{cache:"no-store"});
     if(res.ok){
       const arr=await res.json();
-      arr.filter(x=>x.date.startsWith(String(year))).forEach(x=>{
-        map[x.date]=(map[x.date]||[]).concat([{type:x.type,title:x.title,region:x.region||"remote"}]);
+      arr.filter(x=>x.date && x.date.startsWith(String(year))).forEach(x=>{
+        add(x.date, {type:x.type, title:x.title, region:x.region||"remote"});
       });
     }
   }catch(e){/* ignore */}
@@ -103,15 +126,13 @@ async function render(){
   syncSelectors();
   const y=view.getFullYear(), m=view.getMonth();
   const first=new Date(y,m,1);
-  const startWeekday=(first.getDay()+6)%7;
+  const startWeekday=(first.getDay()+6)%7; // Monday-first
   const days=new Date(y,m+1,0).getDate();
   const backend=await loadBackendEvents(y);
   grid.innerHTML="";
-
   for(let i=0;i<startWeekday;i++){
     const pad=document.createElement("div");
-    pad.className="day pad";
-    grid.appendChild(pad);
+    pad.className="day pad"; grid.appendChild(pad);
   }
 
   const today=new Date();
@@ -119,23 +140,26 @@ async function render(){
 
   for(let d=1; d<=days; d++){
     const cellDate=new Date(y,m,d);
-    const iso=cellDate.toISOString().slice(0,10);
+    const iso = ymdLocal(cellDate);
 
     const age=lunarAge(cellDate);
-    const my = myanmarMonthYearLunar(cellDate); // << lunar-month-driven
+    const my = myanmarMonthYear(cellDate);
     const info = mmLunarInfoWithLength(age, my.myanmarMonth, my.myanmarYear);
 
     const tags=[];
-    if (info.kind === "waxing" || info.kind === "waning") {
-      tags.push(`<span class="tag moon">${info.phase} ${info.number}</span>`);
-    } else {
-      tags.push(`<span class="tag moon">${info.phase}</span>`);
+
+    // 🌕/🌑 icon only on Uposatha days; DO NOT show waxing/waning numbers
+    if (info.kind === "uposatha"){
+      const moonIcon = (info.phase === "လပြည့်") ? "🌕" : "🌑";
+      tags.push(`<span class="tag icon">${moonIcon}</span>`);
     }
 
+    // 🏛️/🎉 icons + text for holidays/festivals/custom
     if(backend[iso]){
       backend[iso].forEach(sp=>{
-        const cls=sp.type==="holiday"?"warn":"fest";
-        const icon=sp.type==="holiday"?"⚠️":"★";
+        const isHoliday = sp.type==="holiday";
+        const cls = isHoliday ? "warn" : "fest";
+        const icon = isHoliday ? "🏛️" : "🎉";
         tags.push(`<span class="tag ${cls}">${icon} ${sp.title}</span>`);
       });
     }
@@ -152,9 +176,9 @@ async function render(){
     grid.appendChild(el);
   }
 
-  // Today bar: "<Myanmar Month> (Zodiac)"
+  // Today bar
   const t=new Date();
-  const myT=myanmarMonthYearLunar(t);
+  const myT=myanmarMonthYear(t);
   const zodiac = ZODIAC_BY_MM[myT.myanmarMonth] ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)` : "";
   todayBar.textContent = `${myT.myanmarMonth}လ${zodiac}`;
 
@@ -162,5 +186,23 @@ async function render(){
     try{ await navigator.serviceWorker.register('./service-worker.js'); }catch(e){}
   }
 }
+
+/* Custom Add/Remove (normalize on save) */
+$("#addCustom").onclick=()=>{
+  const date=$("#custDate").value;
+  const title=$("#custTitle").value?.trim();
+  const type=$("#custType").value;
+  if(!date || !title){ alert("နေ့စွဲနဲ့ ခေါင်းစဉ်ကို ဖြည့်ပါ"); return; }
+  const cur = getCustom();
+  cur.push({date: normalizeYMD(date), title, type});
+  setCustom(cur);
+  $("#custTitle").value=""; $("#custDate").value="";
+  render();
+};
+$("#clearCustom").onclick=()=>{
+  if(confirm("ကိုယ်ပိုင်သတ်မှတ်ထားသမျှကို ဖျက်မလား?")){
+    localStorage.removeItem(LS_CUSTOM); render();
+  }
+};
 
 (async function boot(){ await render(); })();

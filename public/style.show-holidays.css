@@ -1,0 +1,53 @@
+/* === Show Holidays Inside Day Cells (Better Visibility) ===
+   Drop this at the END of style.css or include as a separate file.
+*/
+
+/* Tighter tag style so more items fit per cell */
+.tag{
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 2px 6px;
+  margin: 2px 4px 0 0;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+/* Default: show up to ~4 lines worth of tags without overflowing the cell */
+.day .tags{
+  max-height: 72px;          /* adjust if your .day height differs */
+  overflow: hidden;
+  position: relative;
+}
+
+/* On hover/focus: let the user scroll inside the tag area (cell height stays fixed) */
+.day .tags:hover,
+.day .tags:focus-within{
+  overflow: auto;
+  max-height: 140px;         /* expanded reading space */
+  scrollbar-gutter: stable both-edges;
+}
+
+/* Slim, unobtrusive scrollbar for tags */
+.day .tags::-webkit-scrollbar{
+  width: 6px;
+  height: 6px;
+}
+.day .tags::-webkit-scrollbar-thumb{
+  background: rgba(0,0,0,.3);
+  border-radius: 4px;
+}
+.day .tags::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+/* Make warning/festival tags slightly more compact */
+.tag.warn, .tag.fest, .tag.moon, .tag.note{
+  border-radius: 10px;
+}
+
+/* Mobile: give a little more vertical room so holidays don't get clipped */
+@media (max-width: 520px){
+  .day{ min-height: 140px; }
+  .day .tags{ max-height: 90px; }
+}
