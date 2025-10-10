@@ -8,6 +8,39 @@ import {
   uposathaType,
 } from "./myanmarCalendar.js";
 
+// === Zodiac (ဘုရားစံရာသီ) ↔ Myanmar Months (သင်ပေးထားတဲ့ mapping) ===
+const ZODIAC_BY_MM = {
+  တန်ခူး: "မိဿ", // Mesa (Aries)
+  ကဆုန်: "ပြိဿ", // Vrishabha (Taurus)
+  နယုန်: "မေထုန်", // Mithuna (Gemini)
+  ဝါဆို: "ကြဋ်", // Karkata (Cancer)
+  ဝါခေါင်: "သိဟ်", // Simha (Leo)
+  တော်သလင်း: "ကန်", // Kanya (Virgo)
+  သီတင်းကျွတ်: "တူ", // Tula (Libra)
+  တန်ဆောင်မုန်း: "ဗြိစ္ဆာ", // Vriscika (Scorpio)
+  နတ်တော်: "ဓနု", // Dhanu (Sagittarius)
+  ပြာသို: "မကာရ", // Makara (Capricorn)
+  တပို့တွဲ: "ကုမ်", // Kumbha (Aquarius)
+  တပေါင်း: "မိန်", // Mina (Pisces)
+};
+
+// === English Birthstones (common set) ===
+// Index = Gregorian month (0=Jan … 11=Dec)
+const BIRTHSTONES = [
+  { name: "Garnet", emoji: "🔴" }, // Jan
+  { name: "Amethyst", emoji: "💜" }, // Feb
+  { name: "Aquamarine", emoji: "🔷" }, // Mar
+  { name: "Diamond", emoji: "💎" }, // Apr
+  { name: "Emerald", emoji: "🟢" }, // May
+  { name: "Pearl", emoji: "⚪" }, // Jun (alt: Moonstone/Alexandrite)
+  { name: "Ruby", emoji: "🔴" }, // Jul
+  { name: "Peridot", emoji: "🟢" }, // Aug (alt: Spinel)
+  { name: "Sapphire", emoji: "🔵" }, // Sep
+  { name: "Opal", emoji: "🌈" }, // Oct (alt: Tourmaline)
+  { name: "Topaz", emoji: "🟡" }, // Nov (alt: Citrine)
+  { name: "Turquoise", emoji: "🟦" }, // Dec (alt: Tanzanite/Zircon)
+];
+
 /* ===== DOM ===== */
 const $ = (q) => document.querySelector(q);
 const grid = $("#grid");
@@ -295,23 +328,22 @@ async function render() {
   for (let d = 1; d <= days; d++) {
     const cellDate = new Date(y, m, d);
     const iso = cellDate.toISOString().slice(0, 10);
+
     const age = lunarAge(cellDate);
     const phase = phaseBadge(age);
     const my = myanmarMonthYear(cellDate);
-    const mmDay = Math.floor(age) + 1; // new: lunar day number
-    const yzr = yatyarzar(cellDate);
-    const pth = pyathadar(cellDate);
-    const upo = uposathaType(age);
+    const mmDay = Math.floor(age) + 1; // လရက်နံပါတ် (၁..၃၀)
+    const upo = uposathaType(age); // ဥပုသ်/အဖိတ် (nullable)
+
+    const zodiac = ZODIAC_BY_MM[my.myanmarMonth] || "";
+    const mmLabel = zodiac ? `${my.myanmarMonth} (${zodiac})` : my.myanmarMonth;
 
     const tags = [];
-
-    // show moon + number
+    // လအခြေအနေ + ရက်နံပါတ် eg. "လဆန်း ၁၂", "လပြည့် ၁၅"
     tags.push(`<span class="tag moon">${phase.label} ${mmDay}</span>`);
 
-    // show Uposatha/Afait
     if (upo) tags.push(`<span class="tag fest">★ ${upo}</span>`);
 
-    // show holiday
     if (backend[iso]) {
       backend[iso].forEach((sp) => {
         const cls = sp.type === "holiday" ? "warn" : "fest";
@@ -320,35 +352,38 @@ async function render() {
       });
     }
 
-    // show yatyarzar/pyathadar summary
-    tags.push(`<span class="tag note">${yzr}/${pth}</span>`);
+    // နေ့မှတ်စု tag (ရှိရင်)
+    const notes = getNotes();
+    if (notes[iso]?.trim()) tags.push(`<span class="tag note">✎ Note</span>`);
 
     const el = document.createElement("div");
     el.className = "day" + (isToday(d) ? " today" : "");
     el.innerHTML = `
     <div class="nums">
       <div class="greg">${d}</div>
-      <div class="myan">${my.myanmarMonth}</div>
+      <div class="myan">${mmLabel}</div>
     </div>
     <div class="tags">${tags.join("")}</div>
   `;
     el.onclick = () =>
-      openDetails(cellDate, my, phase, backend[iso] || [], upo, yzr, pth);
+      openDetails(cellDate, my, phase, backend[iso] || [], upo);
     grid.appendChild(el);
   }
 
   // Today bar
   const t = new Date();
   const tAge = lunarAge(t);
+  const myT = myanmarMonthYear(t);
+  const zodiacT = ZODIAC_BY_MM[myT.myanmarMonth] || "";
+  const mmLabelT = zodiacT
+    ? `${myT.myanmarMonth} (${zodiacT})`
+    : myT.myanmarMonth;
+
   todayBar.innerHTML = `
-    Today: ${enMonths[t.getMonth()]} ${t.getDate()}, ${t.getFullYear()} •
-    မြန်မာ - ${myanmarMonthYear(t).myanmarMonth} ${t.getDate()}, ${
-    myanmarMonthYear(t).myanmarYear
-  } •
-    ${phaseBadge(tAge).label} • ရက်ရာဇာ: <strong>${yatyarzar(
-    t
-  )}</strong> • ပြဿဒါး: <strong>${pyathadar(t)}</strong>
-  `;
+  Today: ${enMonths[t.getMonth()]} ${t.getDate()}, ${t.getFullYear()} •
+  မြန်မာ - ${mmLabelT} ${Math.floor(tAge) + 1}, ${myT.myanmarYear} •
+  ${phaseBadge(tAge).label}
+`;
 
   if ("serviceWorker" in navigator) {
     try {
@@ -357,14 +392,28 @@ async function render() {
   }
 }
 
-function openDetails(date, my, phase, specials, upo, yzr, pth) {
+function openDetails(date, my, phase, specials, upo) {
   const iso = date.toISOString().slice(0, 10);
   const age = lunarAge(date);
   const mmDay = Math.floor(age) + 1;
+
+  const zodiac = ZODIAC_BY_MM[my.myanmarMonth] || "";
+  const mmLabel = zodiac ? `${my.myanmarMonth} (${zodiac})` : my.myanmarMonth;
+
   const holi =
     (specials || [])
-      .map((s) => `• ${s.type === "holiday" ? "⚠️" : "★"} ${s.title}`)
+      .map(
+        (s) =>
+          `• ${s.type === "holiday" ? "⚠️" : "★"} ${
+            s.title
+          } <span class="muted">(${s.region || ""})</span>`
+      )
       .join("<br>") || "—";
+
+  // English birthstone for this month
+  const bs = BIRTHSTONES[date.getMonth()];
+  const bsText = `${bs.emoji} ${bs.name}`;
+
   const noteObj = getNotes();
   const val = noteObj[iso] || "";
 
@@ -372,18 +421,26 @@ function openDetails(date, my, phase, specials, upo, yzr, pth) {
     <div class="title">${
       enMonths[date.getMonth()]
     } ${date.getDate()}, ${date.getFullYear()}</div>
-    <div class="kv"><div class="k">မြန်မာလ:</div><div>${
-      my.myanmarMonth
-    } ${mmDay} ရက်၊ ${my.myanmarYear}</div></div>
-    <div class="kv"><div class="k">လအခြေအနေ:</div><div>${
-      phase.label
-    }</div></div>
-    <div class="kv"><div class="k">ရက်ရာဇာ:</div><div>${yzr}</div></div>
-    <div class="kv"><div class="k">ပြဿဒါး:</div><div>${pth}</div></div>
-    <div class="kv"><div class="k">ဥပုသ်/အဖိတ်:</div><div>${
-      upo ? upo : "—"
-    }</div></div>
-    <div class="kv"><div class="k">အထူးနေ့များ:</div><div>${holi}</div></div>
+
+    <div class="kv"><div class="k">မြန်မာလ:</div>
+      <div>${mmLabel} ${mmDay} ရက်၊ ${my.myanmarYear}</div>
+    </div>
+
+    <div class="kv"><div class="k">လအခြေအနေ:</div>
+      <div>${phase.label}</div>
+    </div>
+
+    <div class="kv"><div class="k">Birthstone:</div>
+      <div>${bsText}</div>
+    </div>
+
+    <div class="kv"><div class="k">ဥပုသ်/အဖိတ်:</div>
+      <div>${upo ? upo : "—"}</div>
+    </div>
+
+    <div class="kv"><div class="k">အထူးနေ့များ:</div>
+      <div>${holi}</div>
+    </div>
 
     <div class="notes">
       <h4>✎ နေ့စဉ် မှတ်စု</h4>
@@ -398,6 +455,7 @@ function openDetails(date, my, phase, specials, upo, yzr, pth) {
       <div id="noteStatus" class="muted"></div>
     </div>
   `;
+
   $("#saveNote").onclick = () => {
     const txt = $("#noteText").value || "";
     const obj = getNotes();
