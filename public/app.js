@@ -557,11 +557,29 @@ async function render() {
     todayBar.style.color = "#222";
   }
 
-  const ref = new Date(view.getFullYear(), view.getMonth(), 1); // ← view month anchor
+  const ref = new Date(view.getFullYear(), view.getMonth(), 1); // ← view anchor
   const myRef = myanmarMonthYear(ref);
-  const zodiac = ZODIAC_BY_MM[myT.myanmarMonth]
-    ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)`
+
+  const zodiac = ZODIAC_BY_MM[myRef.myanmarMonth]
+    ? ` (${ZODIAC_BY_MM[myRef.myanmarMonth]}ရာသီ)`
     : "";
+
+  // EN Month-Year label (e.g., October 2025)
+  const EN_FULL = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const gLabel = `${EN_FULL[ref.getMonth()]} ${ref.getFullYear()}`;
 
   // Gregorian month/year for display
   const enMonths = [
@@ -578,31 +596,35 @@ async function render() {
     "November",
     "December",
   ];
-  const gLabel = `${enMonths[t.getMonth()]} ${t.getFullYear()}`;
 
-  let bar = `${myT.myanmarMonth}လ${zodiac} · ${gLabel}`;
+  // Base line: "မြန်မာလ (ရာသီ) · October 2025"
+  let bar = `${myRef.myanmarMonth}လ${zodiac} · ${gLabel}`;
 
-  // Poem
-  const poem = await loadPoemFor(myT.myanmarMonth);
-  if (poem)
+  // Poem (for this Myanmar month)
+  const poem = await loadPoemFor(myRef.myanmarMonth);
+  if (poem) {
     bar += `<br><small class="poem">${poem.replace(/\n/g, "<br>")}</small>`;
+  }
 
-  // ⬇️ Birthstone (Gregorian month-based)
-  const gIdx = t.getMonth(); // 0..11
-  const bs = BIRTHSTONES[gIdx];
-  if (bs) {
-    bar += ` <span class="chip stone" title="${bs.en}">${bs.icon} ${bs.en} — <span class="mm">${bs.mm}</span></span>`;
+  // Birthstone (for this Gregorian view month)
+  if (typeof BIRTHSTONES !== "undefined") {
+    const bs = BIRTHSTONES[ref.getMonth()];
+    if (bs) {
+      bar += `<br><span class="chip stone" title="${bs.en}">
+              ${bs.icon} ${bs.en} — <span class="mm">${bs.mm || ""}</span>
+            </span>`;
+    }
   }
 
   todayBar.innerHTML = bar;
 
   // (optional) Theme auto by Myanmar month (view month)
   if (typeof CALENDAR_THEMES !== "undefined") {
-    const t = CALENDAR_THEMES[myRef.myanmarMonth];
-    if (t) {
-      document.body.style.setProperty("--theme-color", t.color);
-      document.body.style.background = t.bg;
-      todayBar.style.background = t.bg;
+    const theme = CALENDAR_THEMES[myRef.myanmarMonth];
+    if (theme) {
+      document.body.style.setProperty("--theme-color", theme.color);
+      document.body.style.background = theme.bg;
+      todayBar.style.background = theme.bg;
       todayBar.style.color = "#222";
     }
   }
