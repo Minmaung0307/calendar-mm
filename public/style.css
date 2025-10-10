@@ -418,3 +418,18 @@ body {
   line-height: 1.5;
   white-space: pre-line;
 }
+
+.chip.stone{
+  display: inline-block;
+  font-size: .9rem;
+  line-height: 1;
+  padding: 4px 8px;
+  margin-left: 6px;
+  border-radius: 12px;
+  background: var(--chip-bg, rgba(0,0,0,.06));
+  vertical-align: middle;
+  white-space: nowrap;
+}
+body.dark .chip.stone{
+  background: rgba(255,255,255,.12);
+}

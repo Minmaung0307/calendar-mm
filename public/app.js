@@ -24,6 +24,22 @@ function normalizeYMD(s) {
   return `${y}-${mo}-${dd}`;
 }
 
+// Gregorian month (0=Jan .. 11=Dec) → Birthstone name + icon
+const BIRTHSTONES = [
+  { name: "Garnet",              icon: "🔴" },  // Jan
+  { name: "Amethyst",            icon: "🟣" },  // Feb
+  { name: "Aquamarine",          icon: "🩵" },  // Mar
+  { name: "Diamond",             icon: "💎" },  // Apr
+  { name: "Emerald",             icon: "🟢" },  // May
+  { name: "Pearl / Alexandrite", icon: "⚪️" }, // Jun
+  { name: "Ruby",                icon: "🟥" },  // Jul
+  { name: "Peridot",             icon: "🟩" },  // Aug
+  { name: "Sapphire",            icon: "🔷" },  // Sep
+  { name: "Opal / Tourmaline",   icon: "🟠" },  // Oct
+  { name: "Topaz / Citrine",     icon: "🟡" },  // Nov
+  { name: "Turquoise / Tanzanite",icon:"🔹" }   // Dec
+];
+
 /* Today bar zodiac only */
 const ZODIAC_BY_MM = {
   တန်ခူး: "မိဿ",
@@ -343,7 +359,15 @@ async function render() {
   const poem = await loadPoemFor(myT.myanmarMonth);
   if (poem)
     bar += `<br><small class="poem">${poem.replace(/\n/g, "<br>")}</small>`;
-  todayBar.innerHTML = bar;
+
+  // ⬇️ ဒီ 3 လိုင်န့်ကို ထပ်ထည့်ပါ (Gregorian လဖြစ်တဲ့ t.getMonth() သုံး)
+const gIdx = t.getMonth(); // 0..11
+const bs = BIRTHSTONES[gIdx];
+if (bs) {
+  bar += ` <span class="chip stone">${bs.icon} ${bs.name}</span>`;
+}
+
+todayBar.innerHTML = bar;
 
   if ("serviceWorker" in navigator) {
     try {
