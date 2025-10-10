@@ -623,3 +623,21 @@ body.dark .chip.stone {
   font-size: 12px;
   opacity: 0.8;
 }
+
+.nums.two-lines{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.nums .mm-month{
+  font-weight:600;
+  font-size:14px;
+}
+.nums .en-date{
+  font-size:12px;
+  opacity:.85;
+}
+@media (max-width: 420px){
+  .nums .mm-month{ font-size:13px; }
+  .nums .en-date{ font-size:11.5px; }
+}

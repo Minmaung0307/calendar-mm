@@ -495,19 +495,24 @@ async function render() {
     const my = myanmarMonthYear(cellDate);
     const info = mmLunarInfoWithLength(age, my.myanmarMonth, my.myanmarYear);
 
+    // (optional) ဝါထပ်နှစ် label ခွဲချင်ရင် labelWaso() သုံးပါ
+    const shownMonth =
+      typeof labelWaso === "function"
+        ? labelWaso(my.myanmarMonth, my.myanmarYear, iso)
+        : my.myanmarMonth;
+
     const tags = [];
+
     if (info.kind === "uposatha") {
       const moonIcon = info.phase === "လပြည့်" ? "🌕" : "🌑";
       tags.push(`<span class="tag icon">${moonIcon}</span>`);
     } else {
-      // မြန်မာဂဏန်းပြန်
-      const mmDigits = (n) => String(n).replace(/\d/g, (d) => "၀၁၂၃၄၅၆၇၈၉"[+d]);
+      const toMM = (s) => String(s).replace(/\d/g, (d) => "၀၁၂၃၄၅၆၇၈၉"[+d]);
       tags.push(
-        `<span class="tag moontext">${info.phase} ${mmDigits(
-          info.number
-        )}</span>`
+        `<span class="tag moontext">${info.phase} ${toMM(info.number)}</span>`
       );
     }
+
     if (backend[iso]) {
       backend[iso].forEach((sp) => {
         const isHoliday = sp.type === "holiday";
@@ -517,20 +522,19 @@ async function render() {
       });
     }
 
+    // ✅ Greg line "Oct 1" + Myanmar month line (two lines)
+    const gregLine = `${EN_ABBR[m]} ${d}`;
+
     const el = document.createElement("div");
     el.className = "day" + (isToday(d) ? " today" : "");
-
-    // ✅ Greg label: "Jul 1" ပုံစံ
-    const gregLabel = `${EN_ABBR[m]} ${d}`;
-
     el.innerHTML = `
-      <div class="nums">
-        <div class="greg greg-abbr">${gregLabel}</div>
-        <div class="myan">${my.myanmarMonth}</div>
-      </div>
-      <div class="tags">${tags.join("")}</div>
-    `;
-    // (mobile) tap-to-expand (ရှိရင်)
+    <div class="nums two-lines">
+      <div class="line mm-month">${shownMonth}</div>
+      <div class="line en-date">${gregLine}</div>
+    </div>
+    <div class="tags">${tags.join("")}</div>
+  `;
+
     el.addEventListener(
       "touchstart",
       () => {
@@ -538,7 +542,6 @@ async function render() {
       },
       { passive: true }
     );
-
     grid.appendChild(el);
   }
 
@@ -554,6 +557,8 @@ async function render() {
     todayBar.style.color = "#222";
   }
 
+  const ref = new Date(view.getFullYear(), view.getMonth(), 1); // ← view month anchor
+  const myRef = myanmarMonthYear(ref);
   const zodiac = ZODIAC_BY_MM[myT.myanmarMonth]
     ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)`
     : "";
@@ -590,6 +595,17 @@ async function render() {
   }
 
   todayBar.innerHTML = bar;
+
+  // (optional) Theme auto by Myanmar month (view month)
+  if (typeof CALENDAR_THEMES !== "undefined") {
+    const t = CALENDAR_THEMES[myRef.myanmarMonth];
+    if (t) {
+      document.body.style.setProperty("--theme-color", t.color);
+      document.body.style.background = t.bg;
+      todayBar.style.background = t.bg;
+      todayBar.style.color = "#222";
+    }
+  }
 
   if ("serviceWorker" in navigator) {
     try {
