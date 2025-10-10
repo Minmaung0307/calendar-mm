@@ -148,13 +148,16 @@ async function render(){
 
     const tags=[];
 
-    // 🌕/🌑 icon only on Uposatha days; DO NOT show waxing/waning numbers
+    // 🌕/🌑 icon on Uposatha days
     if (info.kind === "uposatha"){
       const moonIcon = (info.phase === "လပြည့်") ? "🌕" : "🌑";
       tags.push(`<span class="tag icon">${moonIcon}</span>`);
+    } else {
+      // Restore waxing/waning label like "လဆန်း ၁၂" / "လဆုတ် ၆"
+      tags.push(`<span class="tag moontext">${info.phase} ${info.number}</span>`);
     }
 
-    // 🏛️/🎉 icons + text for holidays/festivals/custom
+    // 🏛️/🎉 for holidays/festivals/custom
     if(backend[iso]){
       backend[iso].forEach(sp=>{
         const isHoliday = sp.type==="holiday";

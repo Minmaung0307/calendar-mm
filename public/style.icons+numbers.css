@@ -1,0 +1,28 @@
+/* === Icons + Waxing/Waning Labels === */
+.tag.icon{
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 2px;
+  vertical-align: middle;
+}
+.tag.moontext{
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 2px 6px;
+  margin: 2px 4px 0 0;
+  border-radius: 10px;
+  background: var(--badge-bg, rgba(0,0,0,.06));
+}
+.tag.warn, .tag.fest{
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 2px 6px;
+  margin: 2px 4px 0 0;
+  border-radius: 10px;
+}
+
+.day .tags{
+  max-height: 72px;
+  overflow: hidden;
+}
+.day .tags:hover{ max-height: 140px; overflow:auto; }
