@@ -1,0 +1,4 @@
+/* Uniform day cell height to avoid bouncy grids across months */
+.day{ height: 132px; min-height: 132px; }
+.day.pad{ visibility:hidden; } /* keep space but invisible */
+.day .tags{ max-height: 48px; overflow: hidden; }

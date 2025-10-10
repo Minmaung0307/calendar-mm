@@ -1,134 +1,412 @@
 /* ===== Theme Variables ===== */
-:root{
+:root {
   --bg: #fff8ee;
   --card: #ffffff;
   --ink: #2e2a25;
   --muted: #7a6a57;
   --brand: #ffcc66;
-  --brand-ink:#6b4e16;
-  --warn:#d93025;
-  --ok:#1b8b3d;
-  --accent:#8758ff;
-  --soft:#f4ecda;
-  --shadow: 0 10px 24px rgba(0,0,0,.08);
+  --brand-ink: #6b4e16;
+  --warn: #d93025;
+  --ok: #1b8b3d;
+  --accent: #8758ff;
+  --soft: #f4ecda;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 
   /* Fonts */
-  --font-ui: "Noto Sans Myanmar", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
+  --font-ui: "Noto Sans Myanmar", system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, sans-serif;
   --font-fancy: "Times New Roman", Georgia, "Noto Serif Myanmar", serif;
 }
 
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0; font-family:var(--font-ui);
-  background: linear-gradient(135deg,#fffaf1 0%, #f7e7c3 100%);
-  color:var(--ink);
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--font-ui);
+  background: linear-gradient(135deg, #fffaf1 0%, #f7e7c3 100%);
+  color: var(--ink);
 }
 
-.topbar{
-  display:flex; gap:16px; align-items:center; justify-content:space-between;
-  padding:14px 16px; background:var(--brand); color:var(--brand-ink);
-  border-bottom:2px solid #e6b54a; position:sticky; top:0; z-index:99;
+.topbar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: var(--brand);
+  color: var(--brand-ink);
+  border-bottom: 2px solid #e6b54a;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
-.brand{display:flex; align-items:center; gap:10px}
-.brand .logo{font-size:28px}
-.brand h1{margin:0; font-weight:800; letter-spacing:.3px}
-.brand small{display:block; font-weight:600; font-size:.8rem; opacity:.85}
-.controls{display:flex; gap:8px; align-items:center; flex-wrap:wrap}
-.select{
-  appearance:none; padding:8px 10px; border-radius:10px; border:1px solid #e2c26e; background:#fffaf0; color:#553d12; font-weight:600
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.btn{
-  border:none; background:#fff; color:#4b3d1b; padding:8px 12px; border-radius:12px; cursor:pointer; box-shadow:var(--shadow); font-weight:700
+.brand .logo {
+  font-size: 28px;
 }
-.btn:hover{transform:translateY(-1px)}
-.btn.ghost{background:transparent; border:1px dashed #6e5827}
-.btn.wide{width:100%}
-
-.poem{
-  max-width:1100px; margin:12px auto 0; padding:18px 20px;
-  text-align:center; background:var(--card); border-radius:18px; box-shadow:var(--shadow);
-  border-left:6px solid #e9c058; border-right:6px solid #e9c058;
+.brand h1 {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.3px;
 }
-.poem-line{font-family:var(--font-fancy); font-size:1.15rem}
-.poem-meta{margin-top:6px; color:var(--muted); font-style:italic}
-
-.todaybar{
-  text-align:center; padding:10px 16px; color:#563f1b; background:#ffeab3; border-bottom:1px solid #f3d07c;
+.brand small {
+  display: block;
+  font-weight: 600;
+  font-size: 0.8rem;
+  opacity: 0.85;
 }
-.wrap{display:grid; grid-template-columns:280px 1fr 320px; gap:16px; padding:16px; max-width:1300px; margin:0 auto}
-
-.card{
-  background:var(--card); border-radius:18px; box-shadow:var(--shadow); padding:16px
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.legend h3,.details h3{margin:0 0 10px}
-.legend ul{list-style:none; padding-left:0; margin:10px 0 0}
-.legend li{display:flex; align-items:center; gap:8px; margin:6px 0}
-.badge{display:inline-grid; place-items:center; width:18px; height:18px; border-radius:50%}
-.badge.fullmoon{background:#222; color:#ffd900}
-.badge.newmoon{background:#222; color:#222; outline:3px solid #ddd}
-.badge.waxing{background:#ffcc66}
-.badge.waning{background:#b8e0ff}
-.badge.holiday{background:#ffe2df}
-.badge.fest{background:#fff0b3}
-.badge.note{background:#e3f3ff}
-
-.hint{margin-top:10px}
-.hint summary{cursor:pointer}
-
-.custom-add{margin-top:14px; border-top:1px dashed #ead7a2; padding-top:12px}
-.custom-add label{display:block; font-size:.9rem; margin:8px 0}
-.custom-add input,.custom-add select{width:100%; padding:8px 10px; border-radius:10px; border:1px solid #ead7a2; background:#fffdf6}
-
-.calendar .grid{display:grid; grid-template-columns:repeat(7,1fr); gap:8px}
-.calendar .grid.head{font-weight:700; color:#6b4e16; margin-bottom:8px}
-.calendar .grid.head .wknd{color:#9a3b00}
-
-.day{
-  background:var(--soft); border-radius:14px; padding:10px; min-height:118px;
-  display:flex; flex-direction:column; gap:6px; cursor:pointer; transition:.15s ease-in-out;
-  border:1px solid #efe3c7;
+.select {
+  appearance: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #e2c26e;
+  background: #fffaf0;
+  color: #553d12;
+  font-weight: 600;
 }
-.day:hover{transform:translateY(-2px); background:#fffbe8}
-.day .nums{display:flex; justify-content:space-between; align-items:center}
-.day .nums .greg{font-weight:800}
-.day .nums .myan{font-size:.9rem; color:var(--muted)}
-.day .tags{display:flex; gap:6px; flex-wrap:wrap; margin-top:auto}
-.tag{font-size:.75rem; padding:2px 6px; border-radius:999px; background:#fff; border:1px solid #ead7a2}
-.tag.warn{border-color:#f5b5ae; background:#fff2f1; color:#b31b12}
-.tag.fest{border-color:#f2d77a; background:#fff8d3; color:#856100}
-.tag.moon{border-color:#c7c7f5; background:#f5f6ff; color:#3432a8}
-.tag.note{border-color:#b6e0ff; background:#eef7ff; color:#155fa0}
-.day.today{outline:2px solid #7c5a1a; box-shadow:0 0 0 3px #ffe7a6 inset}
+.btn {
+  border: none;
+  background: #fff;
+  color: #4b3d1b;
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  font-weight: 700;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn.ghost {
+  background: transparent;
+  border: 1px dashed #6e5827;
+}
+.btn.wide {
+  width: 100%;
+}
 
-.details p{margin:.4rem 0}
-.details .title{font-weight:800; font-size:1.1rem}
-.kv{display:grid; grid-template-columns:120px 1fr; gap:6px; margin:8px 0}
-.kv .k{color:#6c5731}
-.muted{color:var(--muted); font-size:.9rem}
+.poem {
+  max-width: 1100px;
+  margin: 12px auto 0;
+  padding: 18px 20px;
+  text-align: center;
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  border-left: 6px solid #e9c058;
+  border-right: 6px solid #e9c058;
+}
+.poem-line {
+  font-family: var(--font-fancy);
+  font-size: 1.15rem;
+}
+.poem-meta {
+  margin-top: 6px;
+  color: var(--muted);
+  font-style: italic;
+}
 
-.notes{margin-top:14px}
-.notes textarea{width:100%; border-radius:12px; border:1px solid #ead7a2; padding:10px; background:#fffdf6}
-.note-actions{display:flex; gap:8px; margin-top:8px}
+.todaybar {
+  text-align: center;
+  padding: 10px 16px;
+  color: #563f1b;
+  background: #ffeab3;
+  border-bottom: 1px solid #f3d07c;
+}
+.wrap {
+  display: grid;
+  grid-template-columns: 280px 1fr 320px;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
 
-.foot{
-  text-align:center; padding:14px; color:#6d5831; opacity:.9
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+.legend h3,
+.details h3 {
+  margin: 0 0 10px;
+}
+.legend ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+}
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+.badge {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.badge.fullmoon {
+  background: #222;
+  color: #ffd900;
+}
+.badge.newmoon {
+  background: #222;
+  color: #222;
+  outline: 3px solid #ddd;
+}
+.badge.waxing {
+  background: #ffcc66;
+}
+.badge.waning {
+  background: #b8e0ff;
+}
+.badge.holiday {
+  background: #ffe2df;
+}
+.badge.fest {
+  background: #fff0b3;
+}
+.badge.note {
+  background: #e3f3ff;
+}
+
+.hint {
+  margin-top: 10px;
+}
+.hint summary {
+  cursor: pointer;
+}
+
+.custom-add {
+  margin-top: 14px;
+  border-top: 1px dashed #ead7a2;
+  padding-top: 12px;
+}
+.custom-add label {
+  display: block;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+.custom-add input,
+.custom-add select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ead7a2;
+  background: #fffdf6;
+}
+
+.calendar .grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+.calendar .grid.head {
+  font-weight: 700;
+  color: #6b4e16;
+  margin-bottom: 8px;
+}
+.calendar .grid.head .wknd {
+  color: #9a3b00;
+}
+
+.day {
+  background: var(--soft);
+  border-radius: 14px;
+  padding: 10px;
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  border: 1px solid #efe3c7;
+}
+.day:hover {
+  transform: translateY(-2px);
+  background: #fffbe8;
+}
+.day .nums {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.day .nums .greg {
+  font-weight: 800;
+}
+.day .nums .myan {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.day .tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+.tag {
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #ead7a2;
+}
+.tag.warn {
+  border-color: #f5b5ae;
+  background: #fff2f1;
+  color: #b31b12;
+}
+.tag.fest {
+  border-color: #f2d77a;
+  background: #fff8d3;
+  color: #856100;
+}
+.tag.moon {
+  border-color: #c7c7f5;
+  background: #f5f6ff;
+  color: #3432a8;
+}
+.tag.note {
+  border-color: #b6e0ff;
+  background: #eef7ff;
+  color: #155fa0;
+}
+.day.today {
+  outline: 2px solid #7c5a1a;
+  box-shadow: 0 0 0 3px #ffe7a6 inset;
+}
+
+.details p {
+  margin: 0.4rem 0;
+}
+.details .title {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.kv {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 6px;
+  margin: 8px 0;
+}
+.kv .k {
+  color: #6c5731;
+}
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.notes {
+  margin-top: 14px;
+}
+.notes textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #ead7a2;
+  padding: 10px;
+  background: #fffdf6;
+}
+.note-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.foot {
+  text-align: center;
+  padding: 14px;
+  color: #6d5831;
+  opacity: 0.9;
 }
 
 /* ===== Dark ===== */
-.dark{
-  --bg:#0f0d0b; --card:#16120f; --ink:#efe9e1; --muted:#b6a996; --brand:#2a2011; --brand-ink:#f6e3b3;
-  --warn:#ff7d6b; --ok:#6edb8a; --accent:#b49bff; --soft:#1b1713; --shadow: 0 8px 20px rgba(0,0,0,.35);
-  background:#0f0d0b; color:var(--ink);
+.dark {
+  --bg: #0f0d0b;
+  --card: #16120f;
+  --ink: #efe9e1;
+  --muted: #b6a996;
+  --brand: #2a2011;
+  --brand-ink: #f6e3b3;
+  --warn: #ff7d6b;
+  --ok: #6edb8a;
+  --accent: #b49bff;
+  --soft: #1b1713;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  background: #0f0d0b;
+  color: var(--ink);
 }
-.dark .topbar{background:var(--brand); color:var(--brand-ink); border-bottom-color:#493b20}
-.dark .select{background:#1b1713; border-color:#3b2f1c; color:var(--ink)}
-.dark .btn{background:#211a14; color:#f4e8d3; border:1px solid #3b2f1c}
-.dark .btn.ghost{background:transparent; border:1px dashed #3b2f1c}
-.dark .todaybar{background:#1d1711; color:#f0e5d1; border-bottom-color:#3b2f1c}
-.dark .day{background:#18130e; border-color:#2b241b}
-.dark .day:hover{background:#201a14}
-.dark .tag{background:#15110e; border-color:#3b2f1c}
+.dark .topbar {
+  background: var(--brand);
+  color: var(--brand-ink);
+  border-bottom-color: #493b20;
+}
+.dark .select {
+  background: #1b1713;
+  border-color: #3b2f1c;
+  color: var(--ink);
+}
+.dark .btn {
+  background: #211a14;
+  color: #f4e8d3;
+  border: 1px solid #3b2f1c;
+}
+.dark .btn.ghost {
+  background: transparent;
+  border: 1px dashed #3b2f1c;
+}
+.dark .todaybar {
+  background: #1d1711;
+  color: #f0e5d1;
+  border-bottom-color: #3b2f1c;
+}
+.dark .day {
+  background: #18130e;
+  border-color: #2b241b;
+}
+.dark .day:hover {
+  background: #201a14;
+}
+.dark .tag {
+  background: #15110e;
+  border-color: #3b2f1c;
+}
 
 /* ===== Font Toggle (serif) ===== */
-.serif body, .serif .poem-line{font-family:var(--font-fancy)}
+.serif body,
+.serif .poem-line {
+  font-family: var(--font-fancy);
+}
+
+/* Uniform day cell height to avoid bouncy grids across months */
+.day {
+  height: 132px;
+  min-height: 132px;
+}
+.day.pad {
+  visibility: hidden;
+} /* keep space but invisible */
+.day .tags {
+  max-height: 48px;
+  overflow: hidden;
+}

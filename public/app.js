@@ -1,8 +1,15 @@
 import {
   lunarAge, myanmarMonthYear,
-  mmLunarInfoWithLength, uposathaPattern,
+  mmLunarInfoWithLength, uposathaPattern, // uposathaPattern may be removed; keep if you have it. If not, we'll inline.
   monthLengthFor
 } from './myanmarCalendar.js';
+
+// Fallback for uposathaPattern if not exported in your module
+function uposathaPatternLocal(mmName, myYear){
+  const len = monthLengthFor(mmName, myYear);
+  return { length: len, pattern: (len===30 ? "8/15 8/15" : "8/15 8/14") };
+}
+const getPattern = (mmName, myYear) => (typeof uposathaPattern === 'function' ? uposathaPattern(mmName, myYear) : uposathaPatternLocal(mmName, myYear));
 
 const ZODIAC_BY_MM = {
   တန်ခူး: "မိဿ", ကဆုန်: "ပြိဿ", နယုန်: "မေထုန်", ဝါဆို: "ကြဋ်",
@@ -10,15 +17,6 @@ const ZODIAC_BY_MM = {
   တန်ဆောင်မုန်း: "ဗြိစ္ဆာ", နတ်တော်: "ဓနု", ပြာသို: "မကာရ",
   တပို့တွဲ: "ကုမ်", တပေါင်း: "မိန်"
 };
-
-const BIRTHSTONES = [
-  { name: "Garnet", emoji: "🔴" }, { name: "Amethyst", emoji: "💜" },
-  { name: "Aquamarine", emoji: "🔷" }, { name: "Diamond", emoji: "💎" },
-  { name: "Emerald", emoji: "🟢" }, { name: "Pearl", emoji: "⚪" },
-  { name: "Ruby", emoji: "🔴" }, { name: "Peridot", emoji: "🟢" },
-  { name: "Sapphire", emoji: "🔵" }, { name: "Opal", emoji: "🌈" },
-  { name: "Topaz", emoji: "🟡" }, { name: "Turquoise", emoji: "🟦" }
-];
 
 const $ = (q) => document.querySelector(q);
 const grid = $("#grid");
@@ -34,19 +32,6 @@ const todayBar = $("#todayBar");
 
 const enMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-const USE_FIREBASE = false;
-const FB = { config: { apiKey: "YOUR_API_KEY", authDomain: "YOUR_APP.firebaseapp.com", projectId: "YOUR_APP" } };
-let firestore; let getDocs, collection;
-async function initFirebaseIfNeeded(){
-  if(!USE_FIREBASE) return;
-  const appMod = await import('https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js');
-  const fsMod  = await import('https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js');
-  const app = appMod.initializeApp(FB.config);
-  firestore = fsMod.getFirestore(app);
-  getDocs   = fsMod.getDocs;
-  collection= fsMod.collection;
-}
-
 const POEMS = [
   { line:"လမင်းဝါ ညအေးရေတွင် အိပ်မက်ပုံရိပ်…", by:"Anonymous" },
   { line:"လလှိုင်းရောင် မျက်တောင်ထက် အေးမြလွန်း…", by:"သဒ္ဓါ" },
@@ -55,10 +40,11 @@ const POEMS = [
 ];
 function rollPoem(){
   const one = POEMS[Math.floor(Math.random()*POEMS.length)];
-  document.querySelector("#poemLine").textContent = one.line;
-  document.querySelector("#poemAuthor").textContent = `— ${one.by}`;
+  $("#poemLine").textContent = one.line;
+  $("#poemAuthor").textContent = `— ${one.by}`;
 }
 
+// Holidays (same as before)
 const SOLAR_MM = {"01-04":"လွတ်လပ်ရေးနေ့","02-12":"အမျိုးသားတော်လှန်ရေးနေ့","03-27":"တပ်မတော်နေ့","05-01":"အလုပ်သမားနေ့","07-19":"အာဇာနည်နေ့","12-25":"ခရစ်စမတ်နေ့"};
 const SOLAR_US_FIXED = {"01-01":"New Year's Day","07-04":"Independence Day","10-31":"Halloween","12-25":"Christmas Day"};
 function computeEaster(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),month=Math.floor((h+l-7*m+114)/31),day=((h+l-7*m+114)%31)+1;return {month, day};}
@@ -78,24 +64,24 @@ let selectedISO = null;
 (function setupSelectors(){
   enMonths.forEach((m,i)=>{
     const o=document.createElement("option"); o.value=i; o.textContent=`${i+1}. ${m}`;
-    document.querySelector("#monthSel").appendChild(o);
+    $("#monthSel").appendChild(o);
   });
   for(let y=1900; y<=2100; y++){
     const o=document.createElement("option"); o.value=y; o.textContent=String(y);
-    document.querySelector("#yearSel").appendChild(o);
+    $("#yearSel").appendChild(o);
   }
 })();
-function syncSelectors(){ document.querySelector("#monthSel").value=view.getMonth(); document.querySelector("#yearSel").value=view.getFullYear(); }
-document.querySelector("#prevBtn").onclick=()=>{ view.setMonth(view.getMonth()-1); render(); };
-document.querySelector("#nextBtn").onclick=()=>{ view.setMonth(view.getMonth()+1); render(); };
-document.querySelector("#todayBtn").onclick=()=>{ const n=new Date(); view=new Date(n.getFullYear(), n.getMonth(), 1); render(); };
-document.querySelector("#monthSel").onchange=()=>{ view.setMonth(+document.querySelector("#monthSel").value); render(); };
-document.querySelector("#yearSel").onchange=()=>{ view.setFullYear(+document.querySelector("#yearSel").value); render(); };
-document.querySelector("#themeBtn").onclick=()=>{
+function syncSelectors(){ $("#monthSel").value=view.getMonth(); $("#yearSel").value=view.getFullYear(); }
+$("#prevBtn").onclick=()=>{ view.setMonth(view.getMonth()-1); render(); };
+$("#nextBtn").onclick=()=>{ view.setMonth(view.getMonth()+1); render(); };
+$("#todayBtn").onclick=()=>{ const n=new Date(); view=new Date(n.getFullYear(), n.getMonth(), 1); render(); };
+$("#monthSel").onchange=()=>{ view.setMonth(+$("#monthSel").value); render(); };
+$("#yearSel").onchange=()=>{ view.setFullYear(+$("#yearSel").value); render(); };
+$("#themeBtn").onclick=()=>{
   document.body.classList.toggle("dark");
-  document.querySelector("#themeBtn").textContent = document.body.classList.contains("dark") ? "☀ Light" : "☾ Dark";
+  $("#themeBtn").textContent = document.body.classList.contains("dark") ? "☀ Light" : "☾ Dark";
 };
-document.querySelector("#fontBtn").onclick=()=>{ document.documentElement.classList.toggle("serif"); };
+$("#fontBtn").onclick=()=>{ document.documentElement.classList.toggle("serif"); };
 
 async function loadBackendEvents(year){
   const map={};
@@ -136,14 +122,14 @@ async function render(){
   syncSelectors();
   const y=view.getFullYear(), m=view.getMonth();
   const first=new Date(y,m,1);
-  const startWeekday=(first.getDay()+6)%7;
+  const startWeekday=(first.getDay()+6)%7; // Monday-first
   const days=new Date(y,m+1,0).getDate();
   const backend=await loadBackendEvents(y);
-  document.querySelector("#grid").innerHTML="";
+  grid.innerHTML="";
 
   for(let i=0;i<startWeekday;i++){
     const pad=document.createElement("div");
-    pad.className="day"; pad.style.visibility="hidden";
+    pad.className="day pad"; // style as placeholder but same height
     grid.appendChild(pad);
   }
 
@@ -157,7 +143,7 @@ async function render(){
     const age=lunarAge(cellDate);
     const my = myanmarMonthYear(cellDate);
     const info = mmLunarInfoWithLength(age, my.myanmarMonth, my.myanmarYear);
-    const { pattern } = uposathaPattern(my.myanmarMonth, my.myanmarYear);
+    const { pattern } = getPattern(my.myanmarMonth, my.myanmarYear);
 
     const tags=[];
     if (info.kind === "waxing" || info.kind === "waning") {
@@ -184,13 +170,13 @@ async function render(){
         <div class="greg">${d}</div>
         <div class="myan">${my.myanmarMonth}</div>
       </div>
-      <div class="tags">${tags.join("")}</div>
+      <div class="tags" title="${tags.map(t=>t.replace(/<[^>]+>/g,'')).join(' • ')}">${tags.join("")}</div>
     `;
     el.onclick=()=> openDetails(cellDate, my, info, backend[iso]||[], pattern);
     grid.appendChild(el);
   }
 
-  // Today bar: "<Myanmar Month> (Zodiac)"
+  // Today bar — "<Myanmar Month> (Zodiac)"
   const t=new Date();
   const myT=myanmarMonthYear(t);
   const zodiac = ZODIAC_BY_MM[myT.myanmarMonth] ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)` : "";
@@ -205,8 +191,10 @@ function openDetails(date, my, info, specials, pattern){
   const iso=date.toISOString().slice(0,10);
   const holi=(specials||[]).map(s=>`• ${s.type==="holiday"?"⚠️":"★"} ${s.title} <span class="muted">(${s.region||""})</span>`).join("<br>") || "—";
   const noteObj=getNotes(); const val=noteObj[iso]||"";
-  const enMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-  const moonLine = (info.kind === "waxing" || info.kind === "waning") ? `${info.phase} ${info.number}` : `${info.phase} ${info.uposathaDay ? `(${info.uposathaDay})` : ""}`;
+
+  const moonLine = (info.kind === "waxing" || info.kind === "waning")
+    ? `${info.phase} ${info.number}`
+    : `${info.phase} ${info.uposathaDay ? `(${info.uposathaDay})` : ""}`;
 
   details.innerHTML = `
     <div class="title">${enMonths[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}</div>
@@ -238,27 +226,28 @@ function openDetails(date, my, info, specials, pattern){
     </div>
   `;
 
-  document.querySelector("#saveNote").onclick=()=>{
-    const txt=document.querySelector("#noteText").value||"";
+  $("#saveNote").onclick=()=>{
+    const txt=$("#noteText").value||"";
     const obj=getNotes(); obj[iso]=txt; setNotes(obj);
-    document.querySelector("#noteStatus").textContent="Saved."; render();
+    $("#noteStatus").textContent="Saved."; render();
   };
-  document.querySelector("#deleteNote").onclick=()=>{
+  $("#deleteNote").onclick=()=>{
     const obj=getNotes(); delete obj[iso]; setNotes(obj);
-    document.querySelector("#noteText").value=""; document.querySelector("#noteStatus").textContent="Deleted."; render();
+    $("#noteText").value=""; $("#noteStatus").textContent="Deleted."; render();
   };
 }
 
-document.querySelector("#addCustom").onclick=()=>{
-  const date=document.querySelector("#custDate").value;
-  const title=document.querySelector("#custTitle").value?.trim();
-  const type=document.querySelector("#custType").value;
+// Custom add/remove (unchanged)
+$("#addCustom").onclick=()=>{
+  const date=$("#custDate").value;
+  const title=$("#custTitle").value?.trim();
+  const type=$("#custType").value;
   if(!date || !title){ alert("နေ့စွဲနဲ့ ခေါင်းစဉ်ကို ဖြည့်ပါ"); return; }
   const cur=getCustom(); cur.push({date,title,type});
-  setCustom(cur); document.querySelector("#custTitle").value=""; document.querySelector("#custDate").value="";
+  setCustom(cur); $("#custTitle").value=""; $("#custDate").value="";
   render();
 };
-document.querySelector("#clearCustom").onclick=()=>{
+$("#clearCustom").onclick=()=>{
   if(confirm("ကိုယ်ပိုင်သတ်မှတ်ထားသမျှကို ဖျက်မလား?")){
     localStorage.removeItem(LS_CUSTOM); render();
   }

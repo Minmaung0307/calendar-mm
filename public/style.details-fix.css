@@ -1,0 +1,69 @@
+/* == Details Aside Overflow Fix (responsive) ==
+   Drop this at the END of your style.css OR include as a separate file.
+*/
+
+:root{
+  --aside-width: 420px; /* default desktop width for details card */
+  --header-offset: 80px; /* sticky offset for top toolbar */
+}
+
+/* Main layout assumes a grid container around calendar + details.
+   If your wrapper uses #app or .container, adjust the selector below.
+*/
+#main, .container, #app {
+  display: grid;
+  grid-template-columns: 1fr var(--aside-width);
+  gap: 16px;
+  align-items: start;
+}
+
+/* Details card itself */
+#details{
+  position: sticky;
+  top: var(--header-offset);
+  max-height: calc(100svh - var(--header-offset) - 16px);
+  overflow: auto;
+  box-sizing: border-box;
+  max-inline-size: 100%;
+  overscroll-behavior: contain;
+  contain: content;
+  /* Keep it inside page */
+  inline-size: var(--aside-width);
+}
+
+/* Prevent it from growing beyond viewport width in weird flex/overflow cases */
+#details, #details *{
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Make sure day grid doesn't push the layout wider */
+#grid{
+  min-width: 0;
+}
+
+/* Small screens: stack layout; details goes under calendar and not sticky */
+@media (max-width: 1024px){
+  #main, .container, #app {
+    grid-template-columns: 1fr;
+  }
+  #details{
+    position: relative;
+    top: auto;
+    max-height: none;
+    inline-size: 100%;
+  }
+}
+
+/* Very small screens: keep tags tidy */
+@media (max-width: 480px){
+  .day{ height: auto; min-height: 112px; }
+  .day .tags{ max-height: 56px; overflow: hidden; }
+}
+
+/* Optional: make the toolbar/title bar sticky so the sticky aside offset works nicely */
+#topbar, header, .toolbar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
