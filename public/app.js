@@ -56,15 +56,31 @@ const ZODIAC_BY_MM = {
   တပေါင်း: "မိန်",
 };
 
+// === Calendar Themes by Myanmar Month ===
+const CALENDAR_THEMES = {
+  "တန်ခူး": { name: "summer",  color: "#ffcf33",  bg: "linear-gradient(120deg,#ffecb3,#ffd54f)" },
+  "ကဆုန်": { name: "blossom", color: "#ff99cc",  bg: "linear-gradient(120deg,#ffe6f2,#ffb3d9)" },
+  "နယုန်": { name: "sunrise", color: "#ff9966",  bg: "linear-gradient(120deg,#ffe0b2,#ffb380)" },
+  "ဝါဆို": { name: "rain",    color: "#4fc3f7",  bg: "linear-gradient(120deg,#b3e5fc,#81d4fa)" },
+  "ဝါခေါင်": { name: "cloud", color: "#90a4ae",  bg: "linear-gradient(120deg,#cfd8dc,#90a4ae)" },
+  "တော်သလင်း": { name: "wind", color: "#a5d6a7",  bg: "linear-gradient(120deg,#c8e6c9,#a5d6a7)" },
+  "သီတင်းကျွတ်": { name: "festival", color: "#ff7043", bg: "linear-gradient(120deg,#ffccbc,#ffab91)" },
+  "တန်ဆောင်မုန်း": { name: "firelight", color: "#ff5252", bg: "linear-gradient(120deg,#ff8a80,#ff5252)" },
+  "နတ်တော်": { name: "royal", color: "#ba68c8", bg: "linear-gradient(120deg,#e1bee7,#ce93d8)" },
+  "ပြာသို": { name: "winter", color: "#80deea", bg: "linear-gradient(120deg,#b2ebf2,#80deea)" },
+  "တပို့တွဲ": { name: "snow", color: "#b0bec5", bg: "linear-gradient(120deg,#eceff1,#cfd8dc)" },
+  "တပေါင်း": { name: "newyear", color: "#81c784", bg: "linear-gradient(120deg,#c8e6c9,#81c784)" }
+};
+
 const $ = (q) => document.querySelector(q);
 const grid = $("#grid");
-const monthSel = $("#monthSel");
-const yearSel = $("#yearSel");
-const prevBtn = $("#prevBtn");
-const nextBtn = $("#nextBtn");
-const todayBtn = $("#todayBtn");
-const themeBtn = $("#themeBtn");
-const fontBtn = $("#fontBtn");
+// const monthSel = $("#monthSel");
+// const yearSel = $("#yearSel");
+// const prevBtn = $("#prevBtn");
+// const nextBtn = $("#nextBtn");
+// const todayBtn = $("#todayBtn");
+// const themeBtn = $("#themeBtn");
+// const fontBtn = $("#fontBtn");
 const todayBar = $("#todayBar");
 
 const enMonths = [
@@ -276,9 +292,25 @@ async function loadPoemFor(month) {
   }
 }
 
+document.getElementById("themeSelect")?.addEventListener("change", e => {
+  const val = e.target.value;
+  if (val === "dark") {
+    document.body.style.background = "#111";
+    document.body.style.color = "#fff";
+  } else if (val === "light") {
+    document.body.style.background = "#fff";
+    document.body.style.color = "#111";
+  } else {
+    const myT = myanmarMonthYear(new Date());
+    const t = CALENDAR_THEMES[myT.myanmarMonth];
+    document.body.style.background = t.bg;
+    document.body.style.color = "#111";
+  }
+});
+
 /* Render */
 async function render() {
-  syncSelectors();
+  // syncSelectors();
   const y = view.getFullYear(),
     m = view.getMonth();
   const first = new Date(y, m, 1);
@@ -352,6 +384,15 @@ async function render() {
   // Today bar + poem (one-pass)
   const t = new Date();
   const myT = myanmarMonthYear(t);
+  const currentTheme = CALENDAR_THEMES[myT.myanmarMonth];
+
+if (currentTheme) {
+  document.body.style.setProperty("--theme-color", currentTheme.color);
+  document.body.style.background = currentTheme.bg;
+  todayBar.style.background = currentTheme.bg;
+  todayBar.style.color = "#222";
+}
+
   const zodiac = ZODIAC_BY_MM[myT.myanmarMonth]
     ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)`
     : "";

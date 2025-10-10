@@ -23,20 +23,20 @@
   </head>
   <body>
     <header class="topbar">
-      <div class="brand">
-        <span class="logo">🗓️</span>
-        <h1>မြန်မာပြက္ခဒိန် <small>Myanmar Lunar + Solar</small></h1>
-      </div>
-      <div class="controls">
-        <button id="prevBtn" class="btn">‹</button>
-        <select id="monthSel" class="select"></select>
-        <select id="yearSel" class="select"></select>
-        <button id="nextBtn" class="btn">›</button>
-        <button id="todayBtn" class="btn ghost">Today</button>
-        <button id="themeBtn" class="btn ghost">☾ Dark</button>
-        <button id="fontBtn" class="btn ghost">A𝘢 Font</button>
-      </div>
-    </header>
+  <div class="brand">
+    <span class="logo">🗓️</span>
+    <h1>မြန်မာပြက္ခဒိန် <small>Myanmar Lunar + Solar</small></h1>
+  </div>
+
+  <div class="controls">
+    <!-- အောက်ကလို ထည့်ပါ -->
+    <select id="themeSelect">
+      <option value="auto">🌗 မြန်မာလအလိုက်</option>
+      <option value="light">☀️ နေရာလှပ</option>
+      <option value="dark">🌙 ညနေမိုးလင်း</option>
+    </select>
+  </div>
+</header>
 
     <!-- ကဗျာ Rotator -->
     <!-- <section class="poem card" id="poemBox">

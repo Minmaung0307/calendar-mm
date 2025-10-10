@@ -433,3 +433,36 @@ body {
 body.dark .chip.stone{
   background: rgba(255,255,255,.12);
 }
+
+:root {
+  --theme-color: #ffcf33;
+}
+
+body {
+  transition: background 0.8s ease, color 0.4s ease;
+}
+
+#todayBar {
+  font-weight: bold;
+  text-align: center;
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin: 10px auto;
+  color: #111;
+  transition: background 0.8s ease, color 0.4s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+@media (prefers-color-scheme: dark){
+  :root{ color-scheme: dark; }
+  body{ background:#111; color:#eee; }
+}
+
+.theme-dropdown {
+  margin: 8px auto;
+  display: block;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
