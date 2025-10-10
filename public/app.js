@@ -3,7 +3,9 @@ import {
   myanmarMonthYearLunar as myanmarMonthYear,
   mmLunarInfoWithLength,
   monthLengthFor,
-} from "./myanmarCalendar.js";
+  initCalendarMeta,    // ← add
+  labelWaso            // ← add
+} from './myanmarCalendar.js';
 
 /* Local YYYY-MM-DD to avoid timezone drift */
 function ymdLocal(d) {
@@ -287,6 +289,7 @@ async function render() {
 
     const age = lunarAge(cellDate);
     const my = myanmarMonthYear(cellDate);
+    const shownMonth = labelWaso(my.myanmarMonth, my.myanmarYear, iso);
     const info = mmLunarInfoWithLength(age, my.myanmarMonth, my.myanmarYear);
 
     const tags = [];
@@ -313,7 +316,7 @@ async function render() {
     el.innerHTML = `
       <div class="nums">
         <div class="greg">${d}</div>
-        <div class="myan">${my.myanmarMonth}</div>
+        <div class="myan">${shownMonth}</div>
       </div>
       <div class="tags">${tags.join("")}</div>
     `;
@@ -373,5 +376,6 @@ $("#clearCustom").onclick = () => {
 };
 
 (async function boot() {
+  await initCalendarMeta();
   await render();
 })();
