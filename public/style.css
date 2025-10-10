@@ -501,6 +501,7 @@ body {
 
 /* Today bar responsive */
 #todayBar{
+  width: 1300px;
   max-width: 100%;
   word-break: break-word;
   overflow-wrap: anywhere;
