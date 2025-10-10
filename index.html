@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>မြန်မာပြက္ခဒိန် • Lunar + Solar</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#ffcc66">
+  <link rel="icon" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">🗓️</span>
+      <h1>မြန်မာပြက္ခဒိန် <small>Myanmar Lunar + Solar</small></h1>
+    </div>
+    <div class="controls">
+      <button id="prevBtn" class="btn">‹</button>
+      <select id="monthSel" class="select"></select>
+      <select id="yearSel" class="select"></select>
+      <button id="nextBtn" class="btn">›</button>
+      <button id="todayBtn" class="btn ghost">Today</button>
+      <button id="themeBtn" class="btn ghost">☾ Dark</button>
+      <button id="fontBtn" class="btn ghost">A𝘢 Font</button>
+    </div>
+  </header>
+
+  <!-- ကဗျာ Rotator -->
+  <section class="poem card" id="poemBox">
+    <div class="poem-line" id="poemLine">မြန်မာလပြင် ညအေး လအံ့ဖွယ်…</div>
+    <div class="poem-meta"><span id="poemAuthor">— Anonymous</span></div>
+  </section>
+
+  <section class="todaybar" id="todayBar"></section>
+
+  <main class="wrap">
+    <aside class="legend card">
+      <h3>Legend</h3>
+      <ul>
+        <li><span class="badge fullmoon">●</span> လပြည့်</li>
+        <li><span class="badge newmoon">●</span> လကွယ်</li>
+        <li><span class="badge waxing">●</span> လဆန်း</li>
+        <li><span class="badge waning">●</span> လဆုတ်</li>
+        <li><span class="badge holiday">⚠️</span> အားလပ်/ရုံးပိတ်</li>
+        <li><span class="badge fest">★</span> ပွဲတော်/အထူးနေ့</li>
+        <li><span class="badge note">✎</span> ကိုယ်ပိုင် မှတ်စု</li>
+      </ul>
+
+      <details class="hint">
+        <summary>ရက်ရာဇာ / ပြဿဒါး</summary>
+        <p>ဒီ version သည် astronomical-based approximation ဖြင့်တွက်ထားပြီး အတိအကျအချို့နေ့များကို Backend ထဲက Rule Tables ဖြင့် override လုပ်နိုင်ပါသည်။</p>
+      </details>
+
+      <div class="custom-add">
+        <h4>ကိုယ်ပိုင် အထူးနေ့ထည့်ရန်</h4>
+        <label>နေ့စွဲ (YYYY-MM-DD)
+          <input id="custDate" type="date">
+        </label>
+        <label>ခေါင်းစဉ်
+          <input id="custTitle" placeholder="e.g. အလုပ်အမိန့်/ကျောင်းပွဲ">
+        </label>
+        <label>အမျိုးအစား
+          <select id="custType">
+            <option value="holiday">ရုံးပိတ်/အားလပ်</option>
+            <option value="festival">ပွဲတော်/အထူးနေ့</option>
+          </select>
+        </label>
+        <button id="addCustom" class="btn wide">ထည့်မယ်</button>
+        <button id="clearCustom" class="btn ghost wide">ဖျက်မယ် (အားလုံး)</button>
+      </div>
+    </aside>
+
+    <section class="calendar card">
+      <div class="grid head">
+        <div>တနင်္လာ</div><div>အင်္ဂါ</div><div>ဗုဒ္ဓဟူး</div><div>ကြာသပတေး</div><div>သောကြာ</div><div class="wknd">စနေ</div><div class="wknd">တနင်္ဂနွေ</div>
+      </div>
+      <div id="grid" class="grid body"></div>
+    </section>
+
+    <aside class="details card" id="details">
+      <h3>အသေးစိတ်</h3>
+      <p>နေ့တစ်ရက်ကို နှိပ်ပြီး အသေးစိတ်ကြည့်ပါ…</p>
+
+      <!-- Notes -->
+      <div class="notes">
+        <h4>✎ နေ့စဉ် မှတ်စု</h4>
+        <textarea id="noteText" rows="6" placeholder="ဒီနေ့ အကြောင်းပြောပါ…"></textarea>
+        <div class="note-actions">
+          <button id="saveNote" class="btn">သိမ်းမယ်</button>
+          <button id="deleteNote" class="btn ghost">ဖျက်မယ်</button>
+        </div>
+        <div id="noteStatus" class="muted"></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="foot">
+    <div>© 2025 • ShweDev • PWA-ready • Offline-friendly</div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

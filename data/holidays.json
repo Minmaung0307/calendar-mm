@@ -1,0 +1,7 @@
+[
+  {"date":"2025-01-04", "title":"လွတ်လပ်ရေးနေ့ (Backend)", "type":"holiday", "region":"MM"},
+  {"date":"2025-11-27", "title":"သိန်းခ်စ်ဂျီဗင်း (Custom Title)", "type":"festival", "region":"US"},
+  {"date":"2025-04-13", "title":"သင်္ကြန်အကြို", "type":"festival", "region":"MM"},
+  {"date":"2025-04-14", "title":"သင်္ကြန်အကြား", "type":"festival", "region":"MM"},
+  {"date":"2025-04-15", "title":"သင်္ကြန်အတက်", "type":"festival", "region":"MM"}
+]

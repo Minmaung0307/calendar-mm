@@ -1,0 +1,12 @@
+{
+  "name": "မြန်မာပြက္ခဒိန် • Myanmar Lunar + Solar",
+  "short_name": "Myanmar Calendar",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff8ee",
+  "theme_color": "#ffcc66",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
