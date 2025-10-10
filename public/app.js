@@ -22,22 +22,6 @@ function normalizeYMD(s) {
   return `${y}-${mo}-${dd}`;
 }
 
-// Poem load (with version cache bust)
-const ver = "v7"; // version number to bypass iPhone cache
-const res = await fetch(`./data/poems.json?${ver}`, { cache: "no-store" });
-const poems = await res.json();
-
-// Holidays load
-const res2 = await fetch(`./data/holidays.json?${ver}`, { cache: "no-store" });
-const holidays = await res2.json();
-
-if (poems[myT.myanmarMonth]) {
-  todayBar.innerHTML += `<br><small>${poems[myT.myanmarMonth].replace(
-    /\n/g,
-    "<br>"
-  )}</small>`;
-}
-
 /* Today bar zodiac only */
 const ZODIAC_BY_MM = {
   တန်ခူး: "မိဿ",
