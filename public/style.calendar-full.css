@@ -1,0 +1,29 @@
+/* === Calendar Full-Width Patch ===
+   Drop this at the END of style.css or include as its own file.
+*/
+
+/* Make the main layout single-column */
+#main, .container, #app{
+  display:block;              /* collapse any 2-col grid/flex */
+}
+
+/* Ensure the calendar grid stretches full width */
+#grid{
+  width:100%;
+  max-width:unset;
+  grid-column: 1 / -1;        /* in case a grid remains */
+  min-width:0;
+}
+
+/* Hide details card if it still exists in the DOM */
+#details{ display:none !important; }
+
+/* Keep day cells tidy and consistent */
+.day{ height:132px; min-height:132px; }
+.day.pad{ visibility:hidden; }
+.day .tags{ max-height:48px; overflow:hidden; }
+
+/* Optional: widen calendar on big screens */
+@media (min-width: 1200px){
+  #grid{ max-width: 1200px; margin-inline:auto; }
+}

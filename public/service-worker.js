@@ -1,4 +1,4 @@
-const CACHE = "mm-cal-v4";
+const CACHE = "mm-cal-v5";
 const ASSETS = [
   "./",
   "./index.html",
