@@ -1,0 +1,11 @@
+/* Remove 2-column layout and ensure grid is fluid */
+#main, .container, #app{
+  display:block;
+}
+#details{ display:none !important; }
+#grid{ min-width:0; }
+
+/* Keep day cell heights pleasant */
+.day{ height:132px; min-height:132px; }
+.day.pad{ visibility:hidden; }
+.day .tags{ max-height:48px; overflow:hidden; }
