@@ -244,34 +244,38 @@ function syncSelectors() {
   yearSel.value = view.getFullYear();
 }
 
-$("#prevBtn").onclick = () => {
-  view.setMonth(view.getMonth() - 1);
+// === Controls (null-safe) ===
+const prevBtn  = document.querySelector("#prevBtn");
+const nextBtn  = document.querySelector("#nextBtn");
+const todayBtn = document.querySelector("#todayBtn");
+const themeBtn = document.querySelector("#themeBtn");
+const fontBtn  = document.querySelector("#fontBtn");
+
+// month/year selects listeners (ရှိမှသာ)
+if (monthSel) monthSel.onchange = () => {
+  view.setMonth(+monthSel.value);
   render();
 };
-$("#nextBtn").onclick = () => {
-  view.setMonth(view.getMonth() + 1);
+if (yearSel) yearSel.onchange = () => {
+  view.setFullYear(+yearSel.value);
   render();
 };
-$("#todayBtn").onclick = () => {
-  const n = new Date();
+
+// nav buttons (ရှိမှသာ)
+if (prevBtn)  prevBtn.onclick  = () => { view.setMonth(view.getMonth()-1); render(); };
+if (nextBtn)  nextBtn.onclick  = () => { view.setMonth(view.getMonth()+1); render(); };
+if (todayBtn) todayBtn.onclick = () => {
+  const n=new Date();
   view = new Date(n.getFullYear(), n.getMonth(), 1);
   render();
 };
-$("#monthSel").onchange = () => {
-  view.setMonth(+$("#monthSel").value);
-  render();
-};
-$("#yearSel").onchange = () => {
-  view.setFullYear(+$("#yearSel").value);
-  render();
-};
-$("#themeBtn").onclick = () => {
+
+// theme/font (ရှိမှသာ)
+if (themeBtn) themeBtn.onclick = () => {
   document.body.classList.toggle("dark");
-  $("#themeBtn").textContent = document.body.classList.contains("dark")
-    ? "☀ Light"
-    : "☾ Dark";
+  themeBtn.textContent = document.body.classList.contains("dark") ? "☀ Light" : "☾ Dark";
 };
-$("#fontBtn").onclick = () => {
+if (fontBtn)  fontBtn.onclick  = () => {
   document.documentElement.classList.toggle("serif");
 };
 
