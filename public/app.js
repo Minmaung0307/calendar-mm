@@ -3,9 +3,9 @@ import {
   myanmarMonthYearLunar as myanmarMonthYear,
   mmLunarInfoWithLength,
   monthLengthFor,
-  initCalendarMeta,    // ← add
-  labelWaso            // ← add
-} from './myanmarCalendar.js';
+  initCalendarMeta, // ← add
+  labelWaso, // ← add
+} from "./myanmarCalendar.js";
 
 /* Local YYYY-MM-DD to avoid timezone drift */
 function ymdLocal(d) {
@@ -26,18 +26,18 @@ function normalizeYMD(s) {
 
 // Gregorian month (0=Jan .. 11=Dec) → Birthstone name + icon
 const BIRTHSTONES = [
-  { name: "Garnet",              icon: "🔴" },  // Jan
-  { name: "Amethyst",            icon: "🟣" },  // Feb
-  { name: "Aquamarine",          icon: "🩵" },  // Mar
-  { name: "Diamond",             icon: "💎" },  // Apr
-  { name: "Emerald",             icon: "🟢" },  // May
+  { name: "Garnet", icon: "🔴" }, // Jan
+  { name: "Amethyst", icon: "🟣" }, // Feb
+  { name: "Aquamarine", icon: "🩵" }, // Mar
+  { name: "Diamond", icon: "💎" }, // Apr
+  { name: "Emerald", icon: "🟢" }, // May
   { name: "Pearl / Alexandrite", icon: "⚪️" }, // Jun
-  { name: "Ruby",                icon: "🟥" },  // Jul
-  { name: "Peridot",             icon: "🟩" },  // Aug
-  { name: "Sapphire",            icon: "🔷" },  // Sep
-  { name: "Opal / Tourmaline",   icon: "🟠" },  // Oct
-  { name: "Topaz / Citrine",     icon: "🟡" },  // Nov
-  { name: "Turquoise / Tanzanite",icon:"🔹" }   // Dec
+  { name: "Ruby", icon: "🟥" }, // Jul
+  { name: "Peridot", icon: "🟩" }, // Aug
+  { name: "Sapphire", icon: "🔷" }, // Sep
+  { name: "Opal / Tourmaline", icon: "🟠" }, // Oct
+  { name: "Topaz / Citrine", icon: "🟡" }, // Nov
+  { name: "Turquoise / Tanzanite", icon: "🔹" }, // Dec
 ];
 
 /* Today bar zodiac only */
@@ -58,24 +58,72 @@ const ZODIAC_BY_MM = {
 
 // === Calendar Themes by Myanmar Month ===
 const CALENDAR_THEMES = {
-  "တန်ခူး": { name: "summer",  color: "#ffcf33",  bg: "linear-gradient(120deg,#ffecb3,#ffd54f)" },
-  "ကဆုန်": { name: "blossom", color: "#ff99cc",  bg: "linear-gradient(120deg,#ffe6f2,#ffb3d9)" },
-  "နယုန်": { name: "sunrise", color: "#ff9966",  bg: "linear-gradient(120deg,#ffe0b2,#ffb380)" },
-  "ဝါဆို": { name: "rain",    color: "#4fc3f7",  bg: "linear-gradient(120deg,#b3e5fc,#81d4fa)" },
-  "ဝါခေါင်": { name: "cloud", color: "#90a4ae",  bg: "linear-gradient(120deg,#cfd8dc,#90a4ae)" },
-  "တော်သလင်း": { name: "wind", color: "#a5d6a7",  bg: "linear-gradient(120deg,#c8e6c9,#a5d6a7)" },
-  "သီတင်းကျွတ်": { name: "festival", color: "#ff7043", bg: "linear-gradient(120deg,#ffccbc,#ffab91)" },
-  "တန်ဆောင်မုန်း": { name: "firelight", color: "#ff5252", bg: "linear-gradient(120deg,#ff8a80,#ff5252)" },
-  "နတ်တော်": { name: "royal", color: "#ba68c8", bg: "linear-gradient(120deg,#e1bee7,#ce93d8)" },
-  "ပြာသို": { name: "winter", color: "#80deea", bg: "linear-gradient(120deg,#b2ebf2,#80deea)" },
-  "တပို့တွဲ": { name: "snow", color: "#b0bec5", bg: "linear-gradient(120deg,#eceff1,#cfd8dc)" },
-  "တပေါင်း": { name: "newyear", color: "#81c784", bg: "linear-gradient(120deg,#c8e6c9,#81c784)" }
+  တန်ခူး: {
+    name: "summer",
+    color: "#ffcf33",
+    bg: "linear-gradient(120deg,#ffecb3,#ffd54f)",
+  },
+  ကဆုန်: {
+    name: "blossom",
+    color: "#ff99cc",
+    bg: "linear-gradient(120deg,#ffe6f2,#ffb3d9)",
+  },
+  နယုန်: {
+    name: "sunrise",
+    color: "#ff9966",
+    bg: "linear-gradient(120deg,#ffe0b2,#ffb380)",
+  },
+  ဝါဆို: {
+    name: "rain",
+    color: "#4fc3f7",
+    bg: "linear-gradient(120deg,#b3e5fc,#81d4fa)",
+  },
+  ဝါခေါင်: {
+    name: "cloud",
+    color: "#90a4ae",
+    bg: "linear-gradient(120deg,#cfd8dc,#90a4ae)",
+  },
+  တော်သလင်း: {
+    name: "wind",
+    color: "#a5d6a7",
+    bg: "linear-gradient(120deg,#c8e6c9,#a5d6a7)",
+  },
+  သီတင်းကျွတ်: {
+    name: "festival",
+    color: "#ff7043",
+    bg: "linear-gradient(120deg,#ffccbc,#ffab91)",
+  },
+  တန်ဆောင်မုန်း: {
+    name: "firelight",
+    color: "#ff5252",
+    bg: "linear-gradient(120deg,#ff8a80,#ff5252)",
+  },
+  နတ်တော်: {
+    name: "royal",
+    color: "#ba68c8",
+    bg: "linear-gradient(120deg,#e1bee7,#ce93d8)",
+  },
+  ပြာသို: {
+    name: "winter",
+    color: "#80deea",
+    bg: "linear-gradient(120deg,#b2ebf2,#80deea)",
+  },
+  တပို့တွဲ: {
+    name: "snow",
+    color: "#b0bec5",
+    bg: "linear-gradient(120deg,#eceff1,#cfd8dc)",
+  },
+  တပေါင်း: {
+    name: "newyear",
+    color: "#81c784",
+    bg: "linear-gradient(120deg,#c8e6c9,#81c784)",
+  },
 };
 
 const $ = (q) => document.querySelector(q);
 const grid = $("#grid");
-// const monthSel = $("#monthSel");
-// const yearSel = $("#yearSel");
+const monthSel = $("#monthSel");
+const yearSel = $("#yearSel");
 // const prevBtn = $("#prevBtn");
 // const nextBtn = $("#nextBtn");
 // const todayBtn = $("#todayBtn");
@@ -174,24 +222,28 @@ let view = new Date();
 view.setDate(1);
 
 /* Controls */
-(function setupSelectors() {
-  enMonths.forEach((m, i) => {
-    const o = document.createElement("option");
-    o.value = i;
-    o.textContent = `${i + 1}. ${m}`;
-    $("#monthSel").appendChild(o);
+(function setupSelectors(){
+  if (!monthSel || !yearSel) return;        // ← this line is the key
+
+  const enMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  enMonths.forEach((m,i)=>{
+    const o=document.createElement("option");
+    o.value=i; o.textContent=`${i+1}. ${m}`;
+    if (monthSel) monthSel.appendChild(o);
   });
-  for (let y = 1900; y <= 2100; y++) {
-    const o = document.createElement("option");
-    o.value = y;
-    o.textContent = String(y);
-    $("#yearSel").appendChild(o);
+  for(let y=1900; y<=2100; y++){
+    const o=document.createElement("option");
+    o.value=y; o.textContent=String(y);
+    if (yearSel)  yearSel.appendChild(o);
   }
 })();
+
 function syncSelectors() {
-  $("#monthSel").value = view.getMonth();
-  $("#yearSel").value = view.getFullYear();
+  if (!monthSel || !yearSel) return;
+  monthSel.value = view.getMonth();
+  yearSel.value = view.getFullYear();
 }
+
 $("#prevBtn").onclick = () => {
   view.setMonth(view.getMonth() - 1);
   render();
@@ -292,7 +344,7 @@ async function loadPoemFor(month) {
   }
 }
 
-document.getElementById("themeSelect")?.addEventListener("change", e => {
+document.getElementById("themeSelect")?.addEventListener("change", (e) => {
   const val = e.target.value;
   if (val === "dark") {
     document.body.style.background = "#111";
@@ -310,7 +362,7 @@ document.getElementById("themeSelect")?.addEventListener("change", e => {
 
 /* Render */
 async function render() {
-  // syncSelectors();
+  if (monthSel && yearSel) syncSelectors();
   const y = view.getFullYear(),
     m = view.getMonth();
   const first = new Date(y, m, 1);
@@ -386,12 +438,12 @@ async function render() {
   const myT = myanmarMonthYear(t);
   const currentTheme = CALENDAR_THEMES[myT.myanmarMonth];
 
-if (currentTheme) {
-  document.body.style.setProperty("--theme-color", currentTheme.color);
-  document.body.style.background = currentTheme.bg;
-  todayBar.style.background = currentTheme.bg;
-  todayBar.style.color = "#222";
-}
+  if (currentTheme) {
+    document.body.style.setProperty("--theme-color", currentTheme.color);
+    document.body.style.background = currentTheme.bg;
+    todayBar.style.background = currentTheme.bg;
+    todayBar.style.color = "#222";
+  }
 
   const zodiac = ZODIAC_BY_MM[myT.myanmarMonth]
     ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)`
@@ -402,13 +454,13 @@ if (currentTheme) {
     bar += `<br><small class="poem">${poem.replace(/\n/g, "<br>")}</small>`;
 
   // ⬇️ ဒီ 3 လိုင်န့်ကို ထပ်ထည့်ပါ (Gregorian လဖြစ်တဲ့ t.getMonth() သုံး)
-const gIdx = t.getMonth(); // 0..11
-const bs = BIRTHSTONES[gIdx];
-if (bs) {
-  bar += ` <span class="chip stone">${bs.icon} ${bs.name}</span>`;
-}
+  const gIdx = t.getMonth(); // 0..11
+  const bs = BIRTHSTONES[gIdx];
+  if (bs) {
+    bar += ` <span class="chip stone">${bs.icon} ${bs.name}</span>`;
+  }
 
-todayBar.innerHTML = bar;
+  todayBar.innerHTML = bar;
 
   if ("serviceWorker" in navigator) {
     try {
