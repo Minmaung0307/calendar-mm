@@ -410,3 +410,12 @@ body {
   max-height: 48px;
   overflow: hidden;
 }
+
+.poem {
+  display: block;
+  font-style: italic;
+  color: var(--text-muted, #666);
+  margin-top: 6px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
