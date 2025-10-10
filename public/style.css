@@ -406,10 +406,9 @@ body {
 .day.pad {
   visibility: hidden;
 } /* keep space but invisible */
-.day .tags {
-  max-height: 48px;
-  overflow: hidden;
-}
+/* tap-to-expand on mobile */
+.day .tags{ max-height:72px; overflow:hidden; }
+.day.expand .tags{ max-height:160px; overflow:auto; }
 
 .poem {
   display: block;
