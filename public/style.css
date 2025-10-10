@@ -122,6 +122,7 @@ body {
 }
 
 .todaybar {
+  width: 1300px;
   text-align: center;
   padding: 10px 16px;
   color: #563f1b;
@@ -469,6 +470,7 @@ body {
 
 /* Topbar responsive */
 .topbar{
+  width: 1300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
