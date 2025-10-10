@@ -137,15 +137,6 @@ const todayBtn = $("#todayBtn");
 const themeBtn = $("#themeBtn");
 const fontBtn = $("#fontBtn");
 const todayBar = $("#todayBar");
-const calendarControls = $("#calendarControls");
-
-// header ထဲက controls ကနေ calendar-side controls သို့ ရွှေ့ (ရှိမှသာ)
-(function moveNavControls() {
-  if (!calendarControls) return;
-  [prevBtn, monthSel, yearSel, nextBtn].forEach((el) => {
-    if (el) calendarControls.appendChild(el);
-  });
-})();
 
 const enMonths = [
   "January",
@@ -435,7 +426,7 @@ async function loadPoemFor(month) {
   }
 }
 
-document.getElementById("themeSelect")?.addEventListener("change", (e) => {
+document.getElementById("themeSelect")?.addEventListener("change", e => {
   const val = e.target.value;
   if (val === "dark") {
     document.body.style.background = "#111";
@@ -453,33 +444,12 @@ document.getElementById("themeSelect")?.addEventListener("change", (e) => {
 });
 
 /* Render */
-// English months (abbr)
-const EN_ABBR = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-
 async function render() {
-  if (monthSel && yearSel) {
-    // controls ရှိရင် sync
-    monthSel.value = view.getMonth();
-    yearSel.value = view.getFullYear();
-  }
-
+  if (monthSel && yearSel) syncSelectors();
   const y = view.getFullYear(),
     m = view.getMonth();
   const first = new Date(y, m, 1);
-  const startWeekday = (first.getDay() + 6) % 7;
+  const startWeekday = (first.getDay() + 6) % 7; // Monday-first
   const days = new Date(y, m + 1, 0).getDate();
   const backend = await loadBackendEvents(y);
 
@@ -502,6 +472,7 @@ async function render() {
 
     const age = lunarAge(cellDate);
     const my = myanmarMonthYear(cellDate);
+    const shownMonth = labelWaso(my.myanmarMonth, my.myanmarYear, iso);
     const info = mmLunarInfoWithLength(age, my.myanmarMonth, my.myanmarYear);
 
     const tags = [];
@@ -509,14 +480,10 @@ async function render() {
       const moonIcon = info.phase === "လပြည့်" ? "🌕" : "🌑";
       tags.push(`<span class="tag icon">${moonIcon}</span>`);
     } else {
-      // မြန်မာဂဏန်းပြန်
-      const mmDigits = (n) => String(n).replace(/\d/g, (d) => "၀၁၂၃၄၅၆၇၈၉"[+d]);
-      tags.push(
-        `<span class="tag moontext">${info.phase} ${mmDigits(
-          info.number
-        )}</span>`
-      );
+      const mmNum = toMMDigits(info.number);
+      tags.push(`<span class="tag moontext">${info.phase} ${mmNum}</span>`);
     }
+
     if (backend[iso]) {
       backend[iso].forEach((sp) => {
         const isHoliday = sp.type === "holiday";
@@ -528,18 +495,15 @@ async function render() {
 
     const el = document.createElement("div");
     el.className = "day" + (isToday(d) ? " today" : "");
-
-    // ✅ Greg label: "Jul 1" ပုံစံ
-    const gregLabel = `${EN_ABBR[m]} ${d}`;
-
     el.innerHTML = `
       <div class="nums">
-        <div class="greg greg-abbr">${gregLabel}</div>
-        <div class="myan">${my.myanmarMonth}</div>
+        <div class="greg">${d}</div>
+        <div class="myan">${shownMonth}</div>
       </div>
       <div class="tags">${tags.join("")}</div>
     `;
-    // (mobile) tap-to-expand (ရှိရင်)
+
+    // (optional) mobile: tap to expand tags
     el.addEventListener(
       "touchstart",
       () => {
