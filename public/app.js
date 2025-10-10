@@ -33,18 +33,18 @@ function toMMDigits(n) {
 // Gregorian month (0=Jan .. 11=Dec) → Birthstone name + icon
 // Gregorian month (0=Jan .. 11=Dec) → Birthstone (EN + MM) + icon
 const BIRTHSTONES = [
-  { en: "Garnet", mm: "ဂါနက်", icon: "🔴" }, // Jan
-  { en: "Amethyst", mm: "အမက်သစ်", icon: "🟣" }, // Feb
-  { en: "Aquamarine", mm: "အောက်ဝါရီမရင်း", icon: "🩵" }, // Mar
-  { en: "Diamond", mm: "စိန်", icon: "💎" }, // Apr
+  { en: "Garnet", mm: "ဥဒေါင်းကျောက်", icon: "🔴" }, // January
+  { en: "Amethyst", mm: "ခရမ်းစွဲ", icon: "🟣" }, // February
+  { en: "Aquamarine", mm: "မြပြာ", icon: "🩵" }, // March
+  { en: "Diamond", mm: "စိန်", icon: "💎" }, // April
   { en: "Emerald", mm: "ကျောက်စိမ်း", icon: "🟢" }, // May
-  { en: "Pearl / Alexandrite", mm: "ပုလဲ / အလက်ဇန်ဒရိုက်", icon: "⚪️" }, // Jun
-  { en: "Ruby", mm: "ပတ္တမြား", icon: "🟥" }, // Jul
-  { en: "Peridot", mm: "ပယ်ရီဒော့", icon: "🟩" }, // Aug
-  { en: "Sapphire", mm: "နီလာ (Sapphire)", icon: "🔷" }, // Sep
-  { en: "Opal / Tourmaline", mm: "ဩပယ် / တွမာလင်း", icon: "🟠" }, // Oct
-  { en: "Topaz / Citrine", mm: "တိုးပတ် / စီထရင်း", icon: "🟡" }, // Nov
-  { en: "Turquoise / Tanzanite", mm: "တူရကိုက် / တန်ဇိုနိုက်", icon: "🔹" }, // Dec
+  { en: "Pearl / Moonstone", mm: "ပုလဲ / လကျောက်", icon: "⚪️" }, // June
+  { en: "Ruby", mm: "ပတ္တမြား", icon: "🟥" }, // July
+  { en: "Peridot", mm: "ပယ်ရီဒော့", icon: "🟩" }, // August
+  { en: "Sapphire", mm: "နီလာ", icon: "🔷" }, // September
+  { en: "Opal / Tourmaline", mm: "ဩပယ် / တွမာလင်း", icon: "🟠" }, // October
+  { en: "Topaz / Citrine", mm: "တိုးပတ် / စီထရင်း", icon: "🟡" }, // November
+  { en: "Turquoise", mm: "တူရကိုက်", icon: "🔹" }, // December
 ];
 
 /* Today bar zodiac only */
