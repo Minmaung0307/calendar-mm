@@ -25,19 +25,20 @@ function normalizeYMD(s) {
 }
 
 // Gregorian month (0=Jan .. 11=Dec) → Birthstone name + icon
+// Gregorian month (0=Jan .. 11=Dec) → Birthstone (EN + MM) + icon
 const BIRTHSTONES = [
-  { name: "Garnet", icon: "🔴" }, // Jan
-  { name: "Amethyst", icon: "🟣" }, // Feb
-  { name: "Aquamarine", icon: "🩵" }, // Mar
-  { name: "Diamond", icon: "💎" }, // Apr
-  { name: "Emerald", icon: "🟢" }, // May
-  { name: "Pearl / Alexandrite", icon: "⚪️" }, // Jun
-  { name: "Ruby", icon: "🟥" }, // Jul
-  { name: "Peridot", icon: "🟩" }, // Aug
-  { name: "Sapphire", icon: "🔷" }, // Sep
-  { name: "Opal / Tourmaline", icon: "🟠" }, // Oct
-  { name: "Topaz / Citrine", icon: "🟡" }, // Nov
-  { name: "Turquoise / Tanzanite", icon: "🔹" }, // Dec
+  { en: "Garnet",                mm: "ဂါနက်",               icon: "🔴" }, // Jan
+  { en: "Amethyst",              mm: "အမက်သစ်",             icon: "🟣" }, // Feb
+  { en: "Aquamarine",            mm: "အောက်ဝါရီမရင်း",      icon: "🩵" }, // Mar
+  { en: "Diamond",               mm: "စိန်",                 icon: "💎" }, // Apr
+  { en: "Emerald",               mm: "ကျောက်စိမ်း",         icon: "🟢" }, // May
+  { en: "Pearl / Alexandrite",   mm: "ပုလဲ / အလက်ဇန်ဒရိုက်",  icon: "⚪️" }, // Jun
+  { en: "Ruby",                  mm: "ပတ္တမြား",            icon: "🟥" }, // Jul
+  { en: "Peridot",               mm: "ပယ်ရီဒော့",            icon: "🟩" }, // Aug
+  { en: "Sapphire",              mm: "နီလာ (Sapphire)",     icon: "🔷" }, // Sep
+  { en: "Opal / Tourmaline",     mm: "ဩပယ် / တွမာလင်း",     icon: "🟠" }, // Oct
+  { en: "Topaz / Citrine",       mm: "တိုးပတ် / စီထရင်း",     icon: "🟡" }, // Nov
+  { en: "Turquoise / Tanzanite", mm: "တူရကိုက် / တန်ဇိုနိုက်", icon: "🔹" }  // Dec
 ];
 
 /* Today bar zodiac only */
@@ -452,16 +453,19 @@ async function render() {
   const zodiac = ZODIAC_BY_MM[myT.myanmarMonth]
     ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)`
     : "";
+
   let bar = `${myT.myanmarMonth}လ${zodiac}`;
+
+  // Poem
   const poem = await loadPoemFor(myT.myanmarMonth);
   if (poem)
     bar += `<br><small class="poem">${poem.replace(/\n/g, "<br>")}</small>`;
 
-  // ⬇️ ဒီ 3 လိုင်န့်ကို ထပ်ထည့်ပါ (Gregorian လဖြစ်တဲ့ t.getMonth() သုံး)
+  // ⬇️ Birthstone (Gregorian month-based)
   const gIdx = t.getMonth(); // 0..11
   const bs = BIRTHSTONES[gIdx];
   if (bs) {
-    bar += ` <span class="chip stone">${bs.icon} ${bs.name}</span>`;
+    bar += ` <span class="chip stone" title="${bs.en}">${bs.icon} ${bs.en} — <span class="mm">${bs.mm}</span></span>`;
   }
 
   todayBar.innerHTML = bar;

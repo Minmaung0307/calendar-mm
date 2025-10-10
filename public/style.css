@@ -466,3 +466,66 @@ body {
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+
+/* Topbar responsive */
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  flex-wrap: wrap;               /* small screens: wrap brand + controls */
+}
+.topbar .brand{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.topbar .brand h1{
+  font-size: clamp(16px, 4vw, 20px);
+  line-height: 1.2;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;       /* avoid overflow on iPhone */
+}
+.topbar .controls{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;               /* buttons/selects wrap as needed */
+}
+
+/* Today bar responsive */
+#todayBar{
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  padding: 10px 12px;
+  margin: 8px 12px;
+  border-radius: 10px;
+}
+
+/* Birthstone chip look */
+.chip.stone{
+  display:inline-block;
+  font-size: .9rem;
+  line-height: 1;
+  padding: 4px 8px;
+  margin-left: 6px;
+  border-radius: 12px;
+  background: var(--chip-bg, rgba(0,0,0,.06));
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.chip.stone .mm{ opacity:.85; }
+body.dark .chip.stone{ background: rgba(255,255,255,.12); }
+
+/* Small iPhones */
+@media (max-width: 420px){
+  .topbar{ gap: 8px; }
+  .topbar .controls{ gap: 4px; }
+  #todayBar{ font-size: 14px; }
+  .chip.stone{ font-size: .85rem; }
+}
