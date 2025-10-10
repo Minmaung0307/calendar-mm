@@ -24,21 +24,27 @@ function normalizeYMD(s) {
   return `${y}-${mo}-${dd}`;
 }
 
+// Arabic → Myanmar digits (e.g., 10 -> ၁၀)
+function toMMDigits(n) {
+  const map = ["၀", "၁", "၂", "၃", "၄", "၅", "၆", "၇", "၈", "၉"];
+  return String(n).replace(/\d/g, (d) => map[+d]);
+}
+
 // Gregorian month (0=Jan .. 11=Dec) → Birthstone name + icon
 // Gregorian month (0=Jan .. 11=Dec) → Birthstone (EN + MM) + icon
 const BIRTHSTONES = [
-  { en: "Garnet",                mm: "ဂါနက်",               icon: "🔴" }, // Jan
-  { en: "Amethyst",              mm: "အမက်သစ်",             icon: "🟣" }, // Feb
-  { en: "Aquamarine",            mm: "အောက်ဝါရီမရင်း",      icon: "🩵" }, // Mar
-  { en: "Diamond",               mm: "စိန်",                 icon: "💎" }, // Apr
-  { en: "Emerald",               mm: "ကျောက်စိမ်း",         icon: "🟢" }, // May
-  { en: "Pearl / Alexandrite",   mm: "ပုလဲ / အလက်ဇန်ဒရိုက်",  icon: "⚪️" }, // Jun
-  { en: "Ruby",                  mm: "ပတ္တမြား",            icon: "🟥" }, // Jul
-  { en: "Peridot",               mm: "ပယ်ရီဒော့",            icon: "🟩" }, // Aug
-  { en: "Sapphire",              mm: "နီလာ (Sapphire)",     icon: "🔷" }, // Sep
-  { en: "Opal / Tourmaline",     mm: "ဩပယ် / တွမာလင်း",     icon: "🟠" }, // Oct
-  { en: "Topaz / Citrine",       mm: "တိုးပတ် / စီထရင်း",     icon: "🟡" }, // Nov
-  { en: "Turquoise / Tanzanite", mm: "တူရကိုက် / တန်ဇိုနိုက်", icon: "🔹" }  // Dec
+  { en: "Garnet", mm: "ဂါနက်", icon: "🔴" }, // Jan
+  { en: "Amethyst", mm: "အမက်သစ်", icon: "🟣" }, // Feb
+  { en: "Aquamarine", mm: "အောက်ဝါရီမရင်း", icon: "🩵" }, // Mar
+  { en: "Diamond", mm: "စိန်", icon: "💎" }, // Apr
+  { en: "Emerald", mm: "ကျောက်စိမ်း", icon: "🟢" }, // May
+  { en: "Pearl / Alexandrite", mm: "ပုလဲ / အလက်ဇန်ဒရိုက်", icon: "⚪️" }, // Jun
+  { en: "Ruby", mm: "ပတ္တမြား", icon: "🟥" }, // Jul
+  { en: "Peridot", mm: "ပယ်ရီဒော့", icon: "🟩" }, // Aug
+  { en: "Sapphire", mm: "နီလာ (Sapphire)", icon: "🔷" }, // Sep
+  { en: "Opal / Tourmaline", mm: "ဩပယ် / တွမာလင်း", icon: "🟠" }, // Oct
+  { en: "Topaz / Citrine", mm: "တိုးပတ် / စီထရင်း", icon: "🟡" }, // Nov
+  { en: "Turquoise / Tanzanite", mm: "တူရကိုက် / တန်ဇိုနိုက်", icon: "🔹" }, // Dec
 ];
 
 /* Today bar zodiac only */
@@ -125,11 +131,11 @@ const $ = (q) => document.querySelector(q);
 const grid = $("#grid");
 const monthSel = $("#monthSel");
 const yearSel = $("#yearSel");
-// const prevBtn = $("#prevBtn");
-// const nextBtn = $("#nextBtn");
-// const todayBtn = $("#todayBtn");
-// const themeBtn = $("#themeBtn");
-// const fontBtn = $("#fontBtn");
+const prevBtn = $("#prevBtn");
+const nextBtn = $("#nextBtn");
+const todayBtn = $("#todayBtn");
+const themeBtn = $("#themeBtn");
+const fontBtn = $("#fontBtn");
 const todayBar = $("#todayBar");
 
 const enMonths = [
@@ -223,19 +229,36 @@ let view = new Date();
 view.setDate(1);
 
 /* Controls */
-(function setupSelectors(){
-  if (!monthSel || !yearSel) return;        // ← this line is the key
-
-  const enMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-  enMonths.forEach((m,i)=>{
-    const o=document.createElement("option");
-    o.value=i; o.textContent=`${i+1}. ${m}`;
-    if (monthSel) monthSel.appendChild(o);
+// Month/Year options
+(function setupSelectors() {
+  if (!monthSel || !yearSel) return;
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  monthSel.innerHTML = "";
+  months.forEach((m, i) => {
+    const o = document.createElement("option");
+    o.value = i;
+    o.textContent = `${i + 1}. ${m}`;
+    monthSel.appendChild(o);
   });
-  for(let y=1900; y<=2100; y++){
-    const o=document.createElement("option");
-    o.value=y; o.textContent=String(y);
-    if (yearSel)  yearSel.appendChild(o);
+  yearSel.innerHTML = "";
+  for (let y = 1900; y <= 2100; y++) {
+    const o = document.createElement("option");
+    o.value = y;
+    o.textContent = String(y);
+    yearSel.appendChild(o);
   }
 })();
 
@@ -245,40 +268,94 @@ function syncSelectors() {
   yearSel.value = view.getFullYear();
 }
 
+// Listeners
+if (prevBtn)
+  prevBtn.onclick = () => {
+    view.setMonth(view.getMonth() - 1);
+    render();
+  };
+if (nextBtn)
+  nextBtn.onclick = () => {
+    view.setMonth(view.getMonth() + 1);
+    render();
+  };
+if (todayBtn)
+  todayBtn.onclick = () => {
+    const n = new Date();
+    view = new Date(n.getFullYear(), n.getMonth(), 1);
+    render();
+  };
+if (monthSel)
+  monthSel.onchange = () => {
+    view.setMonth(+monthSel.value);
+    render();
+  };
+if (yearSel)
+  yearSel.onchange = () => {
+    view.setFullYear(+yearSel.value);
+    render();
+  };
+if (themeBtn)
+  themeBtn.onclick = () => {
+    document.body.classList.toggle("dark");
+    themeBtn.textContent = document.body.classList.contains("dark")
+      ? "☀ Light"
+      : "☾ Dark";
+  };
+if (fontBtn)
+  fontBtn.onclick = () => {
+    document.documentElement.classList.toggle("serif");
+  };
+
 // === Controls (null-safe) ===
-const prevBtn  = document.querySelector("#prevBtn");
-const nextBtn  = document.querySelector("#nextBtn");
-const todayBtn = document.querySelector("#todayBtn");
-const themeBtn = document.querySelector("#themeBtn");
-const fontBtn  = document.querySelector("#fontBtn");
+// const prevBtn = document.querySelector("#prevBtn");
+// const nextBtn = document.querySelector("#nextBtn");
+// const todayBtn = document.querySelector("#todayBtn");
+// const themeBtn = document.querySelector("#themeBtn");
+// const fontBtn = document.querySelector("#fontBtn");
 
 // month/year selects listeners (ရှိမှသာ)
-if (monthSel) monthSel.onchange = () => {
-  view.setMonth(+monthSel.value);
-  render();
-};
-if (yearSel) yearSel.onchange = () => {
-  view.setFullYear(+yearSel.value);
-  render();
-};
+// if (monthSel)
+//   monthSel.onchange = () => {
+//     view.setMonth(+monthSel.value);
+//     render();
+//   };
+// if (yearSel)
+//   yearSel.onchange = () => {
+//     view.setFullYear(+yearSel.value);
+//     render();
+//   };
 
-// nav buttons (ရှိမှသာ)
-if (prevBtn)  prevBtn.onclick  = () => { view.setMonth(view.getMonth()-1); render(); };
-if (nextBtn)  nextBtn.onclick  = () => { view.setMonth(view.getMonth()+1); render(); };
-if (todayBtn) todayBtn.onclick = () => {
-  const n=new Date();
-  view = new Date(n.getFullYear(), n.getMonth(), 1);
-  render();
-};
+// // nav buttons (ရှိမှသာ)
+// if (prevBtn)
+//   prevBtn.onclick = () => {
+//     view.setMonth(view.getMonth() - 1);
+//     render();
+//   };
+// if (nextBtn)
+//   nextBtn.onclick = () => {
+//     view.setMonth(view.getMonth() + 1);
+//     render();
+//   };
+// if (todayBtn)
+//   todayBtn.onclick = () => {
+//     const n = new Date();
+//     view = new Date(n.getFullYear(), n.getMonth(), 1);
+//     render();
+//   };
 
-// theme/font (ရှိမှသာ)
-if (themeBtn) themeBtn.onclick = () => {
-  document.body.classList.toggle("dark");
-  themeBtn.textContent = document.body.classList.contains("dark") ? "☀ Light" : "☾ Dark";
-};
-if (fontBtn)  fontBtn.onclick  = () => {
-  document.documentElement.classList.toggle("serif");
-};
+// // theme/font (ရှိမှသာ)
+// if (themeBtn)
+//   themeBtn.onclick = () => {
+//     document.body.classList.toggle("dark");
+//     themeBtn.textContent = document.body.classList.contains("dark")
+//       ? "☀ Light"
+//       : "☾ Dark";
+//   };
+// if (fontBtn)
+//   fontBtn.onclick = () => {
+//     document.documentElement.classList.toggle("serif");
+//   };
 
 /* Backend Loader (local YYYY-MM-DD keys) */
 async function loadBackendEvents(year) {
@@ -349,7 +426,7 @@ async function loadPoemFor(month) {
   }
 }
 
-document.getElementById("themeSelect")?.addEventListener("change", (e) => {
+document.getElementById("themeSelect")?.addEventListener("change", e => {
   const val = e.target.value;
   if (val === "dark") {
     document.body.style.background = "#111";
@@ -358,6 +435,7 @@ document.getElementById("themeSelect")?.addEventListener("change", (e) => {
     document.body.style.background = "#fff";
     document.body.style.color = "#111";
   } else {
+    // auto → use Myanmar month theme
     const myT = myanmarMonthYear(new Date());
     const t = CALENDAR_THEMES[myT.myanmarMonth];
     document.body.style.background = t.bg;
@@ -402,9 +480,8 @@ async function render() {
       const moonIcon = info.phase === "လပြည့်" ? "🌕" : "🌑";
       tags.push(`<span class="tag icon">${moonIcon}</span>`);
     } else {
-      tags.push(
-        `<span class="tag moontext">${info.phase} ${info.number}</span>`
-      );
+      const mmNum = toMMDigits(info.number);
+      tags.push(`<span class="tag moontext">${info.phase} ${mmNum}</span>`);
     }
 
     if (backend[iso]) {
@@ -454,7 +531,24 @@ async function render() {
     ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)`
     : "";
 
-  let bar = `${myT.myanmarMonth}လ${zodiac}`;
+  // Gregorian month/year for display
+  const enMonths = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const gLabel = `${enMonths[t.getMonth()]} ${t.getFullYear()}`;
+
+  let bar = `${myT.myanmarMonth}လ${zodiac} · ${gLabel}`;
 
   // Poem
   const poem = await loadPoemFor(myT.myanmarMonth);

@@ -529,3 +529,55 @@ body.dark .chip.stone{ background: rgba(255,255,255,.12); }
   #todayBar{ font-size: 14px; }
   .chip.stone{ font-size: .85rem; }
 }
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 12px;
+}
+
+.topbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar .brand h1 {
+  font-size: clamp(16px, 4vw, 20px);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.select, .btn {
+  font-size: 14px;
+  padding: 4px 6px;
+}
+
+#themeSelect {
+  border-radius: 6px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .controls {
+    justify-content: center;
+    width: 100%;
+  }
+  .brand h1 {
+    font-size: 15px;
+  }
+}
