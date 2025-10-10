@@ -23,16 +23,19 @@ function normalizeYMD(s) {
 }
 
 // Poem load (with version cache bust)
-const ver = 'v7';  // version number to bypass iPhone cache
-const res = await fetch(`./data/poems.json?${ver}`, { cache: 'no-store' });
+const ver = "v7"; // version number to bypass iPhone cache
+const res = await fetch(`./data/poems.json?${ver}`, { cache: "no-store" });
 const poems = await res.json();
 
 // Holidays load
-const res2 = await fetch(`./data/holidays.json?${ver}`, { cache: 'no-store' });
+const res2 = await fetch(`./data/holidays.json?${ver}`, { cache: "no-store" });
 const holidays = await res2.json();
 
 if (poems[myT.myanmarMonth]) {
-  todayBar.innerHTML += `<br><small>${poems[myT.myanmarMonth].replace(/\n/g,"<br>")}</small>`;
+  todayBar.innerHTML += `<br><small>${poems[myT.myanmarMonth].replace(
+    /\n/g,
+    "<br>"
+  )}</small>`;
 }
 
 /* Today bar zodiac only */
@@ -280,6 +283,7 @@ async function render() {
   const startWeekday = (first.getDay() + 6) % 7; // Monday-first
   const days = new Date(y, m + 1, 0).getDate();
   const backend = await loadBackendEvents(y);
+
   grid.innerHTML = "";
   for (let i = 0; i < startWeekday; i++) {
     const pad = document.createElement("div");
@@ -302,19 +306,15 @@ async function render() {
     const info = mmLunarInfoWithLength(age, my.myanmarMonth, my.myanmarYear);
 
     const tags = [];
-
-    // 🌕/🌑 icon on Uposatha days
     if (info.kind === "uposatha") {
       const moonIcon = info.phase === "လပြည့်" ? "🌕" : "🌑";
       tags.push(`<span class="tag icon">${moonIcon}</span>`);
     } else {
-      // Restore waxing/waning label like "လဆန်း ၁၂" / "လဆုတ် ၆"
       tags.push(
         `<span class="tag moontext">${info.phase} ${info.number}</span>`
       );
     }
 
-    // 🏛️/🎉 for holidays/festivals/custom
     if (backend[iso]) {
       backend[iso].forEach((sp) => {
         const isHoliday = sp.type === "holiday";
@@ -333,25 +333,30 @@ async function render() {
       </div>
       <div class="tags">${tags.join("")}</div>
     `;
+
+    // (optional) mobile: tap to expand tags
+    el.addEventListener(
+      "touchstart",
+      () => {
+        el.classList.toggle("expand");
+      },
+      { passive: true }
+    );
+
     grid.appendChild(el);
   }
 
-  // Today bar
+  // Today bar + poem (one-pass)
   const t = new Date();
   const myT = myanmarMonthYear(t);
   const zodiac = ZODIAC_BY_MM[myT.myanmarMonth]
     ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)`
     : "";
-  todayBar.textContent = `${myT.myanmarMonth}လ${zodiac}`;
-
-  // Poem for current Myanmar month
+  let bar = `${myT.myanmarMonth}လ${zodiac}`;
   const poem = await loadPoemFor(myT.myanmarMonth);
-  if (poem) {
-    todayBar.innerHTML += `<br><small class="poem">${poem.replace(
-      /\n/g,
-      "<br>"
-    )}</small>`;
-  }
+  if (poem)
+    bar += `<br><small class="poem">${poem.replace(/\n/g, "<br>")}</small>`;
+  todayBar.innerHTML = bar;
 
   if ("serviceWorker" in navigator) {
     try {
