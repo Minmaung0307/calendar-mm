@@ -408,8 +408,14 @@ body {
   visibility: hidden;
 } /* keep space but invisible */
 /* tap-to-expand on mobile */
-.day .tags{ max-height:72px; overflow:hidden; }
-.day.expand .tags{ max-height:160px; overflow:auto; }
+.day .tags {
+  max-height: 72px;
+  overflow: hidden;
+}
+.day.expand .tags {
+  max-height: 160px;
+  overflow: auto;
+}
 
 .poem {
   display: block;
@@ -420,19 +426,19 @@ body {
   white-space: pre-line;
 }
 
-.chip.stone{
+.chip.stone {
   display: inline-block;
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1;
   padding: 4px 8px;
   margin-left: 6px;
   border-radius: 12px;
-  background: var(--chip-bg, rgba(0,0,0,.06));
+  background: var(--chip-bg, rgba(0, 0, 0, 0.06));
   vertical-align: middle;
   white-space: nowrap;
 }
-body.dark .chip.stone{
-  background: rgba(255,255,255,.12);
+body.dark .chip.stone {
+  background: rgba(255, 255, 255, 0.12);
 }
 
 :root {
@@ -451,12 +457,17 @@ body {
   margin: 10px auto;
   color: #111;
   transition: background 0.8s ease, color 0.4s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-@media (prefers-color-scheme: dark){
-  :root{ color-scheme: dark; }
-  body{ background:#111; color:#eee; }
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+  body {
+    background: #111;
+    color: #eee;
+  }
 }
 
 .theme-dropdown {
@@ -469,38 +480,38 @@ body {
 }
 
 /* Topbar responsive */
-.topbar{
+.topbar {
   width: 1300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   padding: 10px 12px;
-  flex-wrap: wrap;               /* small screens: wrap brand + controls */
+  flex-wrap: wrap; /* small screens: wrap brand + controls */
 }
-.topbar .brand{
+.topbar .brand {
   display: flex;
   align-items: center;
   gap: 8px;
   min-width: 0;
 }
-.topbar .brand h1{
+.topbar .brand h1 {
   font-size: clamp(16px, 4vw, 20px);
   line-height: 1.2;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;       /* avoid overflow on iPhone */
+  text-overflow: ellipsis; /* avoid overflow on iPhone */
 }
-.topbar .controls{
+.topbar .controls {
   display: flex;
   align-items: center;
   gap: 6px;
-  flex-wrap: wrap;               /* buttons/selects wrap as needed */
+  flex-wrap: wrap; /* buttons/selects wrap as needed */
 }
 
 /* Today bar responsive */
-#todayBar{
+#todayBar {
   width: 1300px;
   /* max-width: 100%; */
   word-break: break-word;
@@ -511,26 +522,38 @@ body {
 }
 
 /* Birthstone chip look */
-.chip.stone{
-  display:inline-block;
-  font-size: .9rem;
+.chip.stone {
+  display: inline-block;
+  font-size: 0.9rem;
   line-height: 1;
   padding: 4px 8px;
   margin-left: 6px;
   border-radius: 12px;
-  background: var(--chip-bg, rgba(0,0,0,.06));
+  background: var(--chip-bg, rgba(0, 0, 0, 0.06));
   vertical-align: middle;
   white-space: nowrap;
 }
-.chip.stone .mm{ opacity:.85; }
-body.dark .chip.stone{ background: rgba(255,255,255,.12); }
+.chip.stone .mm {
+  opacity: 0.85;
+}
+body.dark .chip.stone {
+  background: rgba(255, 255, 255, 0.12);
+}
 
 /* Small iPhones */
-@media (max-width: 420px){
-  .topbar{ gap: 8px; }
-  .topbar .controls{ gap: 4px; }
-  #todayBar{ font-size: 14px; }
-  .chip.stone{ font-size: .85rem; }
+@media (max-width: 420px) {
+  .topbar {
+    gap: 8px;
+  }
+  .topbar .controls {
+    gap: 4px;
+  }
+  #todayBar {
+    font-size: 14px;
+  }
+  .chip.stone {
+    font-size: 0.85rem;
+  }
 }
 
 .topbar {
@@ -564,7 +587,8 @@ body.dark .chip.stone{ background: rgba(255,255,255,.12); }
   justify-content: flex-end;
 }
 
-.select, .btn {
+.select,
+.btn {
   font-size: 14px;
   padding: 4px 6px;
 }
@@ -583,4 +607,19 @@ body.dark .chip.stone{ background: rgba(255,255,255,.12); }
   .brand h1 {
     font-size: 15px;
   }
+}
+
+.greg-abbr {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.nums {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px;
+}
+.nums .myan {
+  font-size: 12px;
+  opacity: 0.8;
 }

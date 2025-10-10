@@ -426,7 +426,7 @@ async function loadPoemFor(month) {
   }
 }
 
-document.getElementById("themeSelect")?.addEventListener("change", e => {
+document.getElementById("themeSelect")?.addEventListener("change", (e) => {
   const val = e.target.value;
   if (val === "dark") {
     document.body.style.background = "#111";
@@ -444,12 +444,33 @@ document.getElementById("themeSelect")?.addEventListener("change", e => {
 });
 
 /* Render */
+// English months (abbr)
+const EN_ABBR = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+
 async function render() {
-  if (monthSel && yearSel) syncSelectors();
+  if (monthSel && yearSel) {
+    // controls ရှိရင် sync
+    monthSel.value = view.getMonth();
+    yearSel.value = view.getFullYear();
+  }
+
   const y = view.getFullYear(),
     m = view.getMonth();
   const first = new Date(y, m, 1);
-  const startWeekday = (first.getDay() + 6) % 7; // Monday-first
+  const startWeekday = (first.getDay() + 6) % 7;
   const days = new Date(y, m + 1, 0).getDate();
   const backend = await loadBackendEvents(y);
 
@@ -472,7 +493,6 @@ async function render() {
 
     const age = lunarAge(cellDate);
     const my = myanmarMonthYear(cellDate);
-    const shownMonth = labelWaso(my.myanmarMonth, my.myanmarYear, iso);
     const info = mmLunarInfoWithLength(age, my.myanmarMonth, my.myanmarYear);
 
     const tags = [];
@@ -480,10 +500,14 @@ async function render() {
       const moonIcon = info.phase === "လပြည့်" ? "🌕" : "🌑";
       tags.push(`<span class="tag icon">${moonIcon}</span>`);
     } else {
-      const mmNum = toMMDigits(info.number);
-      tags.push(`<span class="tag moontext">${info.phase} ${mmNum}</span>`);
+      // မြန်မာဂဏန်းပြန်
+      const mmDigits = (n) => String(n).replace(/\d/g, (d) => "၀၁၂၃၄၅၆၇၈၉"[+d]);
+      tags.push(
+        `<span class="tag moontext">${info.phase} ${mmDigits(
+          info.number
+        )}</span>`
+      );
     }
-
     if (backend[iso]) {
       backend[iso].forEach((sp) => {
         const isHoliday = sp.type === "holiday";
@@ -495,15 +519,18 @@ async function render() {
 
     const el = document.createElement("div");
     el.className = "day" + (isToday(d) ? " today" : "");
+
+    // ✅ Greg label: "Jul 1" ပုံစံ
+    const gregLabel = `${EN_ABBR[m]} ${d}`;
+
     el.innerHTML = `
       <div class="nums">
-        <div class="greg">${d}</div>
-        <div class="myan">${shownMonth}</div>
+        <div class="greg greg-abbr">${gregLabel}</div>
+        <div class="myan">${my.myanmarMonth}</div>
       </div>
       <div class="tags">${tags.join("")}</div>
     `;
-
-    // (optional) mobile: tap to expand tags
+    // (mobile) tap-to-expand (ရှိရင်)
     el.addEventListener(
       "touchstart",
       () => {
