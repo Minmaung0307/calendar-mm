@@ -1,4 +1,4 @@
-const CACHE = "mm-cal-v1";
+const CACHE = "mm-cal-v2";
 const ASSETS = [
   "./",
   "./index.html",
@@ -7,7 +7,8 @@ const ASSETS = [
   "./myanmarCalendar.js",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
-  "./icons/icon-512.png"
+  "./icons/icon-512.png",
+  "./data/holidays.json"
 ];
 
 self.addEventListener("install", (e)=>{
