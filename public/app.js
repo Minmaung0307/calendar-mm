@@ -298,19 +298,20 @@ async function render() {
     const age = lunarAge(cellDate);
     const phase = phaseBadge(age);
     const my = myanmarMonthYear(cellDate);
+    const mmDay = Math.floor(age) + 1; // new: lunar day number
+    const yzr = yatyarzar(cellDate);
+    const pth = pyathadar(cellDate);
+    const upo = uposathaType(age);
 
     const tags = [];
-    // Moon
-    tags.push(`<span class="tag moon">${phase.label}</span>`);
 
-    // Uposatha / Afait
-    const upo = uposathaType(age);
-    if (upo) {
-      // အဖိတ်နေ့ဟု ခေါ်တွင်သော်လည်း ဥပုသ်နှင့် တူညီသဖြင့် တူညီ Tag သုံးထားသည်
-      tags.push(`<span class="tag fest">★ ${upo}</span>`);
-    }
+    // show moon + number
+    tags.push(`<span class="tag moon">${phase.label} ${mmDay}</span>`);
 
-    // Holidays (backend)
+    // show Uposatha/Afait
+    if (upo) tags.push(`<span class="tag fest">★ ${upo}</span>`);
+
+    // show holiday
     if (backend[iso]) {
       backend[iso].forEach((sp) => {
         const cls = sp.type === "holiday" ? "warn" : "fest";
@@ -319,23 +320,20 @@ async function render() {
       });
     }
 
-    // Note tag
-    const notes = getNotes();
-    if (notes[iso]?.trim()) {
-      tags.push(`<span class="tag note">✎ Note</span>`);
-    }
+    // show yatyarzar/pyathadar summary
+    tags.push(`<span class="tag note">${yzr}/${pth}</span>`);
 
     const el = document.createElement("div");
     el.className = "day" + (isToday(d) ? " today" : "");
     el.innerHTML = `
-      <div class="nums">
-        <div class="greg">${d}</div>
-        <div class="myan">${my.myanmarMonth} ${d}</div>
-      </div>
-      <div class="tags">${tags.join("")}</div>
-    `;
+    <div class="nums">
+      <div class="greg">${d}</div>
+      <div class="myan">${my.myanmarMonth}</div>
+    </div>
+    <div class="tags">${tags.join("")}</div>
+  `;
     el.onclick = () =>
-      openDetails(cellDate, my, phase, backend[iso] || [], upo);
+      openDetails(cellDate, my, phase, backend[iso] || [], upo, yzr, pth);
     grid.appendChild(el);
   }
 
@@ -359,17 +357,13 @@ async function render() {
   }
 }
 
-function openDetails(date, my, phase, specials, upo) {
+function openDetails(date, my, phase, specials, upo, yzr, pth) {
   const iso = date.toISOString().slice(0, 10);
-  selectedISO = iso;
+  const age = lunarAge(date);
+  const mmDay = Math.floor(age) + 1;
   const holi =
     (specials || [])
-      .map(
-        (s) =>
-          `• ${s.type === "holiday" ? "⚠️" : "★"} ${
-            s.title
-          } <span class="muted">(${s.region})</span>`
-      )
+      .map((s) => `• ${s.type === "holiday" ? "⚠️" : "★"} ${s.title}`)
       .join("<br>") || "—";
   const noteObj = getNotes();
   const val = noteObj[iso] || "";
@@ -380,16 +374,12 @@ function openDetails(date, my, phase, specials, upo) {
     } ${date.getDate()}, ${date.getFullYear()}</div>
     <div class="kv"><div class="k">မြန်မာလ:</div><div>${
       my.myanmarMonth
-    } ${date.getDate()}, ${my.myanmarYear}</div></div>
+    } ${mmDay} ရက်၊ ${my.myanmarYear}</div></div>
     <div class="kv"><div class="k">လအခြေအနေ:</div><div>${
       phase.label
     }</div></div>
-    <div class="kv"><div class="k">ရက်ရာဇာ:</div><div>${yatyarzar(
-      date
-    )}</div></div>
-    <div class="kv"><div class="k">ပြဿဒါး:</div><div>${pyathadar(
-      date
-    )}</div></div>
+    <div class="kv"><div class="k">ရက်ရာဇာ:</div><div>${yzr}</div></div>
+    <div class="kv"><div class="k">ပြဿဒါး:</div><div>${pth}</div></div>
     <div class="kv"><div class="k">ဥပုသ်/အဖိတ်:</div><div>${
       upo ? upo : "—"
     }</div></div>
