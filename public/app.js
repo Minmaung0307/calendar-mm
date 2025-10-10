@@ -1,11 +1,8 @@
 import {
   lunarAge,
-  moonPhaseName,
   myanmarMonthYear,
-  yatyarzar,
-  pyathadar,
-  isUposatha,
-  uposathaType,
+  mmLunarInfoWithLength,
+  uposathaPattern,
 } from "./myanmarCalendar.js";
 
 // === Zodiac (ဘုရားစံရာသီ) ↔ Myanmar Months (သင်ပေးထားတဲ့ mapping) ===
@@ -330,20 +327,37 @@ async function render() {
     const iso = cellDate.toISOString().slice(0, 10);
 
     const age = lunarAge(cellDate);
-    const phase = phaseBadge(age);
     const my = myanmarMonthYear(cellDate);
-    const mmDay = Math.floor(age) + 1; // လရက်နံပါတ် (၁..၃၀)
-    const upo = uposathaType(age); // ဥပုသ်/အဖိတ် (nullable)
 
-    const zodiac = ZODIAC_BY_MM[my.myanmarMonth] || "";
-    const mmLabel = zodiac ? `${my.myanmarMonth} (${zodiac})` : my.myanmarMonth;
+    // month length (currently not shown, but used to respect rules if you need later)
+    const mmLen = monthLengthFor(my.myanmarMonth, my.myanmarYear);
+
+    // numbered lunar info with 1..14 only; uposatha has no number
+    const info = mmLunarInfoWithLength(age, my.myanmarMonth, my.myanmarYear);
+    const { pattern } = uposathaPattern(my.myanmarMonth, my.myanmarYear);
+    const upo = uposathaType(age);
 
     const tags = [];
-    // လအခြေအနေ + ရက်နံပါတ် eg. "လဆန်း ၁၂", "လပြည့် ၁၅"
-    tags.push(`<span class="tag moon">${phase.label} ${mmDay}</span>`);
+    // Moon tag
+    tags.push(
+      `<span class="tag moon">${info.phase}${
+        info.number ? " " + info.number : ""
+      }</span>`
+    );
 
+    // Moon tag (number only for waxing/waning)
+    if (info.kind === "waxing" || info.kind === "waning") {
+      tags.push(`<span class="tag moon">${info.phase} ${info.number}</span>`);
+    } else {
+      // Uposatha — phase only; (optional) show day number like "လကွယ် (၁၄/၁၅)"
+      // tags.push(`<span class="tag moon">${info.phase} (${info.uposathaDay})</span>`);
+      tags.push(`<span class="tag moon">${info.phase}</span>`);
+    }
+
+    // Uposatha tag
     if (upo) tags.push(`<span class="tag fest">★ ${upo}</span>`);
 
+    // Holidays/Custom
     if (backend[iso]) {
       backend[iso].forEach((sp) => {
         const cls = sp.type === "holiday" ? "warn" : "fest";
@@ -352,21 +366,22 @@ async function render() {
       });
     }
 
-    // နေ့မှတ်စု tag (ရှိရင်)
+    // Notes tag
     const notes = getNotes();
     if (notes[iso]?.trim()) tags.push(`<span class="tag note">✎ Note</span>`);
 
+    // Day cell (NO zodiac here per your request)
     const el = document.createElement("div");
     el.className = "day" + (isToday(d) ? " today" : "");
     el.innerHTML = `
     <div class="nums">
       <div class="greg">${d}</div>
-      <div class="myan">${mmLabel}</div>
+      <div class="myan">${my.myanmarMonth}</div>
     </div>
     <div class="tags">${tags.join("")}</div>
   `;
     el.onclick = () =>
-      openDetails(cellDate, my, phase, backend[iso] || [], upo);
+      openDetails(cellDate, my, info, backend[iso] || [], pattern);
     grid.appendChild(el);
   }
 
@@ -374,16 +389,10 @@ async function render() {
   const t = new Date();
   const tAge = lunarAge(t);
   const myT = myanmarMonthYear(t);
-  const zodiacT = ZODIAC_BY_MM[myT.myanmarMonth] || "";
-  const mmLabelT = zodiacT
-    ? `${myT.myanmarMonth} (${zodiacT})`
-    : myT.myanmarMonth;
-
-  todayBar.innerHTML = `
-  Today: ${enMonths[t.getMonth()]} ${t.getDate()}, ${t.getFullYear()} •
-  မြန်မာ - ${mmLabelT} ${Math.floor(tAge) + 1}, ${myT.myanmarYear} •
-  ${phaseBadge(tAge).label}
-`;
+  const zodiac = ZODIAC_BY_MM[myT.myanmarMonth]
+    ? ` (${ZODIAC_BY_MM[myT.myanmarMonth]}ရာသီ)`
+    : "";
+  todayBar.innerHTML = `${myT.myanmarMonth}လ${zodiac}`;
 
   if ("serviceWorker" in navigator) {
     try {
@@ -392,14 +401,8 @@ async function render() {
   }
 }
 
-function openDetails(date, my, phase, specials, upo) {
+function openDetails(date, my, info, specials, pattern) {
   const iso = date.toISOString().slice(0, 10);
-  const age = lunarAge(date);
-  const mmDay = Math.floor(age) + 1;
-
-  const zodiac = ZODIAC_BY_MM[my.myanmarMonth] || "";
-  const mmLabel = zodiac ? `${my.myanmarMonth} (${zodiac})` : my.myanmarMonth;
-
   const holi =
     (specials || [])
       .map(
@@ -410,12 +413,13 @@ function openDetails(date, my, phase, specials, upo) {
       )
       .join("<br>") || "—";
 
-  // English birthstone for this month
-  const bs = BIRTHSTONES[date.getMonth()];
-  const bsText = `${bs.emoji} ${bs.name}`;
-
   const noteObj = getNotes();
   const val = noteObj[iso] || "";
+
+  const moonLine =
+    info.kind === "waxing" || info.kind === "waning"
+      ? `${info.phase} ${info.number}`
+      : `${info.phase} ${info.uposathaDay ? `(${info.uposathaDay})` : ""}`;
 
   details.innerHTML = `
     <div class="title">${
@@ -423,25 +427,24 @@ function openDetails(date, my, phase, specials, upo) {
     } ${date.getDate()}, ${date.getFullYear()}</div>
 
     <div class="kv"><div class="k">မြန်မာလ:</div>
-      <div>${mmLabel} ${mmDay} ရက်၊ ${my.myanmarYear}</div>
+      <div>${my.myanmarMonth} ${info.number ? info.number + " ရက်, " : ""}${
+    my.myanmarYear
+  }</div>
     </div>
 
     <div class="kv"><div class="k">လအခြေအနေ:</div>
-      <div>${phase.label}</div>
+      <div>${moonLine}</div>
     </div>
 
-    <div class="kv"><div class="k">Birthstone:</div>
-      <div>${bsText}</div>
-    </div>
-
-    <div class="kv"><div class="k">ဥပုသ်/အဖိတ်:</div>
-      <div>${upo ? upo : "—"}</div>
+    <div class="kv"><div class="k">ဥပုသ်ပုံစံ:</div>
+      <div>${pattern} <span class="muted">(Waxing/Full • Waning/New)</span></div>
     </div>
 
     <div class="kv"><div class="k">အထူးနေ့များ:</div>
       <div>${holi}</div>
     </div>
 
+    <!-- Notes UI as before -->
     <div class="notes">
       <h4>✎ နေ့စဉ် မှတ်စု</h4>
       <textarea id="noteText" rows="6" placeholder="ဒီနေ့ အကြောင်းပြောပါ…">${val.replace(
