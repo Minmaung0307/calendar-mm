@@ -584,3 +584,14 @@ body.dark .chip.stone{ background: rgba(255,255,255,.12); }
     font-size: 15px;
   }
 }
+
+.controls-inline{
+  display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+  justify-content:center; padding:6px 10px; margin:8px auto 6px;
+}
+.controls-inline .btn, .controls-inline .select{ padding:4px 8px; font-size:14px; }
+.card.calendar{ padding:10px 12px; }
+
+.greg-abbr{ font-weight:600; letter-spacing:0.2px; }
+.nums{ display:flex; align-items:baseline; justify-content:space-between; gap:6px; }
+.nums .myan{ font-size:12px; opacity:.8; }
