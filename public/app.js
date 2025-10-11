@@ -295,17 +295,49 @@ if (yearSel)
     view.setFullYear(+yearSel.value);
     render();
   };
-if (themeBtn)
-  themeBtn.onclick = () => {
-    document.body.classList.toggle("dark");
-    themeBtn.textContent = document.body.classList.contains("dark")
-      ? "☀ Light"
-      : "☾ Dark";
-  };
+// if (themeBtn)
+//   themeBtn.onclick = () => {
+//     document.body.classList.toggle("dark");
+//     themeBtn.textContent = document.body.classList.contains("dark")
+//       ? "☀ Light"
+//       : "☾ Dark";
+//   };
 if (fontBtn)
   fontBtn.onclick = () => {
     document.documentElement.classList.toggle("serif");
   };
+
+// Helper: set theme
+function setTheme(mode){ // 'light' | 'dark' | 'auto'
+  const root = document.documentElement;
+  if (mode === 'light' || mode === 'dark') {
+    root.setAttribute('data-theme', mode);
+  } else {
+    root.removeAttribute('data-theme'); // auto -> system/our default variables
+  }
+}
+
+// Theme button (if you have one)
+if (themeBtn){
+  themeBtn.onclick = () => {
+    const curr = document.documentElement.getAttribute('data-theme');
+    const next = (curr === 'dark') ? 'light' : 'dark';
+    setTheme(next);
+    themeBtn.textContent = (next === 'dark') ? '☀ Light' : '☾ Dark';
+    // re-render so todayBar gradient/colors re-compose if you add any
+    render();
+  };
+}
+
+// Theme select dropdown (if used)
+const themeSelect = document.getElementById('themeSelect');
+if (themeSelect){
+  themeSelect.addEventListener('change', e=>{
+    const v = e.target.value; // 'auto' | 'light' | 'dark'
+    setTheme(v);
+    render();
+  });
+}
 
 // === Controls (null-safe) ===
 // const prevBtn = document.querySelector("#prevBtn");
@@ -426,21 +458,23 @@ async function loadPoemFor(month) {
   }
 }
 
-document.getElementById("themeSelect")?.addEventListener("change", (e) => {
-  const val = e.target.value;
-  if (val === "dark") {
-    document.body.style.background = "#111";
-    document.body.style.color = "#fff";
-  } else if (val === "light") {
-    document.body.style.background = "#fff";
-    document.body.style.color = "#111";
+function setTheme(mode){
+  const root = document.documentElement;
+  if (mode === "dark" || mode === "light"){
+    root.setAttribute("data-theme", mode);
   } else {
     // auto → use Myanmar month theme
     const myT = myanmarMonthYear(new Date());
     const t = CALENDAR_THEMES[myT.myanmarMonth];
-    document.body.style.background = t.bg;
-    document.body.style.color = "#111";
+    root.setAttribute("data-theme", "auto");
+    // month theme background / accent only
+    document.body.style.backgroundImage = t?.bg || "";
   }
+}
+
+themeSelect?.addEventListener("change", (e) => {
+  setTheme(e.target.value);
+  render(); // re-render to update colors
 });
 
 /* Render */
