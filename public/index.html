@@ -49,49 +49,10 @@
     <div class="poem-meta"><span id="poemAuthor">— Anonymous</span></div>
   </section> -->
 
-    <section class="todaybar" id="todayBar" style="width: 1300px;"></section>
+    <section class="todaybar" id="todayBar" style="width: 1300px"></section>
 
     <main class="wrap">
-      <aside class="legend card">
-        <h3>Legend</h3>
-        <ul>
-          <li><span class="badge fullmoon">●</span> လပြည့်</li>
-          <li><span class="badge newmoon">●</span> လကွယ်</li>
-          <li><span class="badge waxing">●</span> လဆန်း</li>
-          <li><span class="badge waning">●</span> လဆုတ်</li>
-          <li><span class="badge holiday">⚠️</span> အားလပ်/ရုံးပိတ်</li>
-          <li><span class="badge fest">★</span> ပွဲတော်/အထူးနေ့</li>
-        </ul>
-
-        <!-- <details class="hint">
-        <summary>ရက်ရာဇာ / ပြဿဒါး</summary>
-        <p>ဒီ version သည် astronomical-based approximation ဖြင့်တွက်ထားပြီး အတိအကျအချို့နေ့များကို Backend ထဲက Rule Tables ဖြင့် override လုပ်နိုင်ပါသည်။</p>
-      </details> -->
-
-        <div class="custom-add">
-          <h4>ကိုယ်ပိုင် အထူးနေ့ထည့်ရန်</h4>
-          <label
-            >နေ့စွဲ (YYYY-MM-DD)
-            <input id="custDate" type="date" />
-          </label>
-          <label
-            >ခေါင်းစဉ်
-            <input id="custTitle" placeholder="e.g. အလုပ်အမိန့်/ကျောင်းပွဲ" />
-          </label>
-          <label
-            >အမျိုးအစား
-            <select id="custType">
-              <option value="holiday">ရုံးပိတ်/အားလပ်</option>
-              <option value="festival">ပွဲတော်/အထူးနေ့</option>
-            </select>
-          </label>
-          <button id="addCustom" class="btn wide">ထည့်မယ်</button>
-          <button id="clearCustom" class="btn ghost wide">
-            ဖျက်မယ် (အားလုံး)
-          </button>
-        </div>
-      </aside>
-
+      <!-- Calendar card -->
       <section class="calendar card">
         <div class="grid head">
           <div>တနင်္လာ</div>
@@ -105,11 +66,61 @@
         <div id="grid" class="grid body"></div>
       </section>
 
-      <aside class="details card" id="details">
+      <!-- ✅ Legend: calendar အောက်မှာ full width -->
+      <section class="legend-bar">
+        <div class="legend-inner">
+          <div class="legend-items">
+            <span class="legend-item"
+              ><span class="dot fullmoon">🌕</span> လပြည့်</span
+            >
+            <span class="legend-item"
+              ><span class="dot newmoon">🌑</span> လကွယ်</span
+            >
+            <span class="legend-item"
+              ><span class="dot waxing">◔</span> လဆန်း</span
+            >
+            <span class="legend-item"
+              ><span class="dot waning">◑</span> လဆုတ်</span
+            >
+            <span class="legend-item"
+              ><span class="dot holiday">🏛️</span> အားလပ်/ရုံးပိတ်</span
+            >
+            <span class="legend-item"
+              ><span class="dot fest">🎉</span> ပွဲတော်/အထူးနေ့</span
+            >
+          </div>
+
+          <!-- ကိုယ်ပိုင် အထူးနေ့ ထည့်ရန် (full width legend ဘಾರ್ အောက်ပိုင်း) -->
+          <div class="legend-custom">
+            <h4>ကိုယ်ပိုင် အထူးနေ့ထည့်ရန်</h4>
+            <div class="custom-grid">
+              <label for="custDate">နေ့စွဲ (YYYY-MM-DD)</label>
+              <input id="custDate" type="date" />
+
+              <label for="custTitle">ခေါင်းစဉ်</label>
+              <input id="custTitle" placeholder="e.g. အလုပ်အမိန့်/ကျောင်းပွဲ" />
+
+              <label for="custType">အမျိုးအစား</label>
+              <select id="custType">
+                <option value="holiday">ရုံးပိတ်/အားလပ်</option>
+                <!-- ⬇️ JS logic ကိုက်ညီစေရန် 'festival' → 'fest' -->
+                <option value="fest">ပွဲတော်/အထူးနေ့</option>
+              </select>
+
+              <button id="addCustom" class="btn wide">ထည့်မယ်</button>
+              <button id="clearCustom" class="btn ghost wide">
+                ဖျက်မယ် (အားလုံး)
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Details sidebar (ရှိနေသေးချင်ရင်ထား, မလိုရင်ဖျက်နိုင်) -->
+      <!-- <aside class="details card" id="details">
         <h3>အသေးစိတ်</h3>
         <p>နေ့တစ်ရက်ကို နှိပ်ပြီး အသေးစိတ်ကြည့်ပါ…</p>
 
-        <!-- Notes -->
         <div class="notes">
           <h4>✎ နေ့စဉ် မှတ်စု</h4>
           <textarea
@@ -123,7 +134,7 @@
           </div>
           <div id="noteStatus" class="muted"></div>
         </div>
-      </aside>
+      </aside> -->
     </main>
 
     <footer class="foot">
