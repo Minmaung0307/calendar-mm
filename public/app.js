@@ -426,21 +426,34 @@ async function loadPoemFor(month) {
   }
 }
 
-document.getElementById("themeSelect")?.addEventListener("change", (e) => {
-  const val = e.target.value;
-  if (val === "dark") {
-    document.body.style.background = "#111";
-    document.body.style.color = "#fff";
-  } else if (val === "light") {
-    document.body.style.background = "#fff";
-    document.body.style.color = "#111";
+// document.getElementById("themeSelect")?.addEventListener("change", (e) => {
+//   const val = e.target.value;
+//   if (val === "dark") {
+//     document.body.style.background = "#111";
+//     document.body.style.color = "#fff";
+//   } else if (val === "light") {
+//     document.body.style.background = "#fff";
+//     document.body.style.color = "#111";
+//   } else {
+//     // auto → use Myanmar month theme
+//     const myT = myanmarMonthYear(new Date());
+//     const t = CALENDAR_THEMES[myT.myanmarMonth];
+//     document.body.style.background = t.bg;
+//     document.body.style.color = "#111";
+//   }
+// });
+const themeSelectEl = document.getElementById("themeSelect");
+function setTheme(mode){
+  const root = document.documentElement;
+  if (mode === "light" || mode === "dark"){
+    root.setAttribute("data-theme", mode);
   } else {
-    // auto → use Myanmar month theme
-    const myT = myanmarMonthYear(new Date());
-    const t = CALENDAR_THEMES[myT.myanmarMonth];
-    document.body.style.background = t.bg;
-    document.body.style.color = "#111";
+    root.setAttribute("data-theme", "auto"); // leave colors to CSS; optional month accent below
   }
+}
+themeSelectEl?.addEventListener("change", (e) => {
+  setTheme(e.target.value);
+  render();
 });
 
 /* Render */
