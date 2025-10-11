@@ -383,8 +383,8 @@ body {
   border-bottom-color: #3b2f1c;
 }
 .dark .day {
-  background: #18130e;
-  border-color: #2b241b;
+  background: #6b4e16;
+  /* border-color: #2b241b; */
 }
 .dark .day:hover {
   background: #201a14;
@@ -402,6 +402,7 @@ body {
 
 /* Uniform day cell height to avoid bouncy grids across months */
 .day {
+  border: 1px solid #5c5545;
   height: 132px;
   min-height: 132px;
 }
