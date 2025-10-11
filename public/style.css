@@ -59,6 +59,7 @@ body {
   letter-spacing: 0.3px;
 }
 .brand small {
+  padding: 7px 0;
   display: block;
   font-weight: 600;
   font-size: 0.8rem;
@@ -466,7 +467,7 @@ body {
   }
   body {
     background: #111;
-    color: #eee;
+    /* color: #eee; */
   }
 }
 
@@ -496,6 +497,7 @@ body {
   min-width: 0;
 }
 .topbar .brand h1 {
+  padding: 7px 0;
   font-size: clamp(16px, 4vw, 20px);
   line-height: 1.2;
   margin: 0;
