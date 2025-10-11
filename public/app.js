@@ -308,21 +308,21 @@ if (fontBtn)
   };
 
 // Theme button (if you have one)
-if (themeBtn){
+if (themeBtn) {
   themeBtn.onclick = () => {
-    const curr = document.documentElement.getAttribute('data-theme');
-    const next = (curr === 'dark') ? 'light' : 'dark';
+    const curr = document.documentElement.getAttribute("data-theme");
+    const next = curr === "dark" ? "light" : "dark";
     setTheme(next);
-    themeBtn.textContent = (next === 'dark') ? '☀ Light' : '☾ Dark';
+    themeBtn.textContent = next === "dark" ? "☀ Light" : "☾ Dark";
     // re-render so todayBar gradient/colors re-compose if you add any
     render();
   };
 }
 
 // Theme select dropdown (if used)
-const themeSelect = document.getElementById('themeSelect');
-if (themeSelect){
-  themeSelect.addEventListener('change', e=>{
+const themeSelect = document.getElementById("themeSelect");
+if (themeSelect) {
+  themeSelect.addEventListener("change", (e) => {
     const v = e.target.value; // 'auto' | 'light' | 'dark'
     setTheme(v);
     render();
@@ -381,7 +381,10 @@ if (themeSelect){
 
 /* Backend Loader (local YYYY-MM-DD keys) */
 async function loadBackendEvents(year) {
-  const map = {};
+  const map = {
+    /* ...backend data... */
+  };
+
   const add = (ymd, rec) => {
     const k = normalizeYMD(ymd);
     if (!k) return;
@@ -434,6 +437,14 @@ async function loadBackendEvents(year) {
   } catch (e) {
     /* ignore */
   }
+
+  const cust = getCustomEvents();
+  for (const iso in cust) {
+    const y = +iso.slice(0, 4);
+    if (y === year) {
+      map[iso] = (map[iso] || []).concat(cust[iso]);
+    }
+  }
   return map;
 }
 
@@ -448,9 +459,9 @@ async function loadPoemFor(month) {
   }
 }
 
-function setTheme(mode){
+function setTheme(mode) {
   const root = document.documentElement;
-  if (mode === "dark" || mode === "light"){
+  if (mode === "dark" || mode === "light") {
     root.setAttribute("data-theme", mode);
   } else {
     // auto → use Myanmar month theme
@@ -686,4 +697,83 @@ $("#clearCustom").onclick = () => {
 (async function boot() {
   await initCalendarMeta();
   await render();
+})();
+
+// --- Legend toggle (bind once) ---
+(function bindLegendToggle() {
+  const btn = document.querySelector(".legend-toggle");
+  const body = document.getElementById("legendBody");
+  if (!btn || !body || btn._bound) return;
+  btn._bound = true;
+  btn.addEventListener("click", () => {
+    const open = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", String(!open));
+    body.style.display = open ? "none" : "block";
+    btn.textContent = open ? "▸" : "▾";
+  });
+})();
+
+// --- Simple LS helpers ---
+function safeLocalStorage() {
+  try {
+    localStorage.setItem("__t", "1");
+    localStorage.removeItem("__t");
+    return localStorage;
+  } catch (e) {
+    return { getItem: () => null, setItem: () => {}, removeItem: () => {} };
+  }
+}
+const LS = safeLocalStorage();
+const CUST_KEY = "mmc_custom_events";
+
+function getCustomEvents() {
+  try {
+    return JSON.parse(LS.getItem(CUST_KEY) || "{}");
+  } catch (e) {
+    return {};
+  }
+}
+function setCustomEvents(map) {
+  try {
+    LS.setItem(CUST_KEY, JSON.stringify(map));
+  } catch (e) {}
+}
+
+// --- Wire buttons (add / clear) ---
+(function bindCustomInputs() {
+  const addBtn = document.getElementById("addCustom");
+  const clrBtn = document.getElementById("clearCustom");
+  const dEl = document.getElementById("custDate");
+  const tEl = document.getElementById("custTitle");
+  const ty = document.getElementById("custType");
+  if (!addBtn || !clrBtn || !dEl || !tEl || !ty) return;
+
+  addBtn.onclick = () => {
+    const iso = (dEl.value || "").trim();
+    const title = (tEl.value || "").trim();
+    const type = ty.value; // 'holiday' | 'fest'
+    if (!iso || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) {
+      alert("နေ့စွဲ (YYYY-MM-DD) မှန်ကန်မဟုတ်ပါ");
+      return;
+    }
+    if (!title) {
+      alert("ခေါင်းစဉ်ထည့်ပါ");
+      return;
+    }
+
+    const map = getCustomEvents();
+    map[iso] = map[iso] || [];
+    map[iso].push({ type, title, source: "custom" });
+    setCustomEvents(map);
+    dEl.value = "";
+    tEl.value = "";
+    render(); // calendar refresh
+  };
+
+  clrBtn.onclick = () => {
+    if (confirm("ကိုယ်ပိုင်အထူးနေ့ အားလုံး ဖယ်ရှားမလား?")) {
+      setCustomEvents({});
+      render();
+    }
+  };
 })();
