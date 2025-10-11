@@ -193,6 +193,17 @@ body {
   cursor: pointer;
 }
 
+/* placeholder text color for title input */
+.custom-add input#custTitle::placeholder {
+  color: #fdfdfc; /* သင်လိုချင်တဲ့ အရောင်သတ်မှတ်ပါ */
+  opacity: 1;     /* iPhone/Safari မှာ မပျော့အောင် */
+}
+
+/* Dark mode အတွက် optional */
+:root[data-theme="dark"] .custom-add input#custTitle::placeholder {
+  color: #ffd580;
+}
+
 .custom-add {
   margin-top: 14px;
   border-top: 1px dashed #ead7a2;
