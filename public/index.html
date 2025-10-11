@@ -52,44 +52,45 @@
     <section class="todaybar" id="todayBar" style="width: 1300px;"></section>
 
     <main class="wrap">
-      <aside class="legend-card" id="legend">
-  <header class="legend-head">
-    <h3>🗝️ Legend</h3>
-    <button class="legend-toggle" aria-expanded="true" aria-controls="legendBody">▾</button>
-  </header>
+      <aside class="legend card">
+        <h3>Legend</h3>
+        <ul>
+          <li><span class="badge fullmoon">●</span> လပြည့်</li>
+          <li><span class="badge newmoon">●</span> လကွယ်</li>
+          <li><span class="badge waxing">●</span> လဆန်း</li>
+          <li><span class="badge waning">●</span> လဆုတ်</li>
+          <li><span class="badge holiday">⚠️</span> အားလပ်/ရုံးပိတ်</li>
+          <li><span class="badge fest">★</span> ပွဲတော်/အထူးနေ့</li>
+        </ul>
 
-  <div class="legend-body" id="legendBody">
-    <ul class="legend-list">
-      <li><span class="badge fullmoon">🌕</span> လပြည့်</li>
-      <li><span class="badge newmoon">🌑</span> လကွယ်</li>
-      <li><span class="badge waxing">◔</span> လဆန်း</li>
-      <li><span class="badge waning">◑</span> လဆုတ်</li>
-      <li><span class="badge holiday">🏛️</span> အားလပ်/ရုံးပိတ်</li>
-      <li><span class="badge fest">🎉</span> ပွဲတော်/အထူးနေ့</li>
-    </ul>
+        <!-- <details class="hint">
+        <summary>ရက်ရာဇာ / ပြဿဒါး</summary>
+        <p>ဒီ version သည် astronomical-based approximation ဖြင့်တွက်ထားပြီး အတိအကျအချို့နေ့များကို Backend ထဲက Rule Tables ဖြင့် override လုပ်နိုင်ပါသည်။</p>
+      </details> -->
 
-    <div class="custom-add">
-      <h4>ကိုယ်ပိုင် အထူးနေ့ထည့်ရန်</h4>
-
-      <label for="custDate">နေ့စွဲ (YYYY-MM-DD)</label>
-      <input id="custDate" type="date" />
-
-      <label for="custTitle">ခေါင်းစဉ်</label>
-      <input id="custTitle" placeholder="e.g. အလုပ်အမိန့်/ကျောင်းပွဲ" />
-
-      <label for="custType">အမျိုးအစား</label>
-      <select id="custType">
-        <!-- ⚠️ app.js ထဲမှာ sp.type === "holiday" else "fest" လို့သုံးထားတာကို နှုန်းသိမ်း -->
-        <option value="holiday">ရုံးပိတ်/အားလပ်</option>
-        <option value="fest">ပွဲတော်/အထူးနေ့</option>
-      </select>
-
-      <button id="addCustom" class="btn wide">ထည့်မယ်</button>
-      <button id="clearCustom" class="btn ghost wide">ဖျက်မယ် (အားလုံး)</button>
-      <p class="help">💡 ဖုန်းမှာနေ့ကွက်ကို ထိနှိပ်ပြီး tag တွေ ပေါက်/ပိတ်နိုင်သည်</p>
-    </div>
-  </div>
-</aside>
+        <div class="custom-add">
+          <h4>ကိုယ်ပိုင် အထူးနေ့ထည့်ရန်</h4>
+          <label
+            >နေ့စွဲ (YYYY-MM-DD)
+            <input id="custDate" type="date" />
+          </label>
+          <label
+            >ခေါင်းစဉ်
+            <input id="custTitle" placeholder="e.g. အလုပ်အမိန့်/ကျောင်းပွဲ" />
+          </label>
+          <label
+            >အမျိုးအစား
+            <select id="custType">
+              <option value="holiday">ရုံးပိတ်/အားလပ်</option>
+              <option value="festival">ပွဲတော်/အထူးနေ့</option>
+            </select>
+          </label>
+          <button id="addCustom" class="btn wide">ထည့်မယ်</button>
+          <button id="clearCustom" class="btn ghost wide">
+            ဖျက်မယ် (အားလုံး)
+          </button>
+        </div>
+      </aside>
 
       <section class="calendar card">
         <div class="grid head">
