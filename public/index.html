@@ -1,135 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="my">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
     />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="theme-color" content="#ffcc66" />
-    <title>မြန်မာပြက္ခဒိန် • Lunar + Solar</title>
-    <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="icon" sizes="192x192" href="icons/icon-192.png" />
+    <meta name="theme-color" content="#174c43" />
+    <meta
+      name="description"
+      content="မြန်မာရက်စွဲ၊ ဝါထပ်နှစ်၊ လပြည့်လကွယ်နှင့် ကိုယ်ပိုင်မှတ်စုများ"
+    />
+    <title>မြန်မာပြက္ခဒိန် · MM Calendar</title>
+    <link rel="icon" type="image/svg+xml" href="icons/calendar.svg" />
     <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style.details-fix.css" />
-    <link rel="stylesheet" href="style.noaside.css" />
-    <link rel="stylesheet" href="style.calendar-full.css" />
-    <link rel="stylesheet" href="style.show-holidays.css" />
-    <link rel="stylesheet" href="style.icons.css" />
-    <link rel="stylesheet" href="style.icons+numbers.css" />
   </head>
   <body>
     <header class="topbar">
-      <div class="brand">
-        <span class="logo">🗓️</span>
-        <h1>မြန်မာပြက္ခဒိန် <small>Myanmar Lunar + Solar</small></h1>
-      </div>
-      <div class="controls">
-        <button id="prevBtn" class="btn">‹</button>
-        <select id="monthSel" class="select"></select>
-        <select id="yearSel" class="select"></select>
-        <button id="nextBtn" class="btn">›</button>
-        <button id="todayBtn" class="btn ghost">Today</button>
-        <button id="themeBtn" class="btn ghost">☾ Dark</button>
-        <button id="fontBtn" class="btn ghost">Size</button>
-        <select id="themeSelect">
-          <option value="auto">🌗 မြန်မာလအလိုက်</option>
-          <option value="light">☀️ နေရာလှပ</option>
-          <option value="dark">🌙 ညနေမိုးလင်း</option>
-        </select>
+      <a class="brand" href="./"
+        ><img src="icons/calendar.svg" width="48" height="48" alt="" /><span
+          >မြန်မာပြက္ခဒိန်<small>MYANMAR CALENDAR</small></span
+        ></a
+      >
+      <div class="preferences">
+        <label class="sr" for="theme">အရောင်</label
+        ><select id="theme">
+          <option value="auto">စက်အလိုက် အရောင်</option>
+          <option value="light">အလင်း</option>
+          <option value="dark">အမှောင်</option></select
+        ><button id="font" aria-pressed="false">က +</button>
       </div>
     </header>
-
-    <!-- ကဗျာ Rotator -->
-    <!-- <section class="poem card" id="poemBox">
-    <div class="poem-line" id="poemLine">မြန်မာလပြင် ညအေး လအံ့ဖွယ်…</div>
-    <div class="poem-meta"><span id="poemAuthor">— Anonymous</span></div>
-  </section> -->
-
-    <section class="todaybar" id="todayBar" style="width: 1300px;"></section>
-
-    <main class="wrap">
-      <aside class="legend card">
-        <h3>Legend</h3>
-        <ul>
-          <li><span class="badge fullmoon">●</span> လပြည့်</li>
-          <li><span class="badge newmoon">●</span> လကွယ်</li>
-          <li><span class="badge waxing">●</span> လဆန်း</li>
-          <li><span class="badge waning">●</span> လဆုတ်</li>
-          <li><span class="badge holiday">⚠️</span> အားလပ်/ရုံးပိတ်</li>
-          <li><span class="badge fest">★</span> ပွဲတော်/အထူးနေ့</li>
-        </ul>
-
-        <!-- <details class="hint">
-        <summary>ရက်ရာဇာ / ပြဿဒါး</summary>
-        <p>ဒီ version သည် astronomical-based approximation ဖြင့်တွက်ထားပြီး အတိအကျအချို့နေ့များကို Backend ထဲက Rule Tables ဖြင့် override လုပ်နိုင်ပါသည်။</p>
-      </details> -->
-
-        <div class="custom-add">
-          <h4>ကိုယ်ပိုင် အထူးနေ့ထည့်ရန်</h4>
-          <label
-            >နေ့စွဲ (YYYY-MM-DD)
-            <input id="custDate" type="date" />
-          </label>
-          <label
-            >ခေါင်းစဉ်
-            <input id="custTitle" placeholder="e.g. အလုပ်အမိန့်/ကျောင်းပွဲ" />
-          </label>
-          <label
-            >အမျိုးအစား
-            <select id="custType">
-              <option value="holiday">ရုံးပိတ်/အားလပ်</option>
-              <option value="festival">ပွဲတော်/အထူးနေ့</option>
-            </select>
-          </label>
-          <button id="addCustom" class="btn wide">ထည့်မယ်</button>
-          <button id="clearCustom" class="btn ghost wide">
-            ဖျက်မယ် (အားလုံး)
-          </button>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">နေ့ရက်တိုင်းကို အဓိပ္ပာယ်ရှိစေဖို့</span>
+          <h1 id="todayMM"></h1>
+          <p id="todayMeta"></p>
+          <span class="timezone">မြန်မာစံတော်ချိန် · Asia/Yangon</span>
         </div>
-      </aside>
-
-      <section class="calendar card">
-        <div class="grid head">
-          <div>တနင်္လာ</div>
-          <div>အင်္ဂါ</div>
-          <div>ဗုဒ္ဓဟူး</div>
-          <div>ကြာသပတေး</div>
-          <div>သောကြာ</div>
-          <div class="wknd">စနေ</div>
-          <div class="wknd">တနင်္ဂနွေ</div>
-        </div>
-        <div id="grid" class="grid body"></div>
+        <div class="moon-art" aria-hidden="true">☾</div>
       </section>
-
-      <aside class="details card" id="details">
-        <h3>အသေးစိတ်</h3>
-        <p>နေ့တစ်ရက်ကို နှိပ်ပြီး အသေးစိတ်ကြည့်ပါ…</p>
-
-        <!-- Notes -->
-        <div class="notes">
-          <h4>✎ နေ့စဉ် မှတ်စု</h4>
-          <textarea
-            id="noteText"
-            rows="6"
-            placeholder="ဒီနေ့ အကြောင်းပြောပါ…"
-          ></textarea>
-          <div class="note-actions">
-            <button id="saveNote" class="btn">သိမ်းမယ်</button>
-            <button id="deleteNote" class="btn ghost">ဖျက်မယ်</button>
+      <section class="workspace">
+        <section class="calendar card" aria-label="လစဉ်ပြက္ခဒိန်">
+          <div class="calendar-top">
+            <div>
+              <h2 id="monthTitle"></h2>
+              <p id="mmRange"></p>
+            </div>
+            <button id="today">ယနေ့</button>
           </div>
-          <div id="noteStatus" class="muted"></div>
+          <div class="navigation">
+            <button id="prev" aria-label="ယခင်လ">←</button
+            ><label class="sr" for="month">လ</label
+            ><select id="month"></select
+            ><label class="sr" for="year">နှစ်</label
+            ><select id="year"></select
+            ><button id="next" aria-label="နောက်လ">→</button>
+          </div>
+          <div class="weekdays" aria-hidden="true">
+            <span>တနင်္လာ</span><span>အင်္ဂါ</span><span>ဗုဒ္ဓဟူး</span
+            ><span>ကြာသပတေး</span><span>သောကြာ</span><span>စနေ</span
+            ><span>တနင်္ဂနွေ</span>
+          </div>
+          <div id="grid" class="grid"></div>
+          <div class="legend" id="iconLegend"></div>
+          <details class="month-agenda">
+            <summary>ယခုလ ပွဲတော်နှင့် ရုံးပိတ်ရက်များ</summary>
+            <div id="monthEvents"></div>
+          </details>
+        </section>
+        <aside class="card details">
+          <span class="eyebrow">ရွေးထားသောနေ့</span>
+          <h2 id="selectedTitle"></h2>
+          <p id="selectedMeta"></p>
+          <div id="events"></div>
+          <div class="divider"></div>
+          <label for="note">နေ့စဉ် မှတ်စု</label
+          ><textarea
+            id="note"
+            rows="4"
+            placeholder="ဒီနေ့အတွက် မှတ်သားစရာ…"
+          ></textarea>
+          <div class="actions">
+            <button
+              class="primary icon-button"
+              id="save"
+              aria-label="မှတ်စု သိမ်းရန်"
+              title="မှတ်စု သိမ်းရန်"
+            ></button
+            ><button
+              class="icon-button danger-button"
+              id="delete"
+              aria-label="မှတ်စု ဖျက်ရန်"
+              title="မှတ်စု ဖျက်ရန်"
+            ></button>
+          </div>
+          <p class="muted">မှတ်စုများကို ဤ browser ထဲတွင်သာ သိမ်းထားပါသည်။</p>
+          <p id="status" role="status"></p>
+          <details>
+            <summary>ကိုယ်ပိုင် အထူးနေ့ ထည့်ရန်</summary>
+            <form id="customForm">
+              <label for="eventDate">နေ့စွဲ</label
+              ><input
+                id="eventDate"
+                type="date"
+                required
+                min="1900-01-01"
+                max="2100-12-31"
+              /><label for="eventTitle">ခေါင်းစဉ်</label
+              ><input id="eventTitle" maxlength="120" required /><label
+                for="eventType"
+                >အမျိုးအစား</label
+              ><select id="eventType">
+                <option value="festival">အထူးနေ့</option>
+                <option value="holiday">အားလပ်ရက်</option></select
+              ><button class="primary">ထည့်မယ်</button>
+            </form>
+          </details>
+        </aside>
+      </section>
+      <section class="culture-row">
+        <article class="card poem-card">
+          <div class="culture-head">
+            <h2 id="poemHeading">လရာသီကဗျာ</h2>
+            <label class="sr" for="cultureMonth">မြန်မာလ ရွေးရန်</label
+            ><select id="cultureMonth"></select>
+          </div>
+          <div class="season-festival">
+            <div id="festivalIcon"></div>
+            <div>
+              <h3 id="festivalTitle"></h3>
+              <p id="festivalDescription"></p>
+            </div>
+          </div>
+          <blockquote id="poemText"></blockquote>
+          <p class="muted">မူရင်းပြက္ခဒိန်တွင် ပါရှိသော လရာသီကဗျာ</p>
+        </article>
+        <article class="card stone-card">
+          <div id="stoneArt"></div>
+          <span class="eyebrow" id="stoneMonth"></span>
+          <h2 id="stoneName"></h2>
+          <p id="stoneMM"></p>
+          <p class="muted">
+            မွေးလကျောက်မျက်ကို အင်္ဂလိပ်လအလိုက် ဖော်ပြထားပါသည်။
+          </p>
+          <a
+            href="https://www.gia.edu/birthstones"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ကျောက်မျက်အကြောင်း · GIA ↗</a
+          >
+        </article>
+      </section>
+      <section class="card annual-card">
+        <details id="annualDetails">
+          <summary id="annualSummary">နှစ်စဉ် ရုံးပိတ်ရက်စာရင်း</summary>
+          <p id="annualNotice" class="muted"></p>
+          <div id="annualList"></div>
+          <p class="muted">
+            ရင်းမြစ်: DICA/MyCO၊ ASEAN–Japan Centre၊ Myanmar eVisa။
+            နောက်ဆုံးစစ်ဆေးချိန် ၂၀၂၆-၁၀-၁၀။
+          </p>
+        </details>
+      </section>
+      <p class="calendar-note">
+        လပြည့်၊ လကွယ်နှင့် ဝါထပ်နှစ်များကို မြန်မာပြက္ခဒိန်နည်းဖြင့်
+        တွက်ချက်ထားပါသည်။ ၂၀၂၆ ရုံးပိတ်ရက်များကို ထုတ်ပြန်စာရင်းနှင့်
+        တိုက်စစ်ထားသည်။ နောက်ထပ်ကြေညာချက်များကို အလိုအလျောက် မရယူပါ။
+        အခြားနှစ်များမှာ ပုံမှန်ရက်တွက်ချက်မှုဖြစ်သည်။
+      </p>
+      <section class="support">
+        <div>
+          <span class="eyebrow">SUPPORT THIS LITTLE PROJECT</span>
+          <!-- <h2>အတူတူ ဆက်လက်ဖန်တီးကြမယ်</h2> -->
+          <p>ပြက္ခဒိန်ကို နှစ်သက်ပါက ပံ့ပိုးနိုင်ပါသည်။</p>
         </div>
-      </aside>
+        <div class="support-buttons">
+          <button data-support="coffee">☕ Coffee</button
+          ><button data-support="burger">🍔 Burger</button
+          ><button data-support="meal">🍽 Big meal</button
+          ><button data-support="charity">♡ Donation (Charity)</button>
+        </div>
+      </section>
     </main>
-
-    <footer class="foot">
-      <div>© 2025 • ShweDev • PWA-ready • Offline-friendly</div>
+    <footer>
+      <span
+        >© <span id="copyrightYear"></span> · Made by MM
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          aria-label="with love"
+          role="img"
+        >
+          <path
+            fill="currentColor"
+            d="M12 21S2 15 2 7a5 5 0 0 1 10-1A5 5 0 0 1 22 7c0 8-10 14-10 14"
+          /></svg
+      ></span>
+      <nav>
+        <button data-policy="privacy">Privacy</button
+        ><button data-policy="terms">Terms</button
+        ><a
+          href="https://yan9a.github.io/mmcal/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >ရက်စွဲတွက်ချက်မှု · Yan Naing Aye ↗</a
+        >
+      </nav>
     </footer>
-
+    <dialog id="dialog">
+      <div class="dialog-head">
+        <h2 id="dialogTitle"></h2>
+        <button id="closeDialog" aria-label="ပိတ်ရန်">✕</button>
+      </div>
+      <div id="dialogContent"></div>
+    </dialog>
     <script type="module" src="app.js"></script>
   </body>
 </html>

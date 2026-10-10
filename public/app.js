@@ -1,678 +1,494 @@
-import {
-  lunarAge,
-  myanmarMonthYearLunar as myanmarMonthYear,
-  mmLunarInfoWithLength,
-  monthLengthFor,
-  initCalendarMeta, // ← add
-  labelWaso, // ← add
-} from "./myanmarCalendar.js";
-
-/* Local YYYY-MM-DD to avoid timezone drift */
-function ymdLocal(d) {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const dd = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${dd}`;
-}
-function normalizeYMD(s) {
-  if (!s) return s;
-  const m = s.trim().match(/^(\d{4})[-\/.](\d{1,2})[-\/.](\d{1,2})$/);
-  if (!m) return s;
-  const y = m[1],
-    mo = String(+m[2]).padStart(2, "0"),
-    dd = String(+m[3]).padStart(2, "0");
-  return `${y}-${mo}-${dd}`;
-}
-
-// Arabic → Myanmar digits (e.g., 10 -> ၁၀)
-function toMMDigits(n) {
-  const map = ["၀", "၁", "၂", "၃", "၄", "၅", "၆", "၇", "၈", "၉"];
-  return String(n).replace(/\d/g, (d) => map[+d]);
-}
-
-// Gregorian month (0=Jan .. 11=Dec) → Birthstone name + icon
-// Gregorian month (0=Jan .. 11=Dec) → Birthstone (EN + MM) + icon
-const BIRTHSTONES = [
-  { en: "Garnet", mm: "ဥဒေါင်းကျောက်", icon: "🔴" }, // January
-  { en: "Amethyst", mm: "ခရမ်းစွဲ", icon: "🟣" }, // February
-  { en: "Aquamarine", mm: "မြပြာ", icon: "🩵" }, // March
-  { en: "Diamond", mm: "စိန်", icon: "💎" }, // April
-  { en: "Emerald", mm: "ကျောက်စိမ်း", icon: "🟢" }, // May
-  { en: "Pearl / Moonstone", mm: "ပုလဲ / လကျောက်", icon: "⚪️" }, // June
-  { en: "Ruby", mm: "ပတ္တမြား", icon: "🟥" }, // July
-  { en: "Peridot", mm: "ပယ်ရီဒော့", icon: "🟩" }, // August
-  { en: "Sapphire", mm: "နီလာ", icon: "🔷" }, // September
-  { en: "Opal / Tourmaline", mm: "ဩပယ် / တွမာလင်း", icon: "🟠" }, // October
-  { en: "Topaz / Citrine", mm: "တိုးပတ် / စီထရင်း", icon: "🟡" }, // November
-  { en: "Turquoise", mm: "တူရကိုက်", icon: "🔹" }, // December
-];
-
-/* Today bar zodiac only */
-const ZODIAC_BY_MM = {
-  တန်ခူး: "မိဿ",
-  ကဆုန်: "ပြိဿ",
-  နယုန်: "မေထုန်",
-  ဝါဆို: "ကြဋ်",
-  ဝါခေါင်: "သိဟ်",
-  တော်သလင်း: "ကန်",
-  သီတင်းကျွတ်: "တူ",
-  တန်ဆောင်မုန်း: "ဗြိစ္ဆာ",
-  နတ်တော်: "ဓနု",
-  ပြာသို: "မကာရ",
-  တပို့တွဲ: "ကုမ်",
-  တပေါင်း: "မိန်",
-};
-
-// === Calendar Themes by Myanmar Month ===
-const CALENDAR_THEMES = {
-  တန်ခူး: {
-    name: "summer",
-    color: "#ffcf33",
-    bg: "linear-gradient(120deg,#ffecb3,#ffd54f)",
-  },
-  ကဆုန်: {
-    name: "blossom",
-    color: "#ff99cc",
-    bg: "linear-gradient(120deg,#ffe6f2,#ffb3d9)",
-  },
-  နယုန်: {
-    name: "sunrise",
-    color: "#ff9966",
-    bg: "linear-gradient(120deg,#ffe0b2,#ffb380)",
-  },
-  ဝါဆို: {
-    name: "rain",
-    color: "#4fc3f7",
-    bg: "linear-gradient(120deg,#b3e5fc,#81d4fa)",
-  },
-  ဝါခေါင်: {
-    name: "cloud",
-    color: "#90a4ae",
-    bg: "linear-gradient(120deg,#cfd8dc,#90a4ae)",
-  },
-  တော်သလင်း: {
-    name: "wind",
-    color: "#a5d6a7",
-    bg: "linear-gradient(120deg,#c8e6c9,#a5d6a7)",
-  },
-  သီတင်းကျွတ်: {
-    name: "festival",
-    color: "#ff7043",
-    bg: "linear-gradient(120deg,#ffccbc,#ffab91)",
-  },
-  တန်ဆောင်မုန်း: {
-    name: "firelight",
-    color: "#ff5252",
-    bg: "linear-gradient(120deg,#ff8a80,#ff5252)",
-  },
-  နတ်တော်: {
-    name: "royal",
-    color: "#ba68c8",
-    bg: "linear-gradient(120deg,#e1bee7,#ce93d8)",
-  },
-  ပြာသို: {
-    name: "winter",
-    color: "#80deea",
-    bg: "linear-gradient(120deg,#b2ebf2,#80deea)",
-  },
-  တပို့တွဲ: {
-    name: "snow",
-    color: "#b0bec5",
-    bg: "linear-gradient(120deg,#eceff1,#cfd8dc)",
-  },
-  တပေါင်း: {
-    name: "newyear",
-    color: "#81c784",
-    bg: "linear-gradient(120deg,#c8e6c9,#81c784)",
-  },
-};
-
-const $ = (q) => document.querySelector(q);
-const grid = $("#grid");
-const monthSel = $("#monthSel");
-const yearSel = $("#yearSel");
-const prevBtn = $("#prevBtn");
-const nextBtn = $("#nextBtn");
-const todayBtn = $("#todayBtn");
-const themeBtn = $("#themeBtn");
-const fontBtn = $("#fontBtn");
-const todayBar = $("#todayBar");
-
-const enMonths = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
-/* Holidays */
-const SOLAR_MM = {
-  "01-04": "လွတ်လပ်ရေးနေ့",
-  "02-12": "အမျိုးသားတော်လှန်ရေးနေ့",
-  "03-27": "တပ်မတော်နေ့",
-  "05-01": "အလုပ်သမားနေ့",
-  "07-19": "အာဇာနည်နေ့",
-  "12-25": "ခရစ်စမတ်နေ့",
-};
-const SOLAR_US_FIXED = {
-  "01-01": "New Year's Day",
-  "07-04": "Independence Day",
-  "10-31": "Halloween",
-  "12-25": "Christmas Day",
-};
-function computeEaster(y) {
-  const a = y % 19,
-    b = Math.floor(y / 100),
-    c = y % 100,
-    d = Math.floor(b / 4),
-    e = b % 4,
-    f = Math.floor((b + 8) / 25),
-    g = Math.floor((b - f + 1) / 3),
-    h = (19 * a + b - d - g + 15) % 30,
-    i = Math.floor(c / 4),
-    k = c % 4,
-    l = (32 + 2 * e + 2 * i - h - k) % 7,
-    m = Math.floor((a + 11 * h + 22 * l) / 451),
-    month = Math.floor((h + l - 7 * m + 114) / 31),
-    day = ((h + l - 7 * m + 114) % 31) + 1;
-  return { month, day };
-}
-function nthWeekdayOfMonth(year, monthIndex, weekday, n) {
-  let count = 0;
-  for (let d = 1; d <= 31; d++) {
-    const dt = new Date(year, monthIndex, d);
-    if (dt.getMonth() !== monthIndex) break;
-    if (dt.getDay() === weekday) {
-      count++;
-      if (count === n) return d;
-    }
-  }
-  return null;
-}
-function usMovables(year) {
-  const easter = computeEaster(year);
-  const thanks = nthWeekdayOfMonth(year, 10, 4, 4);
-  const res = {};
-  res[
-    `${String(easter.month).padStart(2, "0")}-${String(easter.day).padStart(
-      2,
-      "0"
-    )}`
-  ] = "Easter (Western)";
-  res[`11-${String(thanks).padStart(2, "0")}`] = "Thanksgiving (US)";
-  return res;
-}
-
-/* LocalStorage (custom events) */
-const LS_CUSTOM = "myanmar_calendar_custom_v4";
-const getCustom = () => {
+import { icon } from "./icons.js";
+import { poems, festivals, stones, baseMonth } from "./culture.js";
+import { calendarEvents } from "./events.js";
+import { calendarDate, todayISO, digits } from "./myanmarCalendar.js";
+import { supportLinks } from "./config.js";
+const $ = (s) => document.querySelector(s),
+  key = "myanmar_calendar_custom_v4";
+const read = (k, f) => {
   try {
-    const raw = localStorage.getItem(LS_CUSTOM);
-    const arr = raw ? JSON.parse(raw) : [];
-    return arr.map((x) => ({ ...x, date: normalizeYMD(x.date) }));
-  } catch (e) {
-    return [];
+    return JSON.parse(localStorage.getItem(k)) ?? f;
+  } catch {
+    return f;
   }
 };
-const setCustom = (arr) => localStorage.setItem(LS_CUSTOM, JSON.stringify(arr));
-
-/* View */
-let view = new Date();
-view.setDate(1);
-
-/* Controls */
-// Month/Year options
-(function setupSelectors() {
-  if (!monthSel || !yearSel) return;
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  monthSel.innerHTML = "";
-  months.forEach((m, i) => {
-    const o = document.createElement("option");
-    o.value = i;
-    o.textContent = `${i + 1}. ${m}`;
-    monthSel.appendChild(o);
+function write(k, v) {
+  try {
+    localStorage.setItem(k, JSON.stringify(v));
+    return true;
+  } catch {
+    $("#status").textContent = "သိမ်း၍မရပါ။ Browser storage ကို စစ်ဆေးပါ။";
+    return false;
+  }
+}
+let selected = todayISO(),
+  view = selected.slice(0, 7),
+  custom = read(key, []);
+if (!Array.isArray(custom)) custom = [];
+let notes = read("mm_calendar_notes_v1", {});
+if (!notes || typeof notes !== "object" || Array.isArray(notes)) notes = {};
+const months = Array.from({ length: 12 }, (_, m) =>
+  new Date(2026, m, 1).toLocaleString("en", { month: "long" }),
+);
+months.forEach((m, i) => $("#month").add(new Option(m, i + 1)));
+for (let y = 1900; y <= 2100; y++) $("#year").add(new Option(y, y));
+const iso = (y, m, d) =>
+  `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+const title = (r) => `${r.month} ${r.phaseText}`;
+const format = (s) =>
+  new Date(s + "T12:00:00Z").toLocaleDateString("en-GB", {
+    timeZone: "UTC",
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
   });
-  yearSel.innerHTML = "";
-  for (let y = 1900; y <= 2100; y++) {
-    const o = document.createElement("option");
-    o.value = y;
-    o.textContent = String(y);
-    yearSel.appendChild(o);
-  }
-})();
-
-function syncSelectors() {
-  if (!monthSel || !yearSel) return;
-  monthSel.value = view.getMonth();
-  yearSel.value = view.getFullYear();
+function showDialog(t, content) {
+  $("#dialogTitle").textContent = t;
+  $("#dialogContent").textContent = content;
+  $("#dialog").showModal();
 }
-
-// Listeners
-if (prevBtn)
-  prevBtn.onclick = () => {
-    view.setMonth(view.getMonth() - 1);
-    render();
-  };
-if (nextBtn)
-  nextBtn.onclick = () => {
-    view.setMonth(view.getMonth() + 1);
-    render();
-  };
-if (todayBtn)
-  todayBtn.onclick = () => {
-    const n = new Date();
-    view = new Date(n.getFullYear(), n.getMonth(), 1);
-    render();
-  };
-if (monthSel)
-  monthSel.onchange = () => {
-    view.setMonth(+monthSel.value);
-    render();
-  };
-if (yearSel)
-  yearSel.onchange = () => {
-    view.setFullYear(+yearSel.value);
-    render();
-  };
-if (themeBtn)
-  themeBtn.onclick = () => {
-    document.body.classList.toggle("dark");
-    themeBtn.textContent = document.body.classList.contains("dark")
-      ? "☀ Light"
-      : "☾ Dark";
-  };
-if (fontBtn)
-  fontBtn.onclick = () => {
-    document.documentElement.classList.toggle("serif");
-  };
-
-// === Controls (null-safe) ===
-// const prevBtn = document.querySelector("#prevBtn");
-// const nextBtn = document.querySelector("#nextBtn");
-// const todayBtn = document.querySelector("#todayBtn");
-// const themeBtn = document.querySelector("#themeBtn");
-// const fontBtn = document.querySelector("#fontBtn");
-
-// month/year selects listeners (ရှိမှသာ)
-// if (monthSel)
-//   monthSel.onchange = () => {
-//     view.setMonth(+monthSel.value);
-//     render();
-//   };
-// if (yearSel)
-//   yearSel.onchange = () => {
-//     view.setFullYear(+yearSel.value);
-//     render();
-//   };
-
-// // nav buttons (ရှိမှသာ)
-// if (prevBtn)
-//   prevBtn.onclick = () => {
-//     view.setMonth(view.getMonth() - 1);
-//     render();
-//   };
-// if (nextBtn)
-//   nextBtn.onclick = () => {
-//     view.setMonth(view.getMonth() + 1);
-//     render();
-//   };
-// if (todayBtn)
-//   todayBtn.onclick = () => {
-//     const n = new Date();
-//     view = new Date(n.getFullYear(), n.getMonth(), 1);
-//     render();
-//   };
-
-// // theme/font (ရှိမှသာ)
-// if (themeBtn)
-//   themeBtn.onclick = () => {
-//     document.body.classList.toggle("dark");
-//     themeBtn.textContent = document.body.classList.contains("dark")
-//       ? "☀ Light"
-//       : "☾ Dark";
-//   };
-// if (fontBtn)
-//   fontBtn.onclick = () => {
-//     document.documentElement.classList.toggle("serif");
-//   };
-
-/* Backend Loader (local YYYY-MM-DD keys) */
-async function loadBackendEvents(year) {
-  const map = {};
-  const add = (ymd, rec) => {
-    const k = normalizeYMD(ymd);
-    if (!k) return;
-    map[k] = (map[k] || []).concat([rec]);
-  };
-
-  for (const k of Object.keys(SOLAR_MM)) {
-    const [m, d] = k.split("-").map(Number);
-    add(`${year}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`, {
-      type: "holiday",
-      title: SOLAR_MM[k],
-      region: "MM",
+$("#closeDialog").onclick = () => $("#dialog").close();
+$("#dialog").onclick = (e) => {
+  if (e.target === $("#dialog")) {
+    const r = e.target.getBoundingClientRect();
+    if (
+      e.clientX < r.left ||
+      e.clientX > r.right ||
+      e.clientY < r.top ||
+      e.clientY > r.bottom
+    )
+      e.target.close();
+  }
+};
+function eventsFor(s) {
+  return custom.filter((e) => e && e.date === s && typeof e.title === "string");
+}
+function details() {
+  const r = calendarDate(selected);
+  $("#selectedTitle").textContent = title(r);
+  $("#selectedMeta").textContent =
+    format(selected) + " · " + digits(r.my) + " ခုနှစ်";
+  $("#eventDate").value = selected;
+  $("#note").value = typeof notes[selected] === "string" ? notes[selected] : "";
+  $("#events").replaceChildren();
+  const labels = [];
+  if (r.phase === 1) labels.push({ title: "လပြည့်နေ့", icon: "full" });
+  if (r.phase === 3) labels.push({ title: "လကွယ်နေ့", icon: "new" });
+  if (r.sabbath)
+    labels.push({
+      title: r.sabbath === 1 ? "ဥပုသ်နေ့" : "အဖိတ်နေ့",
+      icon: r.sabbath === 1 ? "sabbath" : "eve",
     });
-  }
-  for (const k of Object.keys(SOLAR_US_FIXED)) {
-    const [m, d] = k.split("-").map(Number);
-    add(`${year}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`, {
-      type: "holiday",
-      title: SOLAR_US_FIXED[k],
-      region: "US",
-    });
-  }
-  const mv = usMovables(year);
-  for (const k of Object.keys(mv)) {
-    add(`${year}-${k}`, { type: "festival", title: mv[k], region: "US" });
-  }
-  getCustom().forEach((ev) => {
-    if (ev?.date?.startsWith(String(year))) {
-      add(ev.date, {
-        type: ev.type === "holiday" ? "holiday" : "festival",
-        title: ev.title,
-        region: "custom",
-      });
+  labels.push(...calendarEvents(selected, r));
+  labels.forEach((e) => {
+    const p = document.createElement("div");
+    p.className = "event";
+    const text = document.createElement("div"),
+      t = document.createElement("strong");
+    t.textContent = e.title;
+    text.append(t);
+    if (e.note) {
+      const small = document.createElement("small");
+      small.textContent =
+        (e.type === "holiday" ? "ရုံးပိတ်ရက် · " : "အထူးနေ့ · ") + e.note;
+      text.append(small);
     }
-  });
-  try {
-    const res = await fetch(`data/holidays.json`, { cache: "no-store" });
-    if (res.ok) {
-      const arr = await res.json();
-      arr
-        .filter((x) => x.date && x.date.startsWith(String(year)))
-        .forEach((x) => {
-          add(x.date, {
-            type: x.type,
-            title: x.title,
-            region: x.region || "remote",
-          });
-        });
-    }
-  } catch (e) {
-    /* ignore */
-  }
-  return map;
-}
-
-async function loadPoemFor(month) {
-  try {
-    const res = await fetch("data/poems.json", { cache: "no-store" });
-    const poems = await res.json();
-    return poems[month] || "";
-  } catch (e) {
-    console.warn("Poem load error:", e);
-    return "";
-  }
-}
-
-// document.getElementById("themeSelect")?.addEventListener("change", (e) => {
-//   const val = e.target.value;
-//   if (val === "dark") {
-//     document.body.style.background = "#111";
-//     document.body.style.color = "#fff";
-//   } else if (val === "light") {
-//     document.body.style.background = "#fff";
-//     document.body.style.color = "#111";
-//   } else {
-//     // auto → use Myanmar month theme
-//     const myT = myanmarMonthYear(new Date());
-//     const t = CALENDAR_THEMES[myT.myanmarMonth];
-//     document.body.style.background = t.bg;
-//     document.body.style.color = "#111";
-//   }
-// });
-const themeSelectEl = document.getElementById("themeSelect");
-function setTheme(mode){
-  const root = document.documentElement;
-  if (mode === "light" || mode === "dark"){
-    root.setAttribute("data-theme", mode);
-  } else {
-    root.setAttribute("data-theme", "auto"); // leave colors to CSS; optional month accent below
-  }
-}
-themeSelectEl?.addEventListener("change", (e) => {
-  setTheme(e.target.value);
-  render();
-});
-
-/* Render */
-// English months (abbr)
-const EN_ABBR = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-
-async function render() {
-  if (monthSel && yearSel) {
-    // controls ရှိရင် sync
-    monthSel.value = view.getMonth();
-    yearSel.value = view.getFullYear();
-  }
-
-  const y = view.getFullYear(),
-    m = view.getMonth();
-  const first = new Date(y, m, 1);
-  const startWeekday = (first.getDay() + 6) % 7;
-  const days = new Date(y, m + 1, 0).getDate();
-  const backend = await loadBackendEvents(y);
-
-  grid.innerHTML = "";
-  for (let i = 0; i < startWeekday; i++) {
-    const pad = document.createElement("div");
-    pad.className = "day pad";
-    grid.appendChild(pad);
-  }
-
-  const today = new Date();
-  const isToday = (d) =>
-    d === today.getDate() &&
-    m === today.getMonth() &&
-    y === today.getFullYear();
-
-  for (let d = 1; d <= days; d++) {
-    const cellDate = new Date(y, m, d);
-    const iso = ymdLocal(cellDate);
-
-    const age = lunarAge(cellDate);
-    const my = myanmarMonthYear(cellDate);
-    const info = mmLunarInfoWithLength(age, my.myanmarMonth, my.myanmarYear);
-
-    // (optional) ဝါထပ်နှစ် label ခွဲချင်ရင် labelWaso() သုံးပါ
-    const shownMonth =
-      typeof labelWaso === "function"
-        ? labelWaso(my.myanmarMonth, my.myanmarYear, iso)
-        : my.myanmarMonth;
-
-    const tags = [];
-
-    if (info.kind === "uposatha") {
-      const moonIcon = info.phase === "လပြည့်" ? "🌕" : "🌑";
-      tags.push(`<span class="tag icon">${moonIcon}</span>`);
-    } else {
-      const toMM = (s) => String(s).replace(/\d/g, (d) => "၀၁၂၃၄၅၆၇၈၉"[+d]);
-      tags.push(
-        `<span class="tag moontext">${info.phase} ${toMM(info.number)}</span>`
-      );
-    }
-
-    if (backend[iso]) {
-      backend[iso].forEach((sp) => {
-        const isHoliday = sp.type === "holiday";
-        const cls = isHoliday ? "warn" : "fest";
-        const icon = isHoliday ? "🏛️" : "🎉";
-        tags.push(`<span class="tag ${cls}">${icon} ${sp.title}</span>`);
-      });
-    }
-
-    // ✅ Greg line "Oct 1" + Myanmar month line (two lines)
-    const gregLine = `${EN_ABBR[m]} ${d}`;
-
-    const el = document.createElement("div");
-    el.className = "day" + (isToday(d) ? " today" : "");
-    el.innerHTML = `
-    <div class="nums two-lines">
-      <div class="line mm-month">${shownMonth}</div>
-      <div class="line en-date">${gregLine}</div>
-    </div>
-    <div class="tags">${tags.join("")}</div>
-  `;
-
-    el.addEventListener(
-      "touchstart",
-      () => {
-        el.classList.toggle("expand");
-      },
-      { passive: true }
+    p.append(
+      icon(e.icon || (e.type === "holiday" ? "holiday" : "festival")),
+      text,
     );
-    grid.appendChild(el);
+    $("#events").append(p);
+  });
+  eventsFor(selected).forEach((e) => {
+    const p = document.createElement("p");
+    p.className = "event custom-event";
+    const span = document.createElement("span");
+    span.className = "custom-event-title";
+    span.textContent = e.title;
+    const b = document.createElement("button");
+    b.className = "icon-button danger-button";
+    b.title = "အထူးနေ့ ဖျက်ရန်";
+    b.append(icon("delete"));
+    b.setAttribute("aria-label", e.title + " ဖျက်ရန်");
+    b.onclick = () => {
+      const next = custom.filter((x) => x !== e);
+      if (write(key, next)) {
+        custom = next;
+        render();
+      }
+    };
+    p.append(span, b);
+    $("#events").append(p);
+  });
+}
+function render() {
+  const [y, m] = view.split("-").map(Number),
+    now = todayISO(),
+    t = calendarDate(now);
+  $("#todayMM").textContent = title(t);
+  $("#todayMeta").textContent =
+    `${digits(t.my)} ခုနှစ် · ${t.myt === 2 ? "ဝါကြီးထပ်နှစ်" : t.myt === 1 ? "ဝါငယ်ထပ်နှစ်" : "ဝါမထပ်နှစ်"} · ${format(now)}`;
+  $("#copyrightYear").textContent = now.slice(0, 4);
+  $("#month").value = m;
+  $("#year").value = y;
+  $("#monthTitle").textContent = months[m - 1] + " " + y;
+  const days = new Date(Date.UTC(y, m, 0)).getUTCDate(),
+    a = calendarDate(iso(y, m, 1)),
+    z = calendarDate(iso(y, m, days));
+  $("#mmRange").textContent =
+    `${a.month}${a.month === z.month ? "" : " — " + z.month} · ${digits(a.my)}${a.my === z.my ? "" : " / " + digits(z.my)}`;
+  $("#prev").disabled = view === "1900-01";
+  $("#next").disabled = view === "2100-12";
+  $("#grid").replaceChildren();
+  const pad = (new Date(Date.UTC(y, m - 1, 1)).getUTCDay() + 6) % 7;
+  for (let i = 0; i < pad; i++) {
+    const p = document.createElement("div");
+    p.className = "pad";
+    $("#grid").append(p);
   }
-
-  // Today bar + poem (one-pass)
-  const t = new Date();
-  const myT = myanmarMonthYear(t);
-  const currentTheme = CALENDAR_THEMES[myT.myanmarMonth];
-
-  if (currentTheme) {
-    document.body.style.setProperty("--theme-color", currentTheme.color);
-    document.body.style.background = currentTheme.bg;
-    todayBar.style.background = currentTheme.bg;
-    todayBar.style.color = "#222";
+  for (let d = 1; d <= days; d++) {
+    const s = iso(y, m, d),
+      r = calendarDate(s),
+      b = document.createElement("button");
+    b.className =
+      "day" +
+      (s === now ? " today" : "") +
+      (s === selected ? " selected" : "") +
+      (r.phase % 2 ? " moon" : "");
+    b.setAttribute("aria-label", format(s) + " " + title(r));
+    b.setAttribute("aria-pressed", String(s === selected));
+    if (s === now) b.setAttribute("aria-current", "date");
+    const n = document.createElement("strong");
+    n.textContent = d;
+    const mn = document.createElement("span");
+    mn.className = "mm-month";
+    mn.textContent = r.month;
+    const ph = document.createElement("span");
+    ph.className = "phase";
+    ph.dataset.short = [
+      "ဆန်း " + digits(r.number),
+      "လပြည့်",
+      "ဆုတ် " + digits(r.number),
+      "လကွယ်",
+    ][r.phase];
+    ph.textContent = r.phaseText.replace(" ရက်", "");
+    const dot = document.createElement("span");
+    dot.className = "event-dot";
+    const allEvents = calendarEvents(s, r);
+    dot.className = "day-icons";
+    if (r.phase === 1) dot.append(icon("full", "လပြည့်"));
+    if (r.phase === 3) dot.append(icon("new", "လကွယ်"));
+    if (r.sabbath)
+      dot.append(
+        icon(
+          r.sabbath === 1 ? "sabbath" : "eve",
+          r.sabbath === 1 ? "ဥပုသ်နေ့" : "အဖိတ်နေ့",
+        ),
+      );
+    if (allEvents.some((e) => e.type === "holiday"))
+      dot.append(icon("holiday", "ရုံးပိတ်ရက်"));
+    if (allEvents.some((e) => e.type !== "holiday") || eventsFor(s).length)
+      dot.append(icon("festival", "အထူးနေ့"));
+    b.setAttribute(
+      "aria-label",
+      format(s) +
+        " " +
+        title(r) +
+        (r.sabbath === 1 ? " ဥပုသ်နေ့" : r.sabbath === 2 ? " အဖိတ်နေ့" : "") +
+        (allEvents.length
+          ? " · " + allEvents.map((e) => e.title).join("၊ ")
+          : ""),
+    );
+    b.append(n, mn, ph, dot);
+    b.onclick = () => {
+      selected = s;
+      $("#status").textContent = "";
+      render();
+    };
+    b.onkeydown = (e) => {
+      const delta = { ArrowLeft: -1, ArrowRight: 1, ArrowUp: -7, ArrowDown: 7 }[
+        e.key
+      ];
+      if (delta) {
+        e.preventDefault();
+        const dt = new Date(s + "T12:00:00Z");
+        dt.setUTCDate(dt.getUTCDate() + delta);
+        const next = dt.toISOString().slice(0, 10);
+        if (next < "1900-01-01" || next > "2100-12-31") return;
+        selected = next;
+        view = next.slice(0, 7);
+        render();
+        $(".day.selected").focus();
+      }
+    };
+    $("#grid").append(b);
   }
+  details();
+  renderCulture(y, m, days);
+  renderAgenda(y, m, days);
+}
+function move(n) {
+  const [y, m] = view.split("-").map(Number),
+    d = new Date(Date.UTC(y, m - 1 + n, 1));
+  if (d.getUTCFullYear() < 1900 || d.getUTCFullYear() > 2100) return;
+  view = d.toISOString().slice(0, 7);
+  render();
+}
+$("#prev").onclick = () => move(-1);
+$("#next").onclick = () => move(1);
+$("#month").onchange = $("#year").onchange = () => {
+  view = iso(+$("#year").value, +$("#month").value, 1).slice(0, 7);
+  render();
+};
+$("#today").onclick = () => {
+  selected = todayISO();
+  view = selected.slice(0, 7);
+  render();
+};
+$("#save").append(icon("save"));
+$("#delete").append(icon("delete"));
+$("#save").onclick = () => {
+  const next = { ...notes, [selected]: $("#note").value };
+  if (write("mm_calendar_notes_v1", next)) {
+    notes = next;
+    $("#status").textContent = "မှတ်စု သိမ်းပြီးပါပြီ။";
+  }
+};
+$("#delete").onclick = () => {
+  const next = { ...notes };
+  delete next[selected];
+  if (write("mm_calendar_notes_v1", next)) {
+    notes = next;
+    $("#note").value = "";
+    $("#status").textContent = "မှတ်စု ဖျက်ပြီးပါပြီ။";
+  }
+};
+$("#customForm").onsubmit = (e) => {
+  e.preventDefault();
+  const date = $("#eventDate").value,
+    t = $("#eventTitle").value.trim();
+  if (!t) return;
+  const next = [...custom, { date, title: t, type: $("#eventType").value }];
+  if (write(key, next)) {
+    custom = next;
+    selected = date;
+    view = date.slice(0, 7);
+    $("#eventTitle").value = "";
+    render();
+    $("#status").textContent = "အထူးနေ့ ထည့်ပြီးပါပြီ။";
+  }
+};
+let theme = read("mm_theme", "auto");
+if (!["auto", "light", "dark"].includes(theme)) theme = "auto";
+$("#theme").value = theme;
+document.documentElement.dataset.theme = theme;
+$("#theme").onchange = () => {
+  document.documentElement.dataset.theme = $("#theme").value;
+  write("mm_theme", $("#theme").value);
+};
+$("#font").onclick = () => {
+  $("body").classList.toggle("large");
+  $("#font").setAttribute(
+    "aria-pressed",
+    String($("body").classList.contains("large")),
+  );
+};
+document.querySelectorAll("[data-support]").forEach(
+  (b) =>
+    (b.onclick = () => {
+      const url = supportLinks[b.dataset.support];
+      try {
+        const u = new URL(url);
+        if (u.protocol === "https:") {
+          window.open(u.href, "_blank", "noopener,noreferrer");
+          return;
+        }
+      } catch {}
+      showDialog(
+        b.textContent,
+        "ငွေပေးချေမှုလင့်ခ် မချိတ်ဆက်ရသေးပါ။ လက်ရှိ ငွေပေးချေ၍ မရသေးပါ။",
+      );
+    }),
+);
+const policies = {
+  privacy: [
+    "Privacy · ကိုယ်ရေးအချက်အလက်",
+    "ဤပြက္ခဒိန်သည် အကောင့်ဖွင့်ရန် မလိုအပ်ပါ။ မှတ်စု၊ ကိုယ်ပိုင်အထူးနေ့နှင့် အရောင်ရွေးချယ်မှုကို သင့် browser ၏ localStorage တွင်သာ သိမ်းပါသည်။ အခြားစက်များသို့ အလိုအလျောက် မကူးပါ။ Browser data ဖျက်လျှင် မှတ်စုများ ပျောက်နိုင်ပါသည်။ Offline အသုံးပြုနိုင်ရန် site ဖိုင်များကို cache သိမ်းပါသည်။ Site code တွင် analytics နှင့် ကြော်ငြာ tracker မထည့်ထားပါ။ Hosting ဝန်ဆောင်မှုက ပုံမှန် access log များ သိမ်းနိုင်ပါသည်။ ပြင်ပငွေပေးချေမှုလင့်ခ်များ အသုံးပြုလျှင် သက်ဆိုင်ရာဝန်ဆောင်မှု၏ privacy စည်းကမ်းများ သက်ရောက်ပါသည်။",
+  ],
+  terms: [
+    "Terms · အသုံးပြုမှုစည်းကမ်း",
+    "ဤပြက္ခဒိန်ကို နေ့စဉ်ရက်စွဲကြည့်ရှုရန် အသုံးပြုနိုင်ပါသည်။ မြန်မာရက်စွဲများကို Yan Naing Aye ၏ MIT လိုင်စင်ပါ တွက်ချက်မှုဖြင့် ဖော်ပြထားပါသည်။ ထပ်မံကြေညာသော အစိုးရရုံးပိတ်ရက်များ၊ ဒေသအလိုက် ပွဲတော်များကို တရားဝင်ကြေညာချက်နှင့် ပြန်လည်တိုက်စစ်ပါ။ မှတ်စုများကို သင့်စက်ပေါ်၌သာ သိမ်းထားသဖြင့် အရေးကြီးသောအချက်အလက်ကို သီးခြားအရန်သိမ်းပါ။ ပံ့ပိုးမှုနှင့် အလှူများသည် မိမိဆန္ဒအလျောက်ဖြစ်ပြီး ပြင်ပငွေပေးချေမှုစာမျက်နှာတွင် လက်ခံသူ၊ ပမာဏနှင့် ပြန်အမ်းစည်းကမ်းများကို စစ်ဆေးပါ။",
+  ],
+};
+document
+  .querySelectorAll("[data-policy]")
+  .forEach(
+    (b) => (b.onclick = () => showDialog(...policies[b.dataset.policy])),
+  );
 
-  const ref = new Date(view.getFullYear(), view.getMonth(), 1); // ← view anchor
-  const myRef = myanmarMonthYear(ref);
-
-  const zodiac = ZODIAC_BY_MM[myRef.myanmarMonth]
-    ? ` (${ZODIAC_BY_MM[myRef.myanmarMonth]}ရာသီ)`
-    : "";
-
-  // EN Month-Year label (e.g., October 2025)
-  const EN_FULL = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+let poemsView = "",
+  annualView = "";
+function renderPoem() {
+  const name = $("#cultureMonth").value,
+    base = baseMonth(name),
+    f = festivals[base];
+  $("#poemHeading").textContent = name + " · လရာသီကဗျာ";
+  $("#poemText").textContent = poems[base] || "";
+  $("#festivalTitle").textContent = f?.title || "";
+  $("#festivalDescription").textContent = f?.description || "";
+  $("#festivalIcon").replaceChildren(icon("festival"));
+}
+function renderCulture(y, m, days) {
+  const names = [
+    ...new Set(
+      Array.from(
+        { length: days },
+        (_, i) => calendarDate(iso(y, m, i + 1)).month,
+      ),
+    ),
   ];
-  const gLabel = `${EN_FULL[ref.getMonth()]} ${ref.getFullYear()}`;
-
-  // Gregorian month/year for display
-  const enMonths = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-
-  // Base line: "မြန်မာလ (ရာသီ) · October 2025"
-  let bar = `${myRef.myanmarMonth}လ${zodiac} · ${gLabel}`;
-
-  // Poem (for this Myanmar month)
-  const poem = await loadPoemFor(myRef.myanmarMonth);
-  if (poem) {
-    bar += `<br><small class="poem">${poem.replace(/\n/g, "<br>")}</small>`;
+  if (poemsView !== view) {
+    $("#cultureMonth").replaceChildren();
+    names.forEach((n) => $("#cultureMonth").add(new Option(n, n)));
+    poemsView = view;
   }
-
-  // Birthstone (for this Gregorian view month)
-  if (typeof BIRTHSTONES !== "undefined") {
-    const bs = BIRTHSTONES[ref.getMonth()];
-    if (bs) {
-      bar += `<br><span class="chip stone" title="${bs.en}">
-              ${bs.icon} ${bs.en} — <span class="mm">${bs.mm || ""}</span>
-            </span>`;
+  if (selected.startsWith(view))
+    $("#cultureMonth").value = calendarDate(selected).month;
+  renderPoem();
+  const stone = stones[m - 1];
+  $("#stoneMonth").textContent = months[m - 1] + " · BIRTHSTONE";
+  $("#stoneName").textContent = stone.en;
+  $("#stoneMM").textContent = stone.mm;
+  $("#stoneArt").style.color = stone.color;
+  $("#stoneArt").replaceChildren(icon("gem"));
+}
+$("#cultureMonth").onchange = renderPoem;
+function eventRow(s, events) {
+  const button = document.createElement("button");
+  button.className = "agenda-row";
+  const date = document.createElement("span");
+  date.className = "agenda-date";
+  date.textContent =
+    s.slice(8) + " " + months[Number(s.slice(5, 7)) - 1].slice(0, 3);
+  const text = document.createElement("span");
+  text.textContent = events.map((e) => e.title).join(" · ");
+  button.append(
+    icon(events.some((e) => e.type === "holiday") ? "holiday" : "festival"),
+    date,
+    text,
+  );
+  button.onclick = () => {
+    selected = s;
+    view = s.slice(0, 7);
+    render();
+    $(".details").scrollIntoView({ block: "start", behavior: "auto" });
+  };
+  return button;
+}
+function renderAgenda(y, m, days) {
+  $("#monthEvents").replaceChildren();
+  let count = 0;
+  for (let d = 1; d <= days; d++) {
+    const s = iso(y, m, d),
+      events = calendarEvents(s, calendarDate(s));
+    if (events.length) {
+      $("#monthEvents").append(eventRow(s, events));
+      count++;
     }
   }
-
-  todayBar.innerHTML = bar;
-
-  // (optional) Theme auto by Myanmar month (view month)
-  if (typeof CALENDAR_THEMES !== "undefined") {
-    const theme = CALENDAR_THEMES[myRef.myanmarMonth];
-    if (theme) {
-      document.body.style.setProperty("--theme-color", theme.color);
-      document.body.style.background = theme.bg;
-      todayBar.style.background = theme.bg;
-      todayBar.style.color = "#222";
+  if (!count)
+    $("#monthEvents").textContent =
+      "ဤလအတွင်း ရက်သတ်မှတ်ထားသော အထူးနေ့စာရင်း မရှိပါ။ ရာသီပွဲတော်ကို အောက်တွင် ကြည့်နိုင်ပါသည်။";
+  if (annualView !== String(y)) {
+    annualView = String(y);
+    $("#annualSummary").textContent = digits(y) + " · ရုံးပိတ်ရက်စာရင်း";
+    $("#annualNotice").textContent =
+      y === 2026
+        ? "အတည်ပြုနိုင်သော ၂၀၂၆ ရုံးပိတ်ရက်များ။ ဒီပါဝလီရုံးပိတ်ရက်ကို ထုတ်ပြန်ချက်မရသေးသဖြင့် မထည့်တွက်ထားပါ။"
+        : "ပုံမှန်နှစ်စဉ်ရက်နှင့် မြန်မာရက်စွဲတွက်ချက်မှုစာရင်း။ ဤနှစ်၏ ထပ်တိုး/အစားထိုးရုံးပိတ်ရက်၊ အိဒ်၊ ဒီပါဝလီနှင့် တရုတ်နှစ်သစ်ကူးရက်တို့အတွက် နှစ်အလိုက်ထုတ်ပြန်ချက်ကို စစ်ဆေးပါ။";
+    $("#annualList").replaceChildren();
+    for (let mo = 1; mo <= 12; mo++) {
+      const end = new Date(Date.UTC(y, mo, 0)).getUTCDate();
+      for (let d = 1; d <= end; d++) {
+        const s = iso(y, mo, d),
+          events = calendarEvents(s, calendarDate(s)).filter(
+            (e) => e.type === "holiday",
+          );
+        if (events.length) $("#annualList").append(eventRow(s, events));
+      }
     }
   }
+}
+for (const [name, label] of [
+  ["full", "လပြည့်"],
+  ["new", "လကွယ်"],
+  ["eve", "အဖိတ်"],
+  ["sabbath", "ဥပုသ်"],
+  ["festival", "အထူးနေ့"],
+  ["holiday", "ရုံးပိတ်"],
+]) {
+  const span = document.createElement("span");
+  span.append(icon(name), document.createTextNode(label));
+  $("#iconLegend").append(span);
+}
 
-  if ("serviceWorker" in navigator) {
-    try {
-      await navigator.serviceWorker.register("./service-worker.js");
-    } catch (e) {}
+render();
+let lastToday = todayISO();
+setInterval(() => {
+  if (todayISO() !== lastToday) {
+    lastToday = todayISO();
+    render();
+  }
+}, 30000);
+if ("serviceWorker" in navigator)
+  navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+
+const dateHeading = document.getElementById("todayMM");
+
+function fitDateHeading() {
+  if (!dateHeading || !dateHeading.clientWidth) return;
+
+  // မူရင်း CSS font size မှ ပြန်တွက်မယ်
+  dateHeading.style.removeProperty("font-size");
+
+  const fontSize = parseFloat(
+    getComputedStyle(dateHeading).fontSize
+  );
+
+  const availableWidth = dateHeading.clientWidth;
+  const textWidth = dateHeading.scrollWidth;
+
+  if (textWidth > availableWidth) {
+    const fittedSize =
+      fontSize * ((availableWidth - 2) / textWidth);
+
+    dateHeading.style.fontSize =
+      `${Math.floor(fittedSize * 10) / 10}px`;
   }
 }
 
-/* Custom Add/Remove (normalize on save) */
-$("#addCustom").onclick = () => {
-  const date = $("#custDate").value;
-  const title = $("#custTitle").value?.trim();
-  const type = $("#custType").value;
-  if (!date || !title) {
-    alert("နေ့စွဲနဲ့ ခေါင်းစဉ်ကို ဖြည့်ပါ");
-    return;
-  }
-  const cur = getCustom();
-  cur.push({ date: normalizeYMD(date), title, type });
-  setCustom(cur);
-  $("#custTitle").value = "";
-  $("#custDate").value = "";
-  render();
-};
-$("#clearCustom").onclick = () => {
-  if (confirm("ကိုယ်ပိုင်သတ်မှတ်ထားသမျှကို ဖျက်မလား?")) {
-    localStorage.removeItem(LS_CUSTOM);
-    render();
-  }
-};
+if (dateHeading) {
+  let pendingFrame;
 
-(async function boot() {
-  await initCalendarMeta();
-  await render();
-})();
+  const scheduleFit = () => {
+    cancelAnimationFrame(pendingFrame);
+    pendingFrame = requestAnimationFrame(fitDateHeading);
+  };
+
+  // ဖုန်းလှည့်ခြင်း၊ မျက်နှာပြင်အကျယ်ပြောင်းခြင်း
+  new ResizeObserver(scheduleFit).observe(
+    dateHeading.parentElement
+  );
+
+  // ရက်စွဲစာသား ပြောင်းခြင်း
+  new MutationObserver(scheduleFit).observe(dateHeading, {
+    childList: true,
+    characterData: true,
+    subtree: true
+  });
+
+  // မြန်မာ font တင်ပြီးမှ ထပ်ချိန်မယ်
+  document.fonts.ready.then(scheduleFit);
+  scheduleFit();
+}

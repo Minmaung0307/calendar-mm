@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {calendarDate as c} from '../public/myanmarCalendar.js';
+import {calendarEvents as e,annual2026} from '../public/events.js';
+import {poems,festivals,stones,baseMonth} from '../public/culture.js';
+assert.equal(Object.keys(poems).length,12);assert.equal(Object.keys(festivals).length,12);assert.equal(stones.length,12);
+assert.equal(baseMonth('ဒုတိယဝါဆို'),'ဝါဆို');assert.equal(baseMonth('နှောင်းတန်ခူး'),'တန်ခူး');
+for(const s of ['2026-01-02','2026-02-13','2026-02-16','2026-04-11','2026-04-19','2026-05-28','2026-10-26','2026-11-24'])assert.ok(e(s,c(s)).some(x=>x.type==='holiday'),s);
+assert.equal(annual2026['2026-03-02'].length,2);
+assert.ok(!e('2026-04-20',c('2026-04-20')).some(x=>x.type==='holiday'));
+assert.ok(!e('2026-11-08',c('2026-11-08')).some(x=>x.type==='holiday'));
+assert.ok(e('2026-04-30',c('2026-04-30')).some(x=>x.title.includes('ညောင်ရေ')));
+assert.ok(!e('2026-06-29',c('2026-06-29')).some(x=>x.title.includes('ဓမ္မစကြာ')));
+assert.ok(e('2026-07-29',c('2026-07-29')).some(x=>x.title.includes('ဓမ္မစကြာ')));
+assert.equal(c('2026-10-10').sabbath,2);assert.equal(c('2026-10-11').sabbath,1);
+console.log('Culture, holidays, double Waso and observance fixtures passed.');
