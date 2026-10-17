@@ -1,0 +1,6492 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MM Calendar//Myanmar Calendar Export//MY
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:မြန်မာပြက္ခဒိန် · ဥပုသ
+ ်နှင့်အထူးနေ့
+X-WR-TIMEZONE:Asia/Yangon
+BEGIN:VEVENT
+UID:mm-calendar-2026-01-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+SUMMARY:ပြာသို လဆန်း ၁၄ ရက် · နိုင
+ ်ငံတကာနှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · ပြာသို လဆန
+ ်း ၁၄ ရက်\nနိုင်ငံတကာနှစ်သစ
+ ်ကူးနေ့\nအဖိတ်နေ့\nရက်ရာဇာ\n
+ ၂၀၂၆ ထုတ်ပြန်ရက်စာရင်း\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-01-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260102
+DTEND;VALUE=DATE:20260103
+SUMMARY:ပြာသို လပြည့် · လပြည့်နေ
+ ့ · ဥပုသ်နေ့ · နှစ်သစ်ကူး ဆက
+ ်စပ်ရုံးပိတ်ရက် · အာနန္ဒာဘ
+ ုရားပွဲ အဓိကနေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · ပြာသို လပြ
+ ည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nနှ
+ စ်သစ်ကူး ဆက်စပ်ရုံးပိတ်ရက
+ ်\nအာနန္ဒာဘုရားပွဲ အဓိကနေ့\n
+ ပြဿဒါး\n၂၀၂၆ ထုတ်ပြန်ရက်စာ
+ ရင်း\nမြန်မာလပြည့်ရက်အလိုက
+ ်\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-01-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260104
+DTEND;VALUE=DATE:20260105
+SUMMARY:ပြာသို လပြည့်ကျော် ၂ ရက် 
+ · လွတ်လပ်ရေးနေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · ပြာသို လပြ
+ ည့်ကျော် ၂ ရက်\nလွတ်လပ်ရေးန
+ ေ့\n၂၀၂၆ ထုတ်ပြန်ရက်စာရင်း\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-01-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260110
+DTEND;VALUE=DATE:20260111
+SUMMARY:ပြာသို လပြည့်ကျော် ၈ ရက် 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · ပြာသို လပြ
+ ည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရက
+ ်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-01-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260117
+DTEND;VALUE=DATE:20260118
+SUMMARY:ပြာသို လကွယ် · လကွယ်နေ့ · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · ပြာသို လကွ
+ ယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက်ရ
+ ာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-01-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260125
+DTEND;VALUE=DATE:20260126
+SUMMARY:တပို့တွဲ လဆန်း ၈ ရက် · ဥပု
+ သ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပို့တွဲ လ
+ ဆန်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-02-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260201
+DTEND;VALUE=DATE:20260202
+SUMMARY:တပို့တွဲ လပြည့် · လပြည့်
+ နေ့ · ဥပုသ်နေ့ · ထမနဲပွဲကာလ
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\n
+ ထမနဲပွဲကာလ\nပြဿဒါး\nဒေသအလို
+ က် ကျင်းပရက်ကွာနိုင်သည်\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-02-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260209
+DTEND;VALUE=DATE:20260210
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၈ ရ
+ က် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\n
+ ပြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-02-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260212
+DTEND;VALUE=DATE:20260213
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၁၁ 
+ ရက် · ပြည်ထောင်စုနေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၁၁ ရက်\nပြည်ထောင
+ ်စုနေ့\nရက်ရာဇာ\n၂၀၂၆ ထုတ်ပြ
+ န်ရက်စာရင်း\nရုံးပိတ်ရက်မျ
+ ား: ၂၀၂၆ မူလစာရင်း၊ အခြားနှ
+ စ်များသည် ပုံမှန်တွက်ချက်
+ မှု။ အသစ်ကြေညာချက်များ အလိ
+ ုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-02-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260213
+DTEND;VALUE=DATE:20260214
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၁၂ 
+ ရက် · ပြည်ထောင်စုနေ့ ဆက်စပ်
+ ရုံးပိတ်ရက်
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၁၂ ရက်\nပြည်ထောင
+ ်စုနေ့ ဆက်စပ်ရုံးပိတ်ရက်\n
+ ၂၀၂၆ ထုတ်ပြန်ရက်စာရင်း\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-02-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260215
+DTEND;VALUE=DATE:20260216
+SUMMARY:တပို့တွဲ လကွယ် · လကွယ်နေ
+ ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပို့တွဲ လ
+ ကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြ
+ ဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-02-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260216
+DTEND;VALUE=DATE:20260217
+SUMMARY:တပေါင်း လဆန်း ၁ ရက် · တရုတ
+ ်နှစ်သစ်ကူး ရုံးပိတ်ရက်
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပေါင်း လဆ
+ န်း ၁ ရက်\nတရုတ်နှစ်သစ်ကူး ရ
+ ုံးပိတ်ရက်\n၂၀၂၆ ထုတ်ပြန်ရ
+ က်စာရင်း\nရုံးပိတ်ရက်များ: 
+ ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်မ
+ ျားသည် ပုံမှန်တွက်ချက်မှု
+ ။ အသစ်ကြေညာချက်များ အလိုအလ
+ ျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-02-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260217
+DTEND;VALUE=DATE:20260218
+SUMMARY:တပေါင်း လဆန်း ၂ ရက် · တရုတ
+ ်နှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပေါင်း လဆ
+ န်း ၂ ရက်\nတရုတ်နှစ်သစ်ကူးန
+ ေ့\nပြဿဒါး\n၂၀၂၆ ထုတ်ပြန်ရက်
+ စာရင်း\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-02-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260223
+DTEND;VALUE=DATE:20260224
+SUMMARY:တပေါင်း လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပေါင်း လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-03-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260302
+DTEND;VALUE=DATE:20260303
+SUMMARY:တပေါင်း လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · တောင်သူလယ်သမ
+ ားနေ့ · တပေါင်းလပြည့်နေ့ · တ
+ ပေါင်းဘုရားပွဲ · သဲပုံစေတီ
+ ပူဇော်ပွဲ
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပေါင်း လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nတ
+ ောင်သူလယ်သမားနေ့\nတပေါင်းလ
+ ပြည့်နေ့\nတပေါင်းဘုရားပွဲ ·
+  သဲပုံစေတီပူဇော်ပွဲ\n၂၀၂၆ ထ
+ ုတ်ပြန်ရက်စာရင်း\n၂၀၂၆ ထုတ
+ ်ပြန်ရက်စာရင်း\nမြန်မာလပြည
+ ့်ရက်အလိုက်\nရုံးပိတ်ရက်မျ
+ ား: ၂၀၂၆ မူလစာရင်း၊ အခြားနှ
+ စ်များသည် ပုံမှန်တွက်ချက်
+ မှု။ အသစ်ကြေညာချက်များ အလိ
+ ုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-03-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260310
+DTEND;VALUE=DATE:20260311
+SUMMARY:တပေါင်း လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပေါင်း လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-03-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260317
+DTEND;VALUE=DATE:20260318
+SUMMARY:တပေါင်း လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · တပေါင်း လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-03-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260325
+DTEND;VALUE=DATE:20260326
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-03-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260327
+DTEND;VALUE=DATE:20260328
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၁၀ ရ
+ က် · တပ်မတော်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၁၀ ရက်\nတပ်မတော်န
+ ေ့\nရက်ရာဇာ\n၂၀၂၆ ထုတ်ပြန်ရက
+ ်စာရင်း\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+SUMMARY:နှောင်းတန်ခူး လပြည့် · လ
+ ပြည့်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်\nလပြည့်နေ့\nဥပုသ
+ ်နေ့\nရက်ရာဇာ\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260409
+DTEND;VALUE=DATE:20260410
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၈ ရက်\nဥပုသ
+ ်နေ့\nပြဿဒါး\nရုံးပိတ်ရက်မျ
+ ား: ၂၀၂၆ မူလစာရင်း၊ အခြားနှ
+ စ်များသည် ပုံမှန်တွက်ချက်
+ မှု။ အသစ်ကြေညာချက်များ အလိ
+ ုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260411
+DTEND;VALUE=DATE:20260412
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၁၀ ရက် · သင်္ကြန်ကာလ ရုံး
+ ပိတ်ရက်
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၁၀ ရက်\nသင်
+ ္ကြန်ကာလ ရုံးပိတ်ရက်\nပြဿဒ
+ ါး\n၂၀၂၆ ထုတ်ပြန်ရက်စာရင်း\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260412
+DTEND;VALUE=DATE:20260413
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၁၁ ရက် · သင်္ကြန်ကာလ ရုံး
+ ပိတ်ရက်
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၁၁ ရက်\nသင်
+ ္ကြန်ကာလ ရုံးပိတ်ရက်\n၂၀၂၆ 
+ ထုတ်ပြန်ရက်စာရင်း\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260413
+DTEND;VALUE=DATE:20260414
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၁၂ ရက် · သင်္ကြန်ကာလ ရုံး
+ ပိတ်ရက် · သင်္ကြန်အကြိုနေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၁၂ ရက်\nသင်
+ ္ကြန်ကာလ ရုံးပိတ်ရက်\nသင်္
+ ကြန်အကြိုနေ့\n၂၀၂၆ ထုတ်ပြန
+ ်ရက်စာရင်း\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20260415
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၁၃ ရက် · သင်္ကြန်ကာလ ရုံး
+ ပိတ်ရက် · သင်္ကြန်အကျနေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၁၃ ရက်\nသင်
+ ္ကြန်ကာလ ရုံးပိတ်ရက်\nသင်္
+ ကြန်အကျနေ့\nအဖိတ်နေ့\n၂၀၂၆ ထ
+ ုတ်ပြန်ရက်စာရင်း\nရုံးပိတ်
+ ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အခ
+ ြားနှစ်များသည် ပုံမှန်တွက
+ ်ချက်မှု။ အသစ်ကြေညာချက်မျ
+ ား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260415
+DTEND;VALUE=DATE:20260416
+SUMMARY:နှောင်းတန်ခူး လကွယ် · လက
+ ွယ်နေ့ · ဥပုသ်နေ့ · သင်္ကြန်
+ ကာလ ရုံးပိတ်ရက် · သင်္ကြန်အ
+ ကြတ်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းတန
+ ်ခူး လကွယ်\nလကွယ်နေ့\nဥပုသ်န
+ ေ့\nသင်္ကြန်ကာလ ရုံးပိတ်ရက
+ ်\nသင်္ကြန်အကြတ်နေ့\nရက်ရာဇ
+ ာ\n၂၀၂၆ ထုတ်ပြန်ရက်စာရင်း\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260416
+DTEND;VALUE=DATE:20260417
+SUMMARY:နှောင်းကဆုန် လဆန်း ၁ ရက် 
+ · သင်္ကြန်ကာလ ရုံးပိတ်ရက် · 
+ သင်္ကြန်အတက်နေ့
+DESCRIPTION:၁၃၈၇ ခုနှစ် · နှောင်းကဆ
+ ုန် လဆန်း ၁ ရက်\nသင်္ကြန်ကာလ
+  ရုံးပိတ်ရက်\nသင်္ကြန်အတက်
+ နေ့\nရက်ရာဇာ\n၂၀၂၆ ထုတ်ပြန်ရ
+ က်စာရင်း\nရုံးပိတ်ရက်များ: 
+ ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်မ
+ ျားသည် ပုံမှန်တွက်ချက်မှု
+ ။ အသစ်ကြေညာချက်များ အလိုအလ
+ ျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260417
+DTEND;VALUE=DATE:20260418
+SUMMARY:ကဆုန် လဆန်း ၂ ရက် · မြန်မာ
+ နှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ကဆုန် လဆန်
+ း ၂ ရက်\nမြန်မာနှစ်သစ်ကူးနေ
+ ့\nပြဿဒါး\n၂၀၂၆ ထုတ်ပြန်ရက်စ
+ ာရင်း\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-18@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260418
+DTEND;VALUE=DATE:20260419
+SUMMARY:ကဆုန် လဆန်း ၃ ရက် · သင်္ကြ
+ န်ကာလ ရုံးပိတ်ရက်
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ကဆုန် လဆန်
+ း ၃ ရက်\nသင်္ကြန်ကာလ ရုံးပိတ
+ ်ရက်\nရက်ရာဇာ\n၂၀၂၆ ထုတ်ပြန်
+ ရက်စာရင်း\nရုံးပိတ်ရက်များ
+ : ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်
+ များသည် ပုံမှန်တွက်ချက်မှ
+ ု။ အသစ်ကြေညာချက်များ အလိုအ
+ လျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260419
+DTEND;VALUE=DATE:20260420
+SUMMARY:ကဆုန် လဆန်း ၄ ရက် · သင်္ကြ
+ န်ကာလ ရုံးပိတ်ရက်
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ကဆုန် လဆန်
+ း ၄ ရက်\nသင်္ကြန်ကာလ ရုံးပိတ
+ ်ရက်\n၂၀၂၆ ထုတ်ပြန်ရက်စာရင
+ ်း\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260423
+DTEND;VALUE=DATE:20260424
+SUMMARY:ကဆုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ကဆုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇာ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-04-30@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260430
+DTEND;VALUE=DATE:20260501
+SUMMARY:ကဆုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · ကဆုန်လပြည့်နေ့ 
+ · ညောင်ရေသွန်းပွဲ · ဗုဒ္ဓနေ
+ ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ကဆုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nကဆု
+ န်လပြည့်နေ့\nညောင်ရေသွန်းပ
+ ွဲ · ဗုဒ္ဓနေ့\nရက်ရာဇာ\n၂၀၂၆ 
+ ထုတ်ပြန်ရက်စာရင်း\nမြန်မာလ
+ ပြည့်ရက်အလိုက်\nရုံးပိတ်ရက
+ ်များ: ၂၀၂၆ မူလစာရင်း၊ အခြာ
+ းနှစ်များသည် ပုံမှန်တွက်ခ
+ ျက်မှု။ အသစ်ကြေညာချက်များ 
+ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-05-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:ကဆုန် လပြည့်ကျော် ၁ ရက် · 
+ အလုပ်သမားနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ကဆုန် လပြည
+ ့်ကျော် ၁ ရက်\nအလုပ်သမားနေ့\
+ nပြဿဒါး\n၂၀၂၆ ထုတ်ပြန်ရက်စာ
+ ရင်း\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-05-08@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260508
+DTEND;VALUE=DATE:20260509
+SUMMARY:ကဆုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ကဆုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-05-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+SUMMARY:ကဆုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ကဆုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿဒါ
+ း\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-05-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260524
+SUMMARY:နယုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နယုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-05-28@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+SUMMARY:နယုန် လဆန်း ၁၃ ရက် · အိဒ်အ
+ လ်အဿွဟာနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နယုန် လဆန်
+ း ၁၃ ရက်\nအိဒ်အလ်အဿွဟာနေ့\nရ
+ က်ရာဇာ\n၂၀၂၆ ထုတ်ပြန်ရက်စာ
+ ရင်း\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-05-30@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260531
+SUMMARY:နယုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · မဟာသမယနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နယုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမဟာ
+ သမယနေ့\nမြန်မာလပြည့်ရက်အလိ
+ ုက်\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-06-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260607
+DTEND;VALUE=DATE:20260608
+SUMMARY:နယုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နယုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-06-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260614
+DTEND;VALUE=DATE:20260615
+SUMMARY:နယုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နယုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿဒါ
+ း\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-06-22@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260622
+DTEND;VALUE=DATE:20260623
+SUMMARY:ပထမဝါဆို လဆန်း ၈ ရက် · ဥပု
+ သ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ပထမဝါဆို လ
+ ဆန်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိ
+ တ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ 
+ အခြားနှစ်များသည် ပုံမှန်တ
+ ွက်ချက်မှု။ အသစ်ကြေညာချက်
+ များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-06-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260629
+DTEND;VALUE=DATE:20260630
+SUMMARY:ပထမဝါဆို လပြည့် · လပြည့်
+ နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ပထမဝါဆို လ
+ ပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-07-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260707
+DTEND;VALUE=DATE:20260708
+SUMMARY:ပထမဝါဆို လပြည့်ကျော် ၈ ရ
+ က် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ပထမဝါဆို လ
+ ပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\n
+ ပြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-07-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260714
+DTEND;VALUE=DATE:20260715
+SUMMARY:ပထမဝါဆို လကွယ် · လကွယ်နေ
+ ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ပထမဝါဆို လ
+ ကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြ
+ ဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-07-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260719
+DTEND;VALUE=DATE:20260720
+SUMMARY:ဒုတိယဝါဆို လဆန်း ၅ ရက် · အ
+ ာဇာနည်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လဆန်း ၅ ရက်\nအာဇာနည်နေ့\nရက
+ ်ရာဇာ\n၂၀၂၆ ထုတ်ပြန်ရက်စာရ
+ င်း\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-07-22@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260722
+DTEND;VALUE=DATE:20260723
+SUMMARY:ဒုတိယဝါဆို လဆန်း ၈ ရက် · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရက်ရ
+ ာဇာ\nမွန်းလွဲပြဿဒါး\nရုံးပိ
+ တ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ 
+ အခြားနှစ်များသည် ပုံမှန်တ
+ ွက်ချက်မှု။ အသစ်ကြေညာချက်
+ များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-07-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260730
+SUMMARY:ဒုတိယဝါဆို လပြည့် · လပြည
+ ့်နေ့ · ဥပုသ်နေ့ · ဒုတိယဝါဆိ
+ ုလပြည့်နေ့ · ဓမ္မစကြာနေ့ · ဝ
+ ါဆိုသင်္ကန်းကပ်လှူပွဲ
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လပြည့်\nလပြည့်နေ့\nဥပုသ်နေ
+ ့\nဒုတိယဝါဆိုလပြည့်နေ့\nဓမ္
+ မစကြာနေ့ · ဝါဆိုသင်္ကန်းကပ
+ ်လှူပွဲ\nရက်ရာဇာ\nမွန်းလွဲပ
+ ြဿဒါး\n၂၀၂၆ ထုတ်ပြန်ရက်စာရ
+ င်း\nမြန်မာလပြည့်ရက်အလိုက်
+ \nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-08-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260807
+SUMMARY:ဒုတိယဝါဆို လပြည့်ကျော် 
+ ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ
+ ့\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-08-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:ဒုတိယဝါဆို လကွယ် · လကွယ်
+ နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-08-21@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:ဝါခေါင် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ဝါခေါင် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇာ\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-08-28@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:ဝါခေါင် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · မေတ္တာအခါတော
+ ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမ
+ ေတ္တာအခါတော်နေ့\nရက်ရာဇာ\nမ
+ ြန်မာလပြည့်ရက်အလိုက်\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-09-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
+SUMMARY:ဝါခေါင် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-09-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:ဝါခေါင် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ဝါခေါင် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက်
+ ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-09-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:တော်သလင်း လဆန်း ၈ ရက် · ဥပ
+ ုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တော်သလင်း 
+ လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာ
+ ဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-09-26@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:တော်သလင်း လပြည့် · လပြည့
+ ်နေ့ · ဥပုသ်နေ့ · ဂရုဓမ္မအခါ
+ တော်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တော်သလင်း 
+ လပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\
+ nဂရုဓမ္မအခါတော်နေ့\nရက်ရာဇ
+ ာ\nမြန်မာလပြည့်ရက်အလိုက်\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-10-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:တော်သလင်း လပြည့်ကျော် ၈ 
+ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တော်သလင်း 
+ လပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\
+ nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-10-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:တော်သလင်း လပြည့်ကျော် ၉ 
+ ရက် · ကမ္ဘာ့ဆရာများနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တော်သလင်း 
+ လပြည့်ကျော် ၉ ရက်\nကမ္ဘာ့ဆရ
+ ာများနေ့\nရုံးပိတ်ရက်များ: 
+ ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်မ
+ ျားသည် ပုံမှန်တွက်ချက်မှု
+ ။ အသစ်ကြေညာချက်များ အလိုအလ
+ ျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-10-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:တော်သလင်း လကွယ် · လကွယ်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တော်သလင်း 
+ လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-10-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:သီတင်းကျွတ် လဆန်း ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၈ ရက်\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-10-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:သီတင်းကျွတ် လဆန်း ၁၃ ရက် 
+ · ကုလသမဂ္ဂနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၁၃ ရက်\nကုလသမဂ္ဂနေ့
+ \nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-10-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:သီတင်းကျွတ် လဆန်း ၁၄ ရက် 
+ · သီတင်းကျွတ် ရုံးပိတ်ရက်
+DESCRIPTION:၁၃၈၈ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၁၄ ရက်\nသီတင်းကျွတ်
+  ရုံးပိတ်ရက်\nအဖိတ်နေ့\nပြဿဒ
+ ါး\n၂၀၂၆ ထုတ်ပြန်ရက်စာရင်း\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-10-26@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:သီတင်းကျွတ် လပြည့် · လပြ
+ ည့်နေ့ · ဥပုသ်နေ့ · သီတင်းကျ
+ ွတ်လပြည့်နေ့ · သီတင်းကျွတ် 
+ မီးထွန်းပွဲ · အဘိဓမ္မာနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်\nလပြည့်နေ့\nဥပုသ်န
+ ေ့\nသီတင်းကျွတ်လပြည့်နေ့\nသ
+ ီတင်းကျွတ် မီးထွန်းပွဲ · အဘ
+ ိဓမ္မာနေ့\nပြဿဒါး\n၂၀၂၆ ထုတ်
+ ပြန်ရက်စာရင်း\nမြန်မာလပြည့
+ ်ရက်အလိုက်\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-10-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၁ ရက် · သီတင်းကျွတ် ရုံးပိတ
+ ်ရက်
+DESCRIPTION:၁၃၈၈ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၁ ရက်\nသီတင်း
+ ကျွတ် ရုံးပိတ်ရက်\nရက်ရာဇာ\n
+ ၂၀၂၆ ထုတ်ပြန်ရက်စာရင်း\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-11-03@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၈ ရက်\nဥပုသ်န
+ ေ့\nရက်ရာဇာ\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-11-08@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၁၃ ရက် · ဒီပါဝလီ (ရက်အတည်ပြု
+ ရန်)
+DESCRIPTION:၁၃၈၈ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၁၃ ရက်\nဒီပါဝ
+ လီ (ရက်အတည်ပြုရန်)\nအဖိတ်နေ့
+ \nပြဿဒါး\nပွဲတော်ရက် ခန့်မှန
+ ်းစာရင်းသာဖြစ်သည်။ ရုံးပိ
+ တ်ရက်အဖြစ် အတည်မပြုထားပါ။\
+ nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-11-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:သီတင်းကျွတ် လကွယ် · လကွယ
+ ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · သီတင်းကျွ
+ တ် လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့
+ \nပြဿဒါး\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-11-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၈ ရက်\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-11-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၁၄ ရ
+ က် · တန်ဆောင်တိုင် ရုံးပိတ်
+ ရက်
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၁၄ ရက်\nတန်ဆောင်တ
+ ိုင် ရုံးပိတ်ရက်\nအဖိတ်နေ့\n
+ ၂၀၂၆ ထုတ်ပြန်ရက်စာရင်း\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-11-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:တန်ဆောင်မုန်း လပြည့် · လ
+ ပြည့်နေ့ · ဥပုသ်နေ့ · တန်ဆော
+ င်မုန်းလပြည့်နေ့ · တန်ဆောင
+ ်တိုင် · မသိုးသင်္ကန်းကပ်လ
+ ှူပွဲ
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်\nလပြည့်နေ့\nဥပုသ
+ ်နေ့\nတန်ဆောင်မုန်းလပြည့်န
+ ေ့\nတန်ဆောင်တိုင် · မသိုးသင
+ ်္ကန်းကပ်လှူပွဲ\nပြဿဒါး\n၂၀
+ ၂၆ ထုတ်ပြန်ရက်စာရင်း\nမြန်
+ မာလပြည့်ရက်အလိုက်\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-12-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၈ ရက်\nဥပုသ
+ ်နေ့\nရက်ရာဇာ\nမွန်းလွဲပြဿဒ
+ ါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-12-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၁၀ ရက် · အမျိုးသားနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၁၀ ရက်\nအမျ
+ ိုးသားနေ့\n၂၀၂၆ ထုတ်ပြန်ရက
+ ်စာရင်း\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-12-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:တန်ဆောင်မုန်း လကွယ် · လက
+ ွယ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လကွယ်\nလကွယ်နေ့\nဥပုသ်န
+ ေ့\nရက်ရာဇာ\nမွန်းလွဲပြဿဒါး\
+ nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-12-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:နတ်တော် လဆန်း ၁ ရက် · စာဆိ
+ ုတော်နေ့ · ရှမ်းနှစ်သစ်ကူး
+ နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နတ်တော် လဆ
+ န်း ၁ ရက်\nစာဆိုတော်နေ့ · ရှမ
+ ်းနှစ်သစ်ကူးနေ့\nပြဿဒါး\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-12-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:နတ်တော် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နတ်တော် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-12-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:နတ်တော် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နတ်တော် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2026-12-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:နတ်တော် လပြည့်ကျော် ၁ ရက
+ ် · ခရစ္စမတ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၁ ရက်\nခရစ္စမတ်နေ
+ ့\nရက်ရာဇာ\n၂၀၂၆ ထုတ်ပြန်ရက်
+ စာရင်း\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-01-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:နတ်တော် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့ · နိုင်ငံတကာနှစ
+ ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nန
+ ိုင်ငံတကာနှစ်သစ်ကူးနေ့\nရက
+ ်ရာဇာ\nနှစ်စဉ်သတ်မှတ်ရက်\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-01-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:နတ်တော် လပြည့်ကျော် ၁၁ ရ
+ က် · လွတ်လပ်ရေးနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၁၁ ရက်\nလွတ်လပ်ရေ
+ းနေ့\nနှစ်စဉ်ပြက္ခဒိန်တွက်
+ ချက်မှု — ထပ်တိုး/အစားထိုး
+ ရုံးပိတ်ရက်များ မပါနိုင်ပ
+ ါ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-01-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:နတ်တော် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နတ်တော် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-01-08@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:ပြာသို လဆန်း ၁ ရက် · ကရင်န
+ ှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ပြာသို လဆန
+ ်း ၁ ရက်\nကရင်နှစ်သစ်ကူးနေ့\
+ nပြဿဒါး\nနှစ်စဉ်ပြက္ခဒိန်တ
+ ွက်ချက်မှု — ထပ်တိုး/အစားထ
+ ိုးရုံးပိတ်ရက်များ မပါနို
+ င်ပါ\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-01-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:ပြာသို လဆန်း ၈ ရက် · ဥပုသ်
+ နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ပြာသို လဆန
+ ်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-01-22@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:ပြာသို လပြည့် · လပြည့်နေ
+ ့ · ဥပုသ်နေ့ · အာနန္ဒာဘုရားပ
+ ွဲ အဓိကနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ပြာသို လပြ
+ ည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nအာ
+ နန္ဒာဘုရားပွဲ အဓိကနေ့\nပြဿ
+ ဒါး\nမြန်မာလပြည့်ရက်အလိုက်
+ \nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-01-30@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:ပြာသို လပြည့်ကျော် ၈ ရက် 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ပြာသို လပြ
+ ည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရက
+ ်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-02-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:ပြာသို လကွယ် · လကွယ်နေ့ · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · ပြာသို လကွ
+ ယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက်ရ
+ ာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-02-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:တပို့တွဲ လဆန်း ၆ ရက် · ပြည
+ ်ထောင်စုနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပို့တွဲ လ
+ ဆန်း ၆ ရက်\nပြည်ထောင်စုနေ့\n
+ နှစ်စဉ်ပြက္ခဒိန်တွက်ချက်
+ မှု — ထပ်တိုး/အစားထိုးရုံး
+ ပိတ်ရက်များ မပါနိုင်ပါ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-02-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:တပို့တွဲ လဆန်း ၈ ရက် · ဥပု
+ သ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပို့တွဲ လ
+ ဆန်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-02-21@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:တပို့တွဲ လပြည့် · လပြည့်
+ နေ့ · ဥပုသ်နေ့ · ထမနဲပွဲကာလ
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\n
+ ထမနဲပွဲကာလ\nပြဿဒါး\nဒေသအလို
+ က် ကျင်းပရက်ကွာနိုင်သည်\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-03-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၈ ရ
+ က် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\n
+ ပြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-03-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၉ ရ
+ က် · တောင်သူလယ်သမားနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၉ ရက်\nတောင်သူလယ
+ ်သမားနေ့\nရက်ရာဇာ\nနှစ်စဉ်ပ
+ ြက္ခဒိန်တွက်ချက်မှု — ထပ်တ
+ ိုး/အစားထိုးရုံးပိတ်ရက်မျ
+ ား မပါနိုင်ပါ\nရုံးပိတ်ရက်
+ များ: ၂၀၂၆ မူလစာရင်း၊ အခြား
+ နှစ်များသည် ပုံမှန်တွက်ချ
+ က်မှု။ အသစ်ကြေညာချက်များ အ
+ လိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-03-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:တပို့တွဲ လကွယ် · လကွယ်နေ
+ ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပို့တွဲ လ
+ ကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြ
+ ဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-03-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:တပေါင်း လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပေါင်း လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-03-22@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:တပေါင်း လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · တပေါင်းလပြည့
+ ်နေ့ · တပေါင်းဘုရားပွဲ · သဲပ
+ ုံစေတီပူဇော်ပွဲ
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပေါင်း လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nတ
+ ပေါင်းလပြည့်နေ့\nတပေါင်းဘု
+ ရားပွဲ · သဲပုံစေတီပူဇော်ပွ
+ ဲ\nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက
+ ်မှု — ထပ်တိုး/အစားထိုးရုံ
+ းပိတ်ရက်များ မပါနိုင်ပါ\nမ
+ ြန်မာလပြည့်ရက်အလိုက်\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-03-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270328
+SUMMARY:တပေါင်း လပြည့်ကျော် ၅ ရက
+ ် · တပ်မတော်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပေါင်း လပ
+ ြည့်ကျော် ၅ ရက်\nတပ်မတော်နေ
+ ့\nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက
+ ်မှု — ထပ်တိုး/အစားထိုးရုံ
+ းပိတ်ရက်များ မပါနိုင်ပါ\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-03-30@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+SUMMARY:တပေါင်း လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပေါင်း လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-04-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270407
+SUMMARY:တပေါင်း လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · တပေါင်း လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-04-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270414
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၇ ရက
+ ် · သင်္ကြန်အကြိုနေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၇ ရက်\nသင်္ကြန်အက
+ ြိုနေ့\nအဖိတ်နေ့\nနှစ်စဉ်ပြ
+ က္ခဒိန်တွက်ချက်မှု — ထပ်တိ
+ ုး/အစားထိုးရုံးပိတ်ရက်မျာ
+ း မပါနိုင်ပါ\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-04-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့ · သင်္ကြန်အကျနေ
+ ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၈ ရက်\nဥပုသ်နေ့\nသ
+ င်္ကြန်အကျနေ့\nရက်ရာဇာ\nနှစ
+ ်စဉ်ပြက္ခဒိန်တွက်ချက်မှု 
+ — ထပ်တိုး/အစားထိုးရုံးပိတ်
+ ရက်များ မပါနိုင်ပါ\nရုံးပိ
+ တ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ 
+ အခြားနှစ်များသည် ပုံမှန်တ
+ ွက်ချက်မှု။ အသစ်ကြေညာချက်
+ များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-04-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၉ ရက
+ ် · သင်္ကြန်အကြတ်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၉ ရက်\nသင်္ကြန်အက
+ ြတ်နေ့\nပြဿဒါး\nနှစ်စဉ်ပြက္
+ ခဒိန်တွက်ချက်မှု — ထပ်တိုး
+ /အစားထိုးရုံးပိတ်ရက်များ မ
+ ပါနိုင်ပါ\nရုံးပိတ်ရက်များ
+ : ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်
+ များသည် ပုံမှန်တွက်ချက်မှ
+ ု။ အသစ်ကြေညာချက်များ အလိုအ
+ လျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-04-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၁၀ ရ
+ က် · သင်္ကြန်အတက်နေ့
+DESCRIPTION:၁၃၈၈ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၁၀ ရက်\nသင်္ကြန်အ
+ တက်နေ့\nရက်ရာဇာ\nနှစ်စဉ်ပြက
+ ္ခဒိန်တွက်ချက်မှု — ထပ်တို
+ း/အစားထိုးရုံးပိတ်ရက်များ 
+ မပါနိုင်ပါ\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-04-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+SUMMARY:တန်ခူး လဆန်း ၁၁ ရက် · မြန်
+ မာနှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ခူး လဆန
+ ်း ၁၁ ရက်\nမြန်မာနှစ်သစ်ကူး
+ နေ့\nပြဿဒါး\nနှစ်စဉ်ပြက္ခဒိ
+ န်တွက်ချက်မှု — ထပ်တိုး/အစ
+ ားထိုးရုံးပိတ်ရက်များ မပါ
+ နိုင်ပါ\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-04-21@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:တန်ခူး လပြည့် · လပြည့်နေ
+ ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ခူး လပြ
+ ည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nရက
+ ်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-04-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:တန်ခူး လပြည့်ကျော် ၈ ရက် 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ခူး လပြ
+ ည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြ
+ ဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-05-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:တန်ခူး လပြည့်ကျော် ၁၀ ရက
+ ် · အလုပ်သမားနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ခူး လပြ
+ ည့်ကျော် ၁၀ ရက်\nအလုပ်သမားန
+ ေ့\nပြဿဒါး\nနှစ်စဉ်ပြက္ခဒိန
+ ်တွက်ချက်မှု — ထပ်တိုး/အစာ
+ းထိုးရုံးပိတ်ရက်များ မပါန
+ ိုင်ပါ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-05-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+SUMMARY:တန်ခူး လကွယ် · လကွယ်နေ့ · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ခူး လကွ
+ ယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက်ရ
+ ာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-05-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270514
+SUMMARY:ကဆုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ကဆုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇာ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-05-20@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+SUMMARY:ကဆုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · ကဆုန်လပြည့်နေ့ 
+ · ညောင်ရေသွန်းပွဲ · ဗုဒ္ဓနေ
+ ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ကဆုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nကဆု
+ န်လပြည့်နေ့\nညောင်ရေသွန်းပ
+ ွဲ · ဗုဒ္ဓနေ့\nရက်ရာဇာ\nနှစ်စ
+ ဉ်ပြက္ခဒိန်တွက်ချက်မှု — ထ
+ ပ်တိုး/အစားထိုးရုံးပိတ်ရက
+ ်များ မပါနိုင်ပါ\nမြန်မာလပ
+ ြည့်ရက်အလိုက်\nရုံးပိတ်ရက်
+ များ: ၂၀၂၆ မူလစာရင်း၊ အခြား
+ နှစ်များသည် ပုံမှန်တွက်ချ
+ က်မှု။ အသစ်ကြေညာချက်များ အ
+ လိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-05-28@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:ကဆုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ကဆုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-06-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:ကဆုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ကဆုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿဒါ
+ း\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-06-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270612
+DTEND;VALUE=DATE:20270613
+SUMMARY:နယုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နယုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-06-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270620
+SUMMARY:နယုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · မဟာသမယနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နယုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမဟာ
+ သမယနေ့\nမြန်မာလပြည့်ရက်အလိ
+ ုက်\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-06-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270627
+DTEND;VALUE=DATE:20270628
+SUMMARY:နယုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နယုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-07-03@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270703
+DTEND;VALUE=DATE:20270704
+SUMMARY:နယုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နယုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-07-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270711
+DTEND;VALUE=DATE:20270712
+SUMMARY:ဝါဆို လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ဝါဆို လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇာ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-07-18@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270718
+DTEND;VALUE=DATE:20270719
+SUMMARY:ဝါဆို လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · ဝါဆိုလပြည့်နေ့ 
+ · ဓမ္မစကြာနေ့ · ဝါဆိုသင်္ကန
+ ်းကပ်လှူပွဲ
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ဝါဆို လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nဝါဆ
+ ိုလပြည့်နေ့\nဓမ္မစကြာနေ့ · 
+ ဝါဆိုသင်္ကန်းကပ်လှူပွဲ\nရက
+ ်ရာဇာ\nနှစ်စဉ်ပြက္ခဒိန်တွက
+ ်ချက်မှု — ထပ်တိုး/အစားထို
+ းရုံးပိတ်ရက်များ မပါနိုင်
+ ပါ\nမြန်မာလပြည့်ရက်အလိုက်\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-07-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270719
+DTEND;VALUE=DATE:20270720
+SUMMARY:ဝါဆို လပြည့်ကျော် ၁ ရက် · 
+ အာဇာနည်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ဝါဆို လပြည
+ ့်ကျော် ၁ ရက်\nအာဇာနည်နေ့\nန
+ ှစ်စဉ်ပြက္ခဒိန်တွက်ချက်မ
+ ှု — ထပ်တိုး/အစားထိုးရုံးပ
+ ိတ်ရက်များ မပါနိုင်ပါ\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-07-26@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270726
+DTEND;VALUE=DATE:20270727
+SUMMARY:ဝါဆို လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ဝါဆို လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-08-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270802
+DTEND;VALUE=DATE:20270803
+SUMMARY:ဝါဆို လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ဝါဆို လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-08-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270810
+DTEND;VALUE=DATE:20270811
+SUMMARY:ဝါခေါင် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ဝါခေါင် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-08-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270817
+DTEND;VALUE=DATE:20270818
+SUMMARY:ဝါခေါင် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · မေတ္တာအခါတော
+ ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမ
+ ေတ္တာအခါတော်နေ့\nမြန်မာလပြ
+ ည့်ရက်အလိုက်\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-08-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:ဝါခေါင် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-08-31@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270831
+DTEND;VALUE=DATE:20270901
+SUMMARY:ဝါခေါင် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ဝါခေါင် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-09-08@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270908
+DTEND;VALUE=DATE:20270909
+SUMMARY:တော်သလင်း လဆန်း ၈ ရက် · ဥပ
+ ုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တော်သလင်း 
+ လဆန်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါ
+ း\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-09-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:တော်သလင်း လပြည့် · လပြည့
+ ်နေ့ · ဥပုသ်နေ့ · ဂရုဓမ္မအခါ
+ တော်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တော်သလင်း 
+ လပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\
+ nဂရုဓမ္မအခါတော်နေ့\nပြဿဒါး\n
+ မြန်မာလပြည့်ရက်အလိုက်\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-09-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270923
+DTEND;VALUE=DATE:20270924
+SUMMARY:တော်သလင်း လပြည့်ကျော် ၈ 
+ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တော်သလင်း 
+ လပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\
+ nရက်ရာဇာ\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-09-30@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271001
+SUMMARY:တော်သလင်း လကွယ် · လကွယ်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တော်သလင်း 
+ လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-10-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271005
+DTEND;VALUE=DATE:20271006
+SUMMARY:သီတင်းကျွတ် လဆန်း ၅ ရက် · 
+ ကမ္ဘာ့ဆရာများနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၅ ရက်\nကမ္ဘာ့ဆရာမျာ
+ းနေ့\nရက်ရာဇာ\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-10-08@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271008
+DTEND;VALUE=DATE:20271009
+SUMMARY:သီတင်းကျွတ် လဆန်း ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-10-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271014
+DTEND;VALUE=DATE:20271015
+SUMMARY:သီတင်းကျွတ် လဆန်း ၁၄ ရက် 
+ · လပြည့်ပွဲတော် ဆက်စပ်ရုံး
+ ပိတ်ရက်
+DESCRIPTION:၁၃၈၉ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၁၄ ရက်\nလပြည့်ပွဲတေ
+ ာ် ဆက်စပ်ရုံးပိတ်ရက်\nအဖိတ
+ ်နေ့\nရက်ရာဇာ\nပုံမှန်ရက်တွ
+ က်ချက်မှု — နှစ်အလိုက်ကြေည
+ ာချက်နှင့် စစ်ဆေးပါ\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-10-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+SUMMARY:သီတင်းကျွတ် လပြည့် · လပြ
+ ည့်နေ့ · ဥပုသ်နေ့ · သီတင်းကျ
+ ွတ်လပြည့်နေ့ · သီတင်းကျွတ် 
+ မီးထွန်းပွဲ · အဘိဓမ္မာနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်\nလပြည့်နေ့\nဥပုသ်န
+ ေ့\nသီတင်းကျွတ်လပြည့်နေ့\nသ
+ ီတင်းကျွတ် မီးထွန်းပွဲ · အဘ
+ ိဓမ္မာနေ့\nနှစ်စဉ်ပြက္ခဒိန
+ ်တွက်ချက်မှု — ထပ်တိုး/အစာ
+ းထိုးရုံးပိတ်ရက်များ မပါန
+ ိုင်ပါ\nမြန်မာလပြည့်ရက်အလိ
+ ုက်\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-10-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271016
+DTEND;VALUE=DATE:20271017
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၁ ရက် · လပြည့်ပွဲတော် ဆက်စပ
+ ်ရုံးပိတ်ရက်
+DESCRIPTION:၁၃၈၉ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၁ ရက်\nလပြည့်
+ ပွဲတော် ဆက်စပ်ရုံးပိတ်ရက်\
+ nပုံမှန်ရက်တွက်ချက်မှု — န
+ ှစ်အလိုက်ကြေညာချက်နှင့် စ
+ စ်ဆေးပါ\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-10-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271023
+DTEND;VALUE=DATE:20271024
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၈ ရက်\nဥပုသ်န
+ ေ့\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-10-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271024
+DTEND;VALUE=DATE:20271025
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၉ ရက် · ကုလသမဂ္ဂနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၉ ရက်\nကုလသမဂ
+ ္ဂနေ့\nပြဿဒါး\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-10-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:သီတင်းကျွတ် လကွယ် · လကွယ
+ ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · သီတင်းကျွ
+ တ် လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့
+ \nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-11-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271106
+DTEND;VALUE=DATE:20271107
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-11-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271112
+DTEND;VALUE=DATE:20271113
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၁၄ ရ
+ က် · လပြည့်ပွဲတော် ဆက်စပ်ရု
+ ံးပိတ်ရက်
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၁၄ ရက်\nလပြည့်ပွဲ
+ တော် ဆက်စပ်ရုံးပိတ်ရက်\nအဖ
+ ိတ်နေ့\nပုံမှန်ရက်တွက်ချက်
+ မှု — နှစ်အလိုက်ကြေညာချက်န
+ ှင့် စစ်ဆေးပါ\nရုံးပိတ်ရက်
+ များ: ၂၀၂၆ မူလစာရင်း၊ အခြား
+ နှစ်များသည် ပုံမှန်တွက်ချ
+ က်မှု။ အသစ်ကြေညာချက်များ အ
+ လိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-11-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271113
+DTEND;VALUE=DATE:20271114
+SUMMARY:တန်ဆောင်မုန်း လပြည့် · လ
+ ပြည့်နေ့ · ဥပုသ်နေ့ · တန်ဆော
+ င်မုန်းလပြည့်နေ့ · တန်ဆောင
+ ်တိုင် · မသိုးသင်္ကန်းကပ်လ
+ ှူပွဲ
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်\nလပြည့်နေ့\nဥပုသ
+ ်နေ့\nတန်ဆောင်မုန်းလပြည့်န
+ ေ့\nတန်ဆောင်တိုင် · မသိုးသင
+ ်္ကန်းကပ်လှူပွဲ\nနှစ်စဉ်ပြ
+ က္ခဒိန်တွက်ချက်မှု — ထပ်တိ
+ ုး/အစားထိုးရုံးပိတ်ရက်မျာ
+ း မပါနိုင်ပါ\nမြန်မာလပြည့်
+ ရက်အလိုက်\nရုံးပိတ်ရက်များ
+ : ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်
+ များသည် ပုံမှန်တွက်ချက်မှ
+ ု။ အသစ်ကြေညာချက်များ အလိုအ
+ လျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-11-21@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271121
+DTEND;VALUE=DATE:20271122
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၈ ရက်\nဥပုသ
+ ်နေ့\nရက်ရာဇာ\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-11-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271123
+DTEND;VALUE=DATE:20271124
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၁၀ ရက် · အမျိုးသားနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၁၀ ရက်\nအမျ
+ ိုးသားနေ့\nပြဿဒါး\nနှစ်စဉ်ပ
+ ြက္ခဒိန်တွက်ချက်မှု — ထပ်တ
+ ိုး/အစားထိုးရုံးပိတ်ရက်မျ
+ ား မပါနိုင်ပါ\nရုံးပိတ်ရက်
+ များ: ၂၀၂၆ မူလစာရင်း၊ အခြား
+ နှစ်များသည် ပုံမှန်တွက်ချ
+ က်မှု။ အသစ်ကြေညာချက်များ အ
+ လိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-11-28@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271128
+DTEND;VALUE=DATE:20271129
+SUMMARY:တန်ဆောင်မုန်း လကွယ် · လက
+ ွယ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လကွယ်\nလကွယ်နေ့\nဥပုသ်န
+ ေ့\nရက်ရာဇာ\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-11-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271129
+DTEND;VALUE=DATE:20271130
+SUMMARY:နတ်တော် လဆန်း ၁ ရက် · စာဆိ
+ ုတော်နေ့ · ရှမ်းနှစ်သစ်ကူး
+ နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နတ်တော် လဆ
+ န်း ၁ ရက်\nစာဆိုတော်နေ့ · ရှမ
+ ်းနှစ်သစ်ကူးနေ့\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-12-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271206
+DTEND;VALUE=DATE:20271207
+SUMMARY:နတ်တော် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နတ်တော် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-12-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271213
+DTEND;VALUE=DATE:20271214
+SUMMARY:နတ်တော် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နတ်တော် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-12-21@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271221
+DTEND;VALUE=DATE:20271222
+SUMMARY:နတ်တော် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-12-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:နတ်တော် လပြည့်ကျော် ၁၂ ရ
+ က် · ခရစ္စမတ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၁၂ ရက်\nခရစ္စမတ်န
+ ေ့\nပြဿဒါး\nနှစ်စဉ်ပြက္ခဒိန
+ ်တွက်ချက်မှု — ထပ်တိုး/အစာ
+ းထိုးရုံးပိတ်ရက်များ မပါန
+ ိုင်ပါ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-12-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271227
+DTEND;VALUE=DATE:20271228
+SUMMARY:နတ်တော် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နတ်တော် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2027-12-28@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20271228
+DTEND;VALUE=DATE:20271229
+SUMMARY:ပြာသို လဆန်း ၁ ရက် · ကရင်န
+ ှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ပြာသို လဆန
+ ်း ၁ ရက်\nကရင်နှစ်သစ်ကူးနေ့\
+ nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက်
+ မှု — ထပ်တိုး/အစားထိုးရုံး
+ ပိတ်ရက်များ မပါနိုင်ပါ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-01-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280101
+DTEND;VALUE=DATE:20280102
+SUMMARY:ပြာသို လဆန်း ၅ ရက် · နိုင်
+ ငံတကာနှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ပြာသို လဆန
+ ်း ၅ ရက်\nနိုင်ငံတကာနှစ်သစ်
+ ကူးနေ့\nရက်ရာဇာ\nနှစ်စဉ်သတ်
+ မှတ်ရက်\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-01-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280104
+DTEND;VALUE=DATE:20280105
+SUMMARY:ပြာသို လဆန်း ၈ ရက် · ဥပုသ်
+ နေ့ · လွတ်လပ်ရေးနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ပြာသို လဆန
+ ်း ၈ ရက်\nဥပုသ်နေ့\nလွတ်လပ်ရ
+ ေးနေ့\nနှစ်စဉ်ပြက္ခဒိန်တွက
+ ်ချက်မှု — ထပ်တိုး/အစားထို
+ းရုံးပိတ်ရက်များ မပါနိုင်
+ ပါ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-01-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280111
+DTEND;VALUE=DATE:20280112
+SUMMARY:ပြာသို လပြည့် · လပြည့်နေ
+ ့ · ဥပုသ်နေ့ · အာနန္ဒာဘုရားပ
+ ွဲ အဓိကနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ပြာသို လပြ
+ ည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nအာ
+ နန္ဒာဘုရားပွဲ အဓိကနေ့\nမြန
+ ်မာလပြည့်ရက်အလိုက်\nရုံးပိ
+ တ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ 
+ အခြားနှစ်များသည် ပုံမှန်တ
+ ွက်ချက်မှု။ အသစ်ကြေညာချက်
+ များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-01-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280119
+DTEND;VALUE=DATE:20280120
+SUMMARY:ပြာသို လပြည့်ကျော် ၈ ရက် 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ပြာသို လပြ
+ ည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြ
+ ဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-01-26@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280126
+DTEND;VALUE=DATE:20280127
+SUMMARY:ပြာသို လကွယ် · လကွယ်နေ့ · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · ပြာသို လကွ
+ ယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿဒ
+ ါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-02-03@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280203
+DTEND;VALUE=DATE:20280204
+SUMMARY:တပို့တွဲ လဆန်း ၈ ရက် · ဥပု
+ သ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပို့တွဲ လ
+ ဆန်း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇ
+ ာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-02-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280210
+DTEND;VALUE=DATE:20280211
+SUMMARY:တပို့တွဲ လပြည့် · လပြည့်
+ နေ့ · ဥပုသ်နေ့ · ထမနဲပွဲကာလ
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\n
+ ထမနဲပွဲကာလ\nရက်ရာဇာ\nဒေသအလိ
+ ုက် ကျင်းပရက်ကွာနိုင်သည်\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-02-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280212
+DTEND;VALUE=DATE:20280213
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၂ ရ
+ က် · ပြည်ထောင်စုနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၂ ရက်\nပြည်ထောင်
+ စုနေ့\nနှစ်စဉ်ပြက္ခဒိန်တွက
+ ်ချက်မှု — ထပ်တိုး/အစားထို
+ းရုံးပိတ်ရက်များ မပါနိုင်
+ ပါ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-02-18@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280218
+DTEND;VALUE=DATE:20280219
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၈ ရ
+ က် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-02-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280224
+DTEND;VALUE=DATE:20280225
+SUMMARY:တပို့တွဲ လကွယ် · လကွယ်နေ
+ ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပို့တွဲ လ
+ ကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက
+ ်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-03-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280302
+DTEND;VALUE=DATE:20280303
+SUMMARY:တပေါင်း လဆန်း ၇ ရက် · တောင
+ ်သူလယ်သမားနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပေါင်း လဆ
+ န်း ၇ ရက်\nတောင်သူလယ်သမားနေ
+ ့\nအဖိတ်နေ့\nနှစ်စဉ်ပြက္ခဒိ
+ န်တွက်ချက်မှု — ထပ်တိုး/အစ
+ ားထိုးရုံးပိတ်ရက်များ မပါ
+ နိုင်ပါ\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-03-03@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280303
+DTEND;VALUE=DATE:20280304
+SUMMARY:တပေါင်း လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပေါင်း လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-03-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280310
+DTEND;VALUE=DATE:20280311
+SUMMARY:တပေါင်း လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · တပေါင်းလပြည့
+ ်နေ့ · တပေါင်းဘုရားပွဲ · သဲပ
+ ုံစေတီပူဇော်ပွဲ
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပေါင်း လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nတ
+ ပေါင်းလပြည့်နေ့\nတပေါင်းဘု
+ ရားပွဲ · သဲပုံစေတီပူဇော်ပွ
+ ဲ\nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက
+ ်မှု — ထပ်တိုး/အစားထိုးရုံ
+ းပိတ်ရက်များ မပါနိုင်ပါ\nမ
+ ြန်မာလပြည့်ရက်အလိုက်\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-03-18@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280318
+DTEND;VALUE=DATE:20280319
+SUMMARY:တပေါင်း လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပေါင်း လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-03-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280325
+DTEND;VALUE=DATE:20280326
+SUMMARY:တပေါင်း လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · တပေါင်း လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-03-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280327
+DTEND;VALUE=DATE:20280328
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၂ ရက
+ ် · တပ်မတော်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၂ ရက်\nတပ်မတော်နေ
+ ့\nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက
+ ်မှု — ထပ်တိုး/အစားထိုးရုံ
+ းပိတ်ရက်များ မပါနိုင်ပါ\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-04-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280402
+DTEND;VALUE=DATE:20280403
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-04-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280409
+DTEND;VALUE=DATE:20280410
+SUMMARY:နှောင်းတန်ခူး လပြည့် · လ
+ ပြည့်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်\nလပြည့်နေ့\nဥပုသ
+ ်နေ့\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-04-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280413
+DTEND;VALUE=DATE:20280414
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၄ ရက် · သင်္ကြန်အကြိုနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၄ ရက်\nသင်္
+ ကြန်အကြိုနေ့\nပြဿဒါး\nနှစ်စ
+ ဉ်ပြက္ခဒိန်တွက်ချက်မှု — ထ
+ ပ်တိုး/အစားထိုးရုံးပိတ်ရက
+ ်များ မပါနိုင်ပါ\nရုံးပိတ်
+ ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အခ
+ ြားနှစ်များသည် ပုံမှန်တွက
+ ်ချက်မှု။ အသစ်ကြေညာချက်မျ
+ ား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-04-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280414
+DTEND;VALUE=DATE:20280415
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၅ ရက် · သင်္ကြန်အကျနေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၅ ရက်\nသင်္
+ ကြန်အကျနေ့\nရက်ရာဇာ\nနှစ်စဉ
+ ်ပြက္ခဒိန်တွက်ချက်မှု — ထပ
+ ်တိုး/အစားထိုးရုံးပိတ်ရက်
+ များ မပါနိုင်ပါ\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-04-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280415
+DTEND;VALUE=DATE:20280416
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၆ ရက် · သင်္ကြန်အကြတ်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၆ ရက်\nသင်္
+ ကြန်အကြတ်နေ့\nပြဿဒါး\nနှစ်စ
+ ဉ်ပြက္ခဒိန်တွက်ချက်မှု — ထ
+ ပ်တိုး/အစားထိုးရုံးပိတ်ရက
+ ်များ မပါနိုင်ပါ\nရုံးပိတ်
+ ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အခ
+ ြားနှစ်များသည် ပုံမှန်တွက
+ ်ချက်မှု။ အသစ်ကြေညာချက်မျ
+ ား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-04-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280416
+DTEND;VALUE=DATE:20280417
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၇ ရက် · သင်္ကြန်အတက်နေ့
+DESCRIPTION:၁၃၈၉ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၇ ရက်\nသင်္
+ ကြန်အတက်နေ့\nအဖိတ်နေ့\nနှစ်
+ စဉ်ပြက္ခဒိန်တွက်ချက်မှု — 
+ ထပ်တိုး/အစားထိုးရုံးပိတ်ရ
+ က်များ မပါနိုင်ပါ\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-04-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280417
+DTEND;VALUE=DATE:20280418
+SUMMARY:တန်ခူး လပြည့်ကျော် ၈ ရက် 
+ · ဥပုသ်နေ့ · မြန်မာနှစ်သစ်က
+ ူးနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တန်ခူး လပြ
+ ည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nမြ
+ န်မာနှစ်သစ်ကူးနေ့\nနှစ်စဉ်
+ ပြက္ခဒိန်တွက်ချက်မှု — ထပ်
+ တိုး/အစားထိုးရုံးပိတ်ရက်မ
+ ျား မပါနိုင်ပါ\nရုံးပိတ်ရက
+ ်များ: ၂၀၂၆ မူလစာရင်း၊ အခြာ
+ းနှစ်များသည် ပုံမှန်တွက်ခ
+ ျက်မှု။ အသစ်ကြေညာချက်များ 
+ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-04-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280423
+DTEND;VALUE=DATE:20280424
+SUMMARY:တန်ခူး လကွယ် · လကွယ်နေ့ · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တန်ခူး လကွ
+ ယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-05-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280501
+DTEND;VALUE=DATE:20280502
+SUMMARY:ကဆုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့ · အလုပ်သမားနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ကဆုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nအလုပ်သမား
+ နေ့\nနှစ်စဉ်ပြက္ခဒိန်တွက်ခ
+ ျက်မှု — ထပ်တိုး/အစားထိုးရ
+ ုံးပိတ်ရက်များ မပါနိုင်ပါ\
+ nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-05-08@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280508
+DTEND;VALUE=DATE:20280509
+SUMMARY:ကဆုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · ကဆုန်လပြည့်နေ့ 
+ · ညောင်ရေသွန်းပွဲ · ဗုဒ္ဓနေ
+ ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ကဆုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nကဆု
+ န်လပြည့်နေ့\nညောင်ရေသွန်းပ
+ ွဲ · ဗုဒ္ဓနေ့\nနှစ်စဉ်ပြက္ခ
+ ဒိန်တွက်ချက်မှု — ထပ်တိုး/
+ အစားထိုးရုံးပိတ်ရက်များ မ
+ ပါနိုင်ပါ\nမြန်မာလပြည့်ရက်
+ အလိုက်\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-05-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280516
+DTEND;VALUE=DATE:20280517
+SUMMARY:ကဆုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ကဆုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-05-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280523
+DTEND;VALUE=DATE:20280524
+SUMMARY:ကဆုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ကဆုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-05-31@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280531
+DTEND;VALUE=DATE:20280601
+SUMMARY:နယုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နယုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-06-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280607
+DTEND;VALUE=DATE:20280608
+SUMMARY:နယုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · မဟာသမယနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နယုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမဟာ
+ သမယနေ့\nမြန်မာလပြည့်ရက်အလိ
+ ုက်\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-06-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280615
+DTEND;VALUE=DATE:20280616
+SUMMARY:နယုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နယုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရက်
+ ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-06-21@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280621
+DTEND;VALUE=DATE:20280622
+SUMMARY:နယုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နယုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-06-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280629
+DTEND;VALUE=DATE:20280630
+SUMMARY:ဝါဆို လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ဝါဆို လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-07-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280706
+DTEND;VALUE=DATE:20280707
+SUMMARY:ဝါဆို လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · ဝါဆိုလပြည့်နေ့ 
+ · ဓမ္မစကြာနေ့ · ဝါဆိုသင်္ကန
+ ်းကပ်လှူပွဲ
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ဝါဆို လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nဝါဆ
+ ိုလပြည့်နေ့\nဓမ္မစကြာနေ့ · 
+ ဝါဆိုသင်္ကန်းကပ်လှူပွဲ\nနှ
+ စ်စဉ်ပြက္ခဒိန်တွက်ချက်မှ
+ ု — ထပ်တိုး/အစားထိုးရုံးပိ
+ တ်ရက်များ မပါနိုင်ပါ\nမြန်
+ မာလပြည့်ရက်အလိုက်\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-07-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280714
+DTEND;VALUE=DATE:20280715
+SUMMARY:ဝါဆို လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ဝါဆို လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-07-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280719
+DTEND;VALUE=DATE:20280720
+SUMMARY:ဝါဆို လပြည့်ကျော် ၁၃ ရက် 
+ · အာဇာနည်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ဝါဆို လပြည
+ ့်ကျော် ၁၃ ရက်\nအာဇာနည်နေ့\n
+ ရက်ရာဇာ\nမွန်းလွဲပြဿဒါး\nနှ
+ စ်စဉ်ပြက္ခဒိန်တွက်ချက်မှ
+ ု — ထပ်တိုး/အစားထိုးရုံးပိ
+ တ်ရက်များ မပါနိုင်ပါ\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-07-21@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280721
+DTEND;VALUE=DATE:20280722
+SUMMARY:ဝါဆို လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ဝါဆို လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-07-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280729
+DTEND;VALUE=DATE:20280730
+SUMMARY:ဝါခေါင် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ဝါခေါင် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-08-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280805
+DTEND;VALUE=DATE:20280806
+SUMMARY:ဝါခေါင် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · မေတ္တာအခါတော
+ ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမ
+ ေတ္တာအခါတော်နေ့\nပြဿဒါး\nမြ
+ န်မာလပြည့်ရက်အလိုက်\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-08-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280813
+DTEND;VALUE=DATE:20280814
+SUMMARY:ဝါခေါင် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-08-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280819
+DTEND;VALUE=DATE:20280820
+SUMMARY:ဝါခေါင် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ဝါခေါင် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-08-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280827
+DTEND;VALUE=DATE:20280828
+SUMMARY:တော်သလင်း လဆန်း ၈ ရက် · ဥပ
+ ုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တော်သလင်း 
+ လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-09-03@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280903
+DTEND;VALUE=DATE:20280904
+SUMMARY:တော်သလင်း လပြည့် · လပြည့
+ ်နေ့ · ဥပုသ်နေ့ · ဂရုဓမ္မအခါ
+ တော်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တော်သလင်း 
+ လပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\
+ nဂရုဓမ္မအခါတော်နေ့\nမြန်မာ
+ လပြည့်ရက်အလိုက်\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-09-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280911
+DTEND;VALUE=DATE:20280912
+SUMMARY:တော်သလင်း လပြည့်ကျော် ၈ 
+ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တော်သလင်း 
+ လပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\
+ nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-09-18@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280918
+DTEND;VALUE=DATE:20280919
+SUMMARY:တော်သလင်း လကွယ် · လကွယ်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တော်သလင်း 
+ လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-09-26@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20280926
+DTEND;VALUE=DATE:20280927
+SUMMARY:သီတင်းကျွတ် လဆန်း ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရက်
+ ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-10-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281002
+DTEND;VALUE=DATE:20281003
+SUMMARY:သီတင်းကျွတ် လဆန်း ၁၄ ရက် 
+ · လပြည့်ပွဲတော် ဆက်စပ်ရုံး
+ ပိတ်ရက်
+DESCRIPTION:၁၃၉၀ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၁၄ ရက်\nလပြည့်ပွဲတေ
+ ာ် ဆက်စပ်ရုံးပိတ်ရက်\nအဖိတ
+ ်နေ့\nပြဿဒါး\nပုံမှန်ရက်တွက
+ ်ချက်မှု — နှစ်အလိုက်ကြေညာ
+ ချက်နှင့် စစ်ဆေးပါ\nရုံးပိ
+ တ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ 
+ အခြားနှစ်များသည် ပုံမှန်တ
+ ွက်ချက်မှု။ အသစ်ကြေညာချက်
+ များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-10-03@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281003
+DTEND;VALUE=DATE:20281004
+SUMMARY:သီတင်းကျွတ် လပြည့် · လပြ
+ ည့်နေ့ · ဥပုသ်နေ့ · သီတင်းကျ
+ ွတ်လပြည့်နေ့ · သီတင်းကျွတ် 
+ မီးထွန်းပွဲ · အဘိဓမ္မာနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်\nလပြည့်နေ့\nဥပုသ်န
+ ေ့\nသီတင်းကျွတ်လပြည့်နေ့\nသ
+ ီတင်းကျွတ် မီးထွန်းပွဲ · အဘ
+ ိဓမ္မာနေ့\nရက်ရာဇာ\nနှစ်စဉ်
+ ပြက္ခဒိန်တွက်ချက်မှု — ထပ်
+ တိုး/အစားထိုးရုံးပိတ်ရက်မ
+ ျား မပါနိုင်ပါ\nမြန်မာလပြည
+ ့်ရက်အလိုက်\nရုံးပိတ်ရက်မျ
+ ား: ၂၀၂၆ မူလစာရင်း၊ အခြားနှ
+ စ်များသည် ပုံမှန်တွက်ချက်
+ မှု။ အသစ်ကြေညာချက်များ အလိ
+ ုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-10-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281004
+DTEND;VALUE=DATE:20281005
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၁ ရက် · လပြည့်ပွဲတော် ဆက်စပ
+ ်ရုံးပိတ်ရက်
+DESCRIPTION:၁၃၉၀ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၁ ရက်\nလပြည့်
+ ပွဲတော် ဆက်စပ်ရုံးပိတ်ရက်\
+ nပုံမှန်ရက်တွက်ချက်မှု — န
+ ှစ်အလိုက်ကြေညာချက်နှင့် စ
+ စ်ဆေးပါ\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-10-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281005
+DTEND;VALUE=DATE:20281006
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၂ ရက် · ကမ္ဘာ့ဆရာများနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၂ ရက်\nကမ္ဘာ့
+ ဆရာများနေ့\nရက်ရာဇာ\nရုံးပိ
+ တ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ 
+ အခြားနှစ်များသည် ပုံမှန်တ
+ ွက်ချက်မှု။ အသစ်ကြေညာချက်
+ များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-10-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281011
+DTEND;VALUE=DATE:20281012
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၈ ရက်\nဥပုသ်န
+ ေ့\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-10-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281017
+DTEND;VALUE=DATE:20281018
+SUMMARY:သီတင်းကျွတ် လကွယ် · လကွယ
+ ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · သီတင်းကျွ
+ တ် လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့
+ \nရက်ရာဇာ\nရုံးပိတ်ရက်များ: 
+ ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်မ
+ ျားသည် ပုံမှန်တွက်ချက်မှု
+ ။ အသစ်ကြေညာချက်များ အလိုအလ
+ ျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-10-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281024
+DTEND;VALUE=DATE:20281025
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၇ ရက
+ ် · ကုလသမဂ္ဂနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၇ ရက်\nကုလသမဂ္ဂနေ
+ ့\nအဖိတ်နေ့\nပြဿဒါး\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-10-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281025
+DTEND;VALUE=DATE:20281026
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nမွန်းလွဲပြဿဒါး\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-10-31@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281031
+DTEND;VALUE=DATE:20281101
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၁၄ ရ
+ က် · လပြည့်ပွဲတော် ဆက်စပ်ရု
+ ံးပိတ်ရက်
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၁၄ ရက်\nလပြည့်ပွဲ
+ တော် ဆက်စပ်ရုံးပိတ်ရက်\nအဖ
+ ိတ်နေ့\nပြဿဒါး\nပုံမှန်ရက်တ
+ ွက်ချက်မှု — နှစ်အလိုက်ကြေ
+ ညာချက်နှင့် စစ်ဆေးပါ\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-11-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281101
+DTEND;VALUE=DATE:20281102
+SUMMARY:တန်ဆောင်မုန်း လပြည့် · လ
+ ပြည့်နေ့ · ဥပုသ်နေ့ · တန်ဆော
+ င်မုန်းလပြည့်နေ့ · တန်ဆောင
+ ်တိုင် · မသိုးသင်္ကန်းကပ်လ
+ ှူပွဲ
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်\nလပြည့်နေ့\nဥပုသ
+ ်နေ့\nတန်ဆောင်မုန်းလပြည့်န
+ ေ့\nတန်ဆောင်တိုင် · မသိုးသင
+ ်္ကန်းကပ်လှူပွဲ\nရက်ရာဇာ\nမ
+ ွန်းလွဲပြဿဒါး\nနှစ်စဉ်ပြက္
+ ခဒိန်တွက်ချက်မှု — ထပ်တိုး
+ /အစားထိုးရုံးပိတ်ရက်များ မ
+ ပါနိုင်ပါ\nမြန်မာလပြည့်ရက်
+ အလိုက်\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-11-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281109
+DTEND;VALUE=DATE:20281110
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၈ ရက်\nဥပုသ
+ ်နေ့\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-11-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281111
+DTEND;VALUE=DATE:20281112
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၁၀ ရက် · အမျိုးသားနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၁၀ ရက်\nအမျ
+ ိုးသားနေ့\nနှစ်စဉ်ပြက္ခဒိန
+ ်တွက်ချက်မှု — ထပ်တိုး/အစာ
+ းထိုးရုံးပိတ်ရက်များ မပါန
+ ိုင်ပါ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-11-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281116
+DTEND;VALUE=DATE:20281117
+SUMMARY:တန်ဆောင်မုန်း လကွယ် · လက
+ ွယ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လကွယ်\nလကွယ်နေ့\nဥပုသ်န
+ ေ့\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-11-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281117
+DTEND;VALUE=DATE:20281118
+SUMMARY:နတ်တော် လဆန်း ၁ ရက် · စာဆိ
+ ုတော်နေ့ · ရှမ်းနှစ်သစ်ကူး
+ နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နတ်တော် လဆ
+ န်း ၁ ရက်\nစာဆိုတော်နေ့ · ရှမ
+ ်းနှစ်သစ်ကူးနေ့\nရက်ရာဇာ\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-11-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281124
+DTEND;VALUE=DATE:20281125
+SUMMARY:နတ်တော် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နတ်တော် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇာ\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-12-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281201
+DTEND;VALUE=DATE:20281202
+SUMMARY:နတ်တော် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နတ်တော် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-12-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281209
+DTEND;VALUE=DATE:20281210
+SUMMARY:နတ်တော် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-12-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281215
+DTEND;VALUE=DATE:20281216
+SUMMARY:နတ်တော် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နတ်တော် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက်
+ ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-12-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281216
+DTEND;VALUE=DATE:20281217
+SUMMARY:ပြာသို လဆန်း ၁ ရက် · ကရင်န
+ ှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ပြာသို လဆန
+ ်း ၁ ရက်\nကရင်နှစ်သစ်ကူးနေ့\
+ nရက်ရာဇာ\nနှစ်စဉ်ပြက္ခဒိန်
+ တွက်ချက်မှု — ထပ်တိုး/အစား
+ ထိုးရုံးပိတ်ရက်များ မပါနိ
+ ုင်ပါ\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-12-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281223
+DTEND;VALUE=DATE:20281224
+SUMMARY:ပြာသို လဆန်း ၈ ရက် · ဥပုသ်
+ နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ပြာသို လဆန
+ ်း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇာ\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-12-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281225
+DTEND;VALUE=DATE:20281226
+SUMMARY:ပြာသို လဆန်း ၁၀ ရက် · ခရစ္
+ စမတ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ပြာသို လဆန
+ ်း ၁၀ ရက်\nခရစ္စမတ်နေ့\nနှစ်
+ စဉ်ပြက္ခဒိန်တွက်ချက်မှု — 
+ ထပ်တိုး/အစားထိုးရုံးပိတ်ရ
+ က်များ မပါနိုင်ပါ\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2028-12-30@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20281230
+DTEND;VALUE=DATE:20281231
+SUMMARY:ပြာသို လပြည့် · လပြည့်နေ
+ ့ · ဥပုသ်နေ့ · အာနန္ဒာဘုရားပ
+ ွဲ အဓိကနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ပြာသို လပြ
+ ည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nအာ
+ နန္ဒာဘုရားပွဲ အဓိကနေ့\nရက်
+ ရာဇာ\nမြန်မာလပြည့်ရက်အလိုက
+ ်\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-01-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290101
+DTEND;VALUE=DATE:20290102
+SUMMARY:ပြာသို လပြည့်ကျော် ၂ ရက် 
+ · နိုင်ငံတကာနှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ပြာသို လပြ
+ ည့်ကျော် ၂ ရက်\nနိုင်ငံတကာန
+ ှစ်သစ်ကူးနေ့\nနှစ်စဉ်သတ်မှ
+ တ်ရက်\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-01-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290104
+DTEND;VALUE=DATE:20290105
+SUMMARY:ပြာသို လပြည့်ကျော် ၅ ရက် 
+ · လွတ်လပ်ရေးနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ပြာသို လပြ
+ ည့်ကျော် ၅ ရက်\nလွတ်လပ်ရေးန
+ ေ့\nရက်ရာဇာ\nနှစ်စဉ်ပြက္ခဒိ
+ န်တွက်ချက်မှု — ထပ်တိုး/အစ
+ ားထိုးရုံးပိတ်ရက်များ မပါ
+ နိုင်ပါ\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-01-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290107
+DTEND;VALUE=DATE:20290108
+SUMMARY:ပြာသို လပြည့်ကျော် ၈ ရက် 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ပြာသို လပြ
+ ည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-01-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290114
+DTEND;VALUE=DATE:20290115
+SUMMARY:ပြာသို လကွယ် · လကွယ်နေ့ · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · ပြာသို လကွ
+ ယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-01-22@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290122
+DTEND;VALUE=DATE:20290123
+SUMMARY:တပို့တွဲ လဆန်း ၈ ရက် · ဥပု
+ သ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တပို့တွဲ လ
+ ဆန်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-01-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290129
+DTEND;VALUE=DATE:20290130
+SUMMARY:တပို့တွဲ လပြည့် · လပြည့်
+ နေ့ · ဥပုသ်နေ့ · ထမနဲပွဲကာလ
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\n
+ ထမနဲပွဲကာလ\nပြဿဒါး\nဒေသအလို
+ က် ကျင်းပရက်ကွာနိုင်သည်\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-02-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290206
+DTEND;VALUE=DATE:20290207
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၈ ရ
+ က် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\n
+ ရက်ရာဇာ\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-02-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290212
+DTEND;VALUE=DATE:20290213
+SUMMARY:တပို့တွဲ လကွယ် · လကွယ်နေ
+ ့ · ဥပုသ်နေ့ · ပြည်ထောင်စုနေ
+ ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တပို့တွဲ လ
+ ကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြ
+ ည်ထောင်စုနေ့\nပြဿဒါး\nနှစ်စ
+ ဉ်ပြက္ခဒိန်တွက်ချက်မှု — ထ
+ ပ်တိုး/အစားထိုးရုံးပိတ်ရက
+ ်များ မပါနိုင်ပါ\nရုံးပိတ်
+ ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အခ
+ ြားနှစ်များသည် ပုံမှန်တွက
+ ်ချက်မှု။ အသစ်ကြေညာချက်မျ
+ ား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-02-20@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290220
+DTEND;VALUE=DATE:20290221
+SUMMARY:တပေါင်း လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တပေါင်း လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-02-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290227
+DTEND;VALUE=DATE:20290228
+SUMMARY:တပေါင်း လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · တပေါင်းလပြည့
+ ်နေ့ · တပေါင်းဘုရားပွဲ · သဲပ
+ ုံစေတီပူဇော်ပွဲ
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တပေါင်း လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nတ
+ ပေါင်းလပြည့်နေ့\nတပေါင်းဘု
+ ရားပွဲ · သဲပုံစေတီပူဇော်ပွ
+ ဲ\nပြဿဒါး\nနှစ်စဉ်ပြက္ခဒိန်
+ တွက်ချက်မှု — ထပ်တိုး/အစား
+ ထိုးရုံးပိတ်ရက်များ မပါနိ
+ ုင်ပါ\nမြန်မာလပြည့်ရက်အလို
+ က်\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-03-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290302
+DTEND;VALUE=DATE:20290303
+SUMMARY:တပေါင်း လပြည့်ကျော် ၃ ရက
+ ် · တောင်သူလယ်သမားနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တပေါင်း လပ
+ ြည့်ကျော် ၃ ရက်\nတောင်သူလယ်
+ သမားနေ့\nနှစ်စဉ်ပြက္ခဒိန်တ
+ ွက်ချက်မှု — ထပ်တိုး/အစားထ
+ ိုးရုံးပိတ်ရက်များ မပါနို
+ င်ပါ\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-03-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290307
+DTEND;VALUE=DATE:20290308
+SUMMARY:တပေါင်း လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တပေါင်း လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nမွန်းလွဲပြဿဒါး\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-03-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290314
+DTEND;VALUE=DATE:20290315
+SUMMARY:တပေါင်း လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · တပေါင်း လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက်
+ ရာဇာ\nမွန်းလွဲပြဿဒါး\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-03-22@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290322
+DTEND;VALUE=DATE:20290323
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၈ ရက်\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-03-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290327
+DTEND;VALUE=DATE:20290328
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၁၃ ရ
+ က် · တပ်မတော်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၁၃ ရက်\nတပ်မတော်န
+ ေ့\nနှစ်စဉ်ပြက္ခဒိန်တွက်ချ
+ က်မှု — ထပ်တိုး/အစားထိုးရု
+ ံးပိတ်ရက်များ မပါနိုင်ပါ\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-03-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290329
+DTEND;VALUE=DATE:20290330
+SUMMARY:နှောင်းတန်ခူး လပြည့် · လ
+ ပြည့်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်\nလပြည့်နေ့\nဥပုသ
+ ်နေ့\nပြဿဒါး\nရုံးပိတ်ရက်မျ
+ ား: ၂၀၂၆ မူလစာရင်း၊ အခြားနှ
+ စ်များသည် ပုံမှန်တွက်ချက်
+ မှု။ အသစ်ကြေညာချက်များ အလိ
+ ုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-04-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290406
+DTEND;VALUE=DATE:20290407
+SUMMARY:နှောင်းတန်ခူး လပြည့်ကျေ
+ ာ် ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နှောင်းတန
+ ်ခူး လပြည့်ကျော် ၈ ရက်\nဥပုသ
+ ်နေ့\nရက်ရာဇာ\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-04-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290412
+DTEND;VALUE=DATE:20290413
+SUMMARY:နှောင်းတန်ခူး လကွယ် · လက
+ ွယ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နှောင်းတန
+ ်ခူး လကွယ်\nလကွယ်နေ့\nဥပုသ်န
+ ေ့\nပြဿဒါး\nရုံးပိတ်ရက်များ:
+  ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်
+ များသည် ပုံမှန်တွက်ချက်မှ
+ ု။ အသစ်ကြေညာချက်များ အလိုအ
+ လျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-04-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290413
+DTEND;VALUE=DATE:20290414
+SUMMARY:နှောင်းကဆုန် လဆန်း ၁ ရက် 
+ · သင်္ကြန်အကြိုနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နှောင်းကဆ
+ ုန် လဆန်း ၁ ရက်\nသင်္ကြန်အကြ
+ ိုနေ့\nပြဿဒါး\nနှစ်စဉ်ပြက္ခ
+ ဒိန်တွက်ချက်မှု — ထပ်တိုး/
+ အစားထိုးရုံးပိတ်ရက်များ မ
+ ပါနိုင်ပါ\nရုံးပိတ်ရက်များ
+ : ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်
+ များသည် ပုံမှန်တွက်ချက်မှ
+ ု။ အသစ်ကြေညာချက်များ အလိုအ
+ လျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-04-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290414
+DTEND;VALUE=DATE:20290415
+SUMMARY:နှောင်းကဆုန် လဆန်း ၂ ရက် 
+ · သင်္ကြန်အကျနေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နှောင်းကဆ
+ ုန် လဆန်း ၂ ရက်\nသင်္ကြန်အကျ
+ နေ့\nရက်ရာဇာ\nနှစ်စဉ်ပြက္ခဒ
+ ိန်တွက်ချက်မှု — ထပ်တိုး/အ
+ စားထိုးရုံးပိတ်ရက်များ မပ
+ ါနိုင်ပါ\nရုံးပိတ်ရက်များ: 
+ ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်မ
+ ျားသည် ပုံမှန်တွက်ချက်မှု
+ ။ အသစ်ကြေညာချက်များ အလိုအလ
+ ျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-04-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290415
+DTEND;VALUE=DATE:20290416
+SUMMARY:နှောင်းကဆုန် လဆန်း ၃ ရက် 
+ · သင်္ကြန်အကြတ်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နှောင်းကဆ
+ ုန် လဆန်း ၃ ရက်\nသင်္ကြန်အကြ
+ တ်နေ့\nနှစ်စဉ်ပြက္ခဒိန်တွက
+ ်ချက်မှု — ထပ်တိုး/အစားထို
+ းရုံးပိတ်ရက်များ မပါနိုင်
+ ပါ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-04-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290416
+DTEND;VALUE=DATE:20290417
+SUMMARY:နှောင်းကဆုန် လဆန်း ၄ ရက် 
+ · သင်္ကြန်အတက်နေ့
+DESCRIPTION:၁၃၉၀ ခုနှစ် · နှောင်းကဆ
+ ုန် လဆန်း ၄ ရက်\nသင်္ကြန်အတက
+ ်နေ့\nနှစ်စဉ်ပြက္ခဒိန်တွက်
+ ချက်မှု — ထပ်တိုး/အစားထိုး
+ ရုံးပိတ်ရက်များ မပါနိုင်ပ
+ ါ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-04-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290417
+DTEND;VALUE=DATE:20290418
+SUMMARY:ကဆုန် လဆန်း ၅ ရက် · မြန်မာ
+ နှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ကဆုန် လဆန်
+ း ၅ ရက်\nမြန်မာနှစ်သစ်ကူးနေ
+ ့\nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက
+ ်မှု — ထပ်တိုး/အစားထိုးရုံ
+ းပိတ်ရက်များ မပါနိုင်ပါ\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-04-20@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290420
+DTEND;VALUE=DATE:20290421
+SUMMARY:ကဆုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ကဆုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-04-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290427
+DTEND;VALUE=DATE:20290428
+SUMMARY:ကဆုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · ကဆုန်လပြည့်နေ့ 
+ · ညောင်ရေသွန်းပွဲ · ဗုဒ္ဓနေ
+ ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ကဆုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nကဆု
+ န်လပြည့်နေ့\nညောင်ရေသွန်းပ
+ ွဲ · ဗုဒ္ဓနေ့\nပြဿဒါး\nနှစ်စဉ
+ ်ပြက္ခဒိန်တွက်ချက်မှု — ထပ
+ ်တိုး/အစားထိုးရုံးပိတ်ရက်
+ များ မပါနိုင်ပါ\nမြန်မာလပြ
+ ည့်ရက်အလိုက်\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-05-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290501
+DTEND;VALUE=DATE:20290502
+SUMMARY:ကဆုန် လပြည့်ကျော် ၄ ရက် · 
+ အလုပ်သမားနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ကဆုန် လပြည
+ ့်ကျော် ၄ ရက်\nအလုပ်သမားနေ့\
+ nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက်
+ မှု — ထပ်တိုး/အစားထိုးရုံး
+ ပိတ်ရက်များ မပါနိုင်ပါ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-05-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290505
+DTEND;VALUE=DATE:20290506
+SUMMARY:ကဆုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ကဆုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရက်
+ ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-05-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290512
+DTEND;VALUE=DATE:20290513
+SUMMARY:ကဆုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ကဆုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက်ရာ
+ ဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-05-20@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290520
+DTEND;VALUE=DATE:20290521
+SUMMARY:နယုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နယုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-05-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290527
+DTEND;VALUE=DATE:20290528
+SUMMARY:နယုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · မဟာသမယနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နယုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမဟာ
+ သမယနေ့\nပြဿဒါး\nမြန်မာလပြည့
+ ်ရက်အလိုက်\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-06-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290604
+DTEND;VALUE=DATE:20290605
+SUMMARY:နယုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နယုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-06-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290610
+DTEND;VALUE=DATE:20290611
+SUMMARY:နယုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နယုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿဒါ
+ း\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-06-18@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290618
+DTEND;VALUE=DATE:20290619
+SUMMARY:ပထမဝါဆို လဆန်း ၈ ရက် · ဥပု
+ သ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ပထမဝါဆို လ
+ ဆန်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိ
+ တ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ 
+ အခြားနှစ်များသည် ပုံမှန်တ
+ ွက်ချက်မှု။ အသစ်ကြေညာချက်
+ များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-06-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290625
+DTEND;VALUE=DATE:20290626
+SUMMARY:ပထမဝါဆို လပြည့် · လပြည့်
+ နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ပထမဝါဆို လ
+ ပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-07-03@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290703
+DTEND;VALUE=DATE:20290704
+SUMMARY:ပထမဝါဆို လပြည့်ကျော် ၈ ရ
+ က် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ပထမဝါဆို လ
+ ပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\n
+ ပြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-07-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290710
+DTEND;VALUE=DATE:20290711
+SUMMARY:ပထမဝါဆို လကွယ် · လကွယ်နေ
+ ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ပထမဝါဆို လ
+ ကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြ
+ ဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-07-18@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290718
+DTEND;VALUE=DATE:20290719
+SUMMARY:ဒုတိယဝါဆို လဆန်း ၈ ရက် · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရက်ရ
+ ာဇာ\nမွန်းလွဲပြဿဒါး\nရုံးပိ
+ တ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ 
+ အခြားနှစ်များသည် ပုံမှန်တ
+ ွက်ချက်မှု။ အသစ်ကြေညာချက်
+ များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-07-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290719
+DTEND;VALUE=DATE:20290720
+SUMMARY:ဒုတိယဝါဆို လဆန်း ၉ ရက် · အ
+ ာဇာနည်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လဆန်း ၉ ရက်\nအာဇာနည်နေ့\nနှ
+ စ်စဉ်ပြက္ခဒိန်တွက်ချက်မှ
+ ု — ထပ်တိုး/အစားထိုးရုံးပိ
+ တ်ရက်များ မပါနိုင်ပါ\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-07-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290725
+DTEND;VALUE=DATE:20290726
+SUMMARY:ဒုတိယဝါဆို လပြည့် · လပြည
+ ့်နေ့ · ဥပုသ်နေ့ · ဝါဆိုလပြည
+ ့်နေ့ · ဓမ္မစကြာနေ့ · ဝါဆိုသ
+ င်္ကန်းကပ်လှူပွဲ
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လပြည့်\nလပြည့်နေ့\nဥပုသ်နေ
+ ့\nဝါဆိုလပြည့်နေ့\nဓမ္မစကြာ
+ နေ့ · ဝါဆိုသင်္ကန်းကပ်လှူပ
+ ွဲ\nရက်ရာဇာ\nမွန်းလွဲပြဿဒါး\
+ nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက်
+ မှု — ထပ်တိုး/အစားထိုးရုံး
+ ပိတ်ရက်များ မပါနိုင်ပါ\nမြ
+ န်မာလပြည့်ရက်အလိုက်\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-08-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290802
+DTEND;VALUE=DATE:20290803
+SUMMARY:ဒုတိယဝါဆို လပြည့်ကျော် 
+ ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ
+ ့\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-08-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290809
+DTEND;VALUE=DATE:20290810
+SUMMARY:ဒုတိယဝါဆို လကွယ် · လကွယ်
+ နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ဒုတိယဝါဆိ
+ ု လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-08-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290817
+DTEND;VALUE=DATE:20290818
+SUMMARY:ဝါခေါင် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ဝါခေါင် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇာ\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-08-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290824
+DTEND;VALUE=DATE:20290825
+SUMMARY:ဝါခေါင် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · မေတ္တာအခါတော
+ ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမ
+ ေတ္တာအခါတော်နေ့\nရက်ရာဇာ\nမ
+ ြန်မာလပြည့်ရက်အလိုက်\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-09-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290901
+DTEND;VALUE=DATE:20290902
+SUMMARY:ဝါခေါင် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-09-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290907
+DTEND;VALUE=DATE:20290908
+SUMMARY:ဝါခေါင် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ဝါခေါင် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက်
+ ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-09-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290915
+DTEND;VALUE=DATE:20290916
+SUMMARY:တော်သလင်း လဆန်း ၈ ရက် · ဥပ
+ ုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တော်သလင်း 
+ လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာ
+ ဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-09-22@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290922
+DTEND;VALUE=DATE:20290923
+SUMMARY:တော်သလင်း လပြည့် · လပြည့
+ ်နေ့ · ဥပုသ်နေ့ · ဂရုဓမ္မအခါ
+ တော်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တော်သလင်း 
+ လပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\
+ nဂရုဓမ္မအခါတော်နေ့\nရက်ရာဇ
+ ာ\nမြန်မာလပြည့်ရက်အလိုက်\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-09-30@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20290930
+DTEND;VALUE=DATE:20291001
+SUMMARY:တော်သလင်း လပြည့်ကျော် ၈ 
+ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တော်သလင်း 
+ လပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\
+ nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-10-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291005
+DTEND;VALUE=DATE:20291006
+SUMMARY:တော်သလင်း လပြည့်ကျော် ၁
+ ၃ ရက် · ကမ္ဘာ့ဆရာများနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တော်သလင်း 
+ လပြည့်ကျော် ၁၃ ရက်\nကမ္ဘာ့ဆ
+ ရာများနေ့\nပြဿဒါး\nရုံးပိတ်
+ ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အခ
+ ြားနှစ်များသည် ပုံမှန်တွက
+ ်ချက်မှု။ အသစ်ကြေညာချက်မျ
+ ား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-10-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291007
+DTEND;VALUE=DATE:20291008
+SUMMARY:တော်သလင်း လကွယ် · လကွယ်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တော်သလင်း 
+ လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-10-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291015
+DTEND;VALUE=DATE:20291016
+SUMMARY:သီတင်းကျွတ် လဆန်း ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၈ ရက်\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-10-21@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291021
+DTEND;VALUE=DATE:20291022
+SUMMARY:သီတင်းကျွတ် လဆန်း ၁၄ ရက် 
+ · လပြည့်ပွဲတော် ဆက်စပ်ရုံး
+ ပိတ်ရက်
+DESCRIPTION:၁၃၉၁ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၁၄ ရက်\nလပြည့်ပွဲတေ
+ ာ် ဆက်စပ်ရုံးပိတ်ရက်\nအဖိတ
+ ်နေ့\nပြဿဒါး\nပုံမှန်ရက်တွက
+ ်ချက်မှု — နှစ်အလိုက်ကြေညာ
+ ချက်နှင့် စစ်ဆေးပါ\nရုံးပိ
+ တ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ 
+ အခြားနှစ်များသည် ပုံမှန်တ
+ ွက်ချက်မှု။ အသစ်ကြေညာချက်
+ များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-10-22@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291022
+DTEND;VALUE=DATE:20291023
+SUMMARY:သီတင်းကျွတ် လပြည့် · လပြ
+ ည့်နေ့ · ဥပုသ်နေ့ · သီတင်းကျ
+ ွတ်လပြည့်နေ့ · သီတင်းကျွတ် 
+ မီးထွန်းပွဲ · အဘိဓမ္မာနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်\nလပြည့်နေ့\nဥပုသ်န
+ ေ့\nသီတင်းကျွတ်လပြည့်နေ့\nသ
+ ီတင်းကျွတ် မီးထွန်းပွဲ · အဘ
+ ိဓမ္မာနေ့\nပြဿဒါး\nနှစ်စဉ်ပ
+ ြက္ခဒိန်တွက်ချက်မှု — ထပ်တ
+ ိုး/အစားထိုးရုံးပိတ်ရက်မျ
+ ား မပါနိုင်ပါ\nမြန်မာလပြည့
+ ်ရက်အလိုက်\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-10-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291023
+DTEND;VALUE=DATE:20291024
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၁ ရက် · လပြည့်ပွဲတော် ဆက်စပ
+ ်ရုံးပိတ်ရက်
+DESCRIPTION:၁၃၉၁ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၁ ရက်\nလပြည့်
+ ပွဲတော် ဆက်စပ်ရုံးပိတ်ရက်\
+ nရက်ရာဇာ\nပုံမှန်ရက်တွက်ချ
+ က်မှု — နှစ်အလိုက်ကြေညာချက
+ ်နှင့် စစ်ဆေးပါ\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-10-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291024
+DTEND;VALUE=DATE:20291025
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၂ ရက် · ကုလသမဂ္ဂနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၂ ရက်\nကုလသမဂ
+ ္ဂနေ့\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-10-30@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291030
+DTEND;VALUE=DATE:20291031
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၈ ရက်\nဥပုသ်န
+ ေ့\nရက်ရာဇာ\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-11-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291105
+DTEND;VALUE=DATE:20291106
+SUMMARY:သီတင်းကျွတ် လကွယ် · လကွယ
+ ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · သီတင်းကျွ
+ တ် လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့
+ \nပြဿဒါး\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-11-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291113
+DTEND;VALUE=DATE:20291114
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၈ ရက်\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-11-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291119
+DTEND;VALUE=DATE:20291120
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၁၄ ရ
+ က် · လပြည့်ပွဲတော် ဆက်စပ်ရု
+ ံးပိတ်ရက်
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၁၄ ရက်\nလပြည့်ပွဲ
+ တော် ဆက်စပ်ရုံးပိတ်ရက်\nအဖ
+ ိတ်နေ့\nပုံမှန်ရက်တွက်ချက်
+ မှု — နှစ်အလိုက်ကြေညာချက်န
+ ှင့် စစ်ဆေးပါ\nရုံးပိတ်ရက်
+ များ: ၂၀၂၆ မူလစာရင်း၊ အခြား
+ နှစ်များသည် ပုံမှန်တွက်ချ
+ က်မှု။ အသစ်ကြေညာချက်များ အ
+ လိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-11-20@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291120
+DTEND;VALUE=DATE:20291121
+SUMMARY:တန်ဆောင်မုန်း လပြည့် · လ
+ ပြည့်နေ့ · ဥပုသ်နေ့ · တန်ဆော
+ င်မုန်းလပြည့်နေ့ · တန်ဆောင
+ ်တိုင် · မသိုးသင်္ကန်းကပ်လ
+ ှူပွဲ
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်\nလပြည့်နေ့\nဥပုသ
+ ်နေ့\nတန်ဆောင်မုန်းလပြည့်န
+ ေ့\nတန်ဆောင်တိုင် · မသိုးသင
+ ်္ကန်းကပ်လှူပွဲ\nပြဿဒါး\nနှ
+ စ်စဉ်ပြက္ခဒိန်တွက်ချက်မှ
+ ု — ထပ်တိုး/အစားထိုးရုံးပိ
+ တ်ရက်များ မပါနိုင်ပါ\nမြန်
+ မာလပြည့်ရက်အလိုက်\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-11-28@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291128
+DTEND;VALUE=DATE:20291129
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၈ ရက်\nဥပုသ
+ ်နေ့\nရက်ရာဇာ\nမွန်းလွဲပြဿဒ
+ ါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-11-30@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291130
+DTEND;VALUE=DATE:20291201
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၁၀ ရက် · အမျိုးသားနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၁၀ ရက်\nအမျ
+ ိုးသားနေ့\nနှစ်စဉ်ပြက္ခဒိန
+ ်တွက်ချက်မှု — ထပ်တိုး/အစာ
+ းထိုးရုံးပိတ်ရက်များ မပါန
+ ိုင်ပါ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-12-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291205
+DTEND;VALUE=DATE:20291206
+SUMMARY:တန်ဆောင်မုန်း လကွယ် · လက
+ ွယ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လကွယ်\nလကွယ်နေ့\nဥပုသ်န
+ ေ့\nရက်ရာဇာ\nမွန်းလွဲပြဿဒါး\
+ nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-12-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291206
+DTEND;VALUE=DATE:20291207
+SUMMARY:နတ်တော် လဆန်း ၁ ရက် · စာဆိ
+ ုတော်နေ့ · ရှမ်းနှစ်သစ်ကူး
+ နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နတ်တော် လဆ
+ န်း ၁ ရက်\nစာဆိုတော်နေ့ · ရှမ
+ ်းနှစ်သစ်ကူးနေ့\nပြဿဒါး\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-12-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291213
+DTEND;VALUE=DATE:20291214
+SUMMARY:နတ်တော် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နတ်တော် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-12-20@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291220
+DTEND;VALUE=DATE:20291221
+SUMMARY:နတ်တော် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နတ်တော် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-12-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291225
+DTEND;VALUE=DATE:20291226
+SUMMARY:နတ်တော် လပြည့်ကျော် ၅ ရက
+ ် · ခရစ္စမတ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၅ ရက်\nခရစ္စမတ်နေ
+ ့\nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက
+ ်မှု — ထပ်တိုး/အစားထိုးရုံ
+ းပိတ်ရက်များ မပါနိုင်ပါ\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2029-12-28@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20291228
+DTEND;VALUE=DATE:20291229
+SUMMARY:နတ်တော် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-01-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300101
+DTEND;VALUE=DATE:20300102
+SUMMARY:နတ်တော် လပြည့်ကျော် ၁၂ ရ
+ က် · နိုင်ငံတကာနှစ်သစ်ကူးန
+ ေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၁၂ ရက်\nနိုင်ငံတက
+ ာနှစ်သစ်ကူးနေ့\nနှစ်စဉ်သတ်
+ မှတ်ရက်\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-01-03@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300103
+DTEND;VALUE=DATE:20300104
+SUMMARY:နတ်တော် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နတ်တော် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-01-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300104
+DTEND;VALUE=DATE:20300105
+SUMMARY:ပြာသို လဆန်း ၁ ရက် · လွတ်လ
+ ပ်ရေးနေ့ · ကရင်နှစ်သစ်ကူးန
+ ေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ပြာသို လဆန
+ ်း ၁ ရက်\nလွတ်လပ်ရေးနေ့\nကရင
+ ်နှစ်သစ်ကူးနေ့\nပြဿဒါး\nနှစ
+ ်စဉ်ပြက္ခဒိန်တွက်ချက်မှု 
+ — ထပ်တိုး/အစားထိုးရုံးပိတ်
+ ရက်များ မပါနိုင်ပါ\nနှစ်စဉ
+ ်ပြက္ခဒိန်တွက်ချက်မှု — ထပ
+ ်တိုး/အစားထိုးရုံးပိတ်ရက်
+ များ မပါနိုင်ပါ\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-01-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300111
+DTEND;VALUE=DATE:20300112
+SUMMARY:ပြာသို လဆန်း ၈ ရက် · ဥပုသ်
+ နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ပြာသို လဆန
+ ်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-01-18@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300118
+DTEND;VALUE=DATE:20300119
+SUMMARY:ပြာသို လပြည့် · လပြည့်နေ
+ ့ · ဥပုသ်နေ့ · အာနန္ဒာဘုရားပ
+ ွဲ အဓိကနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ပြာသို လပြ
+ ည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nအာ
+ နန္ဒာဘုရားပွဲ အဓိကနေ့\nပြဿ
+ ဒါး\nမြန်မာလပြည့်ရက်အလိုက်
+ \nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-01-26@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300126
+DTEND;VALUE=DATE:20300127
+SUMMARY:ပြာသို လပြည့်ကျော် ၈ ရက် 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ပြာသို လပြ
+ ည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရက
+ ်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-02-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300202
+DTEND;VALUE=DATE:20300203
+SUMMARY:ပြာသို လကွယ် · လကွယ်နေ့ · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · ပြာသို လကွ
+ ယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရက်ရ
+ ာဇာ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-02-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300210
+DTEND;VALUE=DATE:20300211
+SUMMARY:တပို့တွဲ လဆန်း ၈ ရက် · ဥပု
+ သ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပို့တွဲ လ
+ ဆန်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါး\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-02-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300212
+DTEND;VALUE=DATE:20300213
+SUMMARY:တပို့တွဲ လဆန်း ၁၀ ရက် · ပြ
+ ည်ထောင်စုနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပို့တွဲ လ
+ ဆန်း ၁၀ ရက်\nပြည်ထောင်စုနေ့\
+ nရက်ရာဇာ\nနှစ်စဉ်ပြက္ခဒိန်
+ တွက်ချက်မှု — ထပ်တိုး/အစား
+ ထိုးရုံးပိတ်ရက်များ မပါနိ
+ ုင်ပါ\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-02-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300217
+DTEND;VALUE=DATE:20300218
+SUMMARY:တပို့တွဲ လပြည့် · လပြည့်
+ နေ့ · ဥပုသ်နေ့ · ထမနဲပွဲကာလ
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\n
+ ထမနဲပွဲကာလ\nပြဿဒါး\nဒေသအလို
+ က် ကျင်းပရက်ကွာနိုင်သည်\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-02-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300225
+DTEND;VALUE=DATE:20300226
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၈ ရ
+ က် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\n
+ ပြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-03-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300302
+DTEND;VALUE=DATE:20300303
+SUMMARY:တပို့တွဲ လပြည့်ကျော် ၁၃ 
+ ရက် · တောင်သူလယ်သမားနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပို့တွဲ လ
+ ပြည့်ကျော် ၁၃ ရက်\nတောင်သူလ
+ ယ်သမားနေ့\nအဖိတ်နေ့\nနှစ်စဉ
+ ်ပြက္ခဒိန်တွက်ချက်မှု — ထပ
+ ်တိုး/အစားထိုးရုံးပိတ်ရက်
+ များ မပါနိုင်ပါ\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-03-03@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300303
+DTEND;VALUE=DATE:20300304
+SUMMARY:တပို့တွဲ လကွယ် · လကွယ်နေ
+ ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပို့တွဲ လ
+ ကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြ
+ ဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-03-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300311
+DTEND;VALUE=DATE:20300312
+SUMMARY:တပေါင်း လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပေါင်း လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-03-18@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300318
+DTEND;VALUE=DATE:20300319
+SUMMARY:တပေါင်း လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · တပေါင်းလပြည့
+ ်နေ့ · တပေါင်းဘုရားပွဲ · သဲပ
+ ုံစေတီပူဇော်ပွဲ
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပေါင်း လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nတ
+ ပေါင်းလပြည့်နေ့\nတပေါင်းဘု
+ ရားပွဲ · သဲပုံစေတီပူဇော်ပွ
+ ဲ\nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက
+ ်မှု — ထပ်တိုး/အစားထိုးရုံ
+ းပိတ်ရက်များ မပါနိုင်ပါ\nမ
+ ြန်မာလပြည့်ရက်အလိုက်\nရုံး
+ ပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်
+ း၊ အခြားနှစ်များသည် ပုံမှန
+ ်တွက်ချက်မှု။ အသစ်ကြေညာချ
+ က်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-03-26@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300326
+DTEND;VALUE=DATE:20300327
+SUMMARY:တပေါင်း လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပေါင်း လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပ
+ ြဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂
+ ၆ မူလစာရင်း၊ အခြားနှစ်များ
+ သည် ပုံမှန်တွက်ချက်မှု။ အသ
+ စ်ကြေညာချက်များ အလိုအလျော
+ က်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-03-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300327
+DTEND;VALUE=DATE:20300328
+SUMMARY:တပေါင်း လပြည့်ကျော် ၉ ရက
+ ် · တပ်မတော်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပေါင်း လပ
+ ြည့်ကျော် ၉ ရက်\nတပ်မတော်နေ
+ ့\nရက်ရာဇာ\nမွန်းလွဲပြဿဒါး\n
+ နှစ်စဉ်ပြက္ခဒိန်တွက်ချက်
+ မှု — ထပ်တိုး/အစားထိုးရုံး
+ ပိတ်ရက်များ မပါနိုင်ပါ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-04-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300402
+DTEND;VALUE=DATE:20300403
+SUMMARY:တပေါင်း လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · တပေါင်း လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-04-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300410
+DTEND;VALUE=DATE:20300411
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-04-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300413
+DTEND;VALUE=DATE:20300414
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၁၁ ရ
+ က် · သင်္ကြန်အကြိုနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၁၁ ရက်\nသင်္ကြန်အ
+ ကြိုနေ့\nပြဿဒါး\nနှစ်စဉ်ပြက
+ ္ခဒိန်တွက်ချက်မှု — ထပ်တို
+ း/အစားထိုးရုံးပိတ်ရက်များ 
+ မပါနိုင်ပါ\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-04-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300414
+DTEND;VALUE=DATE:20300415
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၁၂ ရ
+ က် · သင်္ကြန်အကျနေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၁၂ ရက်\nသင်္ကြန်အ
+ ကျနေ့\nနှစ်စဉ်ပြက္ခဒိန်တွက
+ ်ချက်မှု — ထပ်တိုး/အစားထို
+ းရုံးပိတ်ရက်များ မပါနိုင်
+ ပါ\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-04-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300415
+DTEND;VALUE=DATE:20300416
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၁၃ ရ
+ က် · သင်္ကြန်အကြတ်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၁၃ ရက်\nသင်္ကြန်အ
+ ကြတ်နေ့\nနှစ်စဉ်ပြက္ခဒိန်တ
+ ွက်ချက်မှု — ထပ်တိုး/အစားထ
+ ိုးရုံးပိတ်ရက်များ မပါနို
+ င်ပါ\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-04-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300416
+DTEND;VALUE=DATE:20300417
+SUMMARY:နှောင်းတန်ခူး လဆန်း ၁၄ ရ
+ က် · သင်္ကြန်အတက်နေ့
+DESCRIPTION:၁၃၉၁ ခုနှစ် · နှောင်းတန
+ ်ခူး လဆန်း ၁၄ ရက်\nသင်္ကြန်အ
+ တက်နေ့\nအဖိတ်နေ့\nနှစ်စဉ်ပြ
+ က္ခဒိန်တွက်ချက်မှု — ထပ်တိ
+ ုး/အစားထိုးရုံးပိတ်ရက်မျာ
+ း မပါနိုင်ပါ\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-04-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300417
+DTEND;VALUE=DATE:20300418
+SUMMARY:တန်ခူး လပြည့် · လပြည့်နေ
+ ့ · ဥပုသ်နေ့ · မြန်မာနှစ်သစ်
+ ကူးနေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တန်ခူး လပြ
+ ည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမြ
+ န်မာနှစ်သစ်ကူးနေ့\nရက်ရာဇာ
+ \nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက်
+ မှု — ထပ်တိုး/အစားထိုးရုံး
+ ပိတ်ရက်များ မပါနိုင်ပါ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-04-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300425
+DTEND;VALUE=DATE:20300426
+SUMMARY:တန်ခူး လပြည့်ကျော် ၈ ရက် 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တန်ခူး လပြ
+ ည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြ
+ ဿဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-05-01@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300501
+DTEND;VALUE=DATE:20300502
+SUMMARY:တန်ခူး လကွယ် · လကွယ်နေ့ · 
+ ဥပုသ်နေ့ · အလုပ်သမားနေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တန်ခူး လကွ
+ ယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nအလုပ
+ ်သမားနေ့\nရက်ရာဇာ\nနှစ်စဉ်ပ
+ ြက္ခဒိန်တွက်ချက်မှု — ထပ်တ
+ ိုး/အစားထိုးရုံးပိတ်ရက်မျ
+ ား မပါနိုင်ပါ\nရုံးပိတ်ရက်
+ များ: ၂၀၂၆ မူလစာရင်း၊ အခြား
+ နှစ်များသည် ပုံမှန်တွက်ချ
+ က်မှု။ အသစ်ကြေညာချက်များ အ
+ လိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-05-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300509
+DTEND;VALUE=DATE:20300510
+SUMMARY:ကဆုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ကဆုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇာ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-05-16@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300516
+DTEND;VALUE=DATE:20300517
+SUMMARY:ကဆုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · ကဆုန်လပြည့်နေ့ 
+ · ညောင်ရေသွန်းပွဲ · ဗုဒ္ဓနေ
+ ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ကဆုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nကဆု
+ န်လပြည့်နေ့\nညောင်ရေသွန်းပ
+ ွဲ · ဗုဒ္ဓနေ့\nရက်ရာဇာ\nနှစ်စ
+ ဉ်ပြက္ခဒိန်တွက်ချက်မှု — ထ
+ ပ်တိုး/အစားထိုးရုံးပိတ်ရက
+ ်များ မပါနိုင်ပါ\nမြန်မာလပ
+ ြည့်ရက်အလိုက်\nရုံးပိတ်ရက်
+ များ: ၂၀၂၆ မူလစာရင်း၊ အခြား
+ နှစ်များသည် ပုံမှန်တွက်ချ
+ က်မှု။ အသစ်ကြေညာချက်များ အ
+ လိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-05-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300524
+DTEND;VALUE=DATE:20300525
+SUMMARY:ကဆုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ကဆုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-05-31@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300531
+DTEND;VALUE=DATE:20300601
+SUMMARY:ကဆုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ကဆုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nပြဿဒါ
+ း\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-06-08@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300608
+DTEND;VALUE=DATE:20300609
+SUMMARY:နယုန် လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · နယုန် လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-06-15@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300615
+DTEND;VALUE=DATE:20300616
+SUMMARY:နယုန် လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · မဟာသမယနေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · နယုန် လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမဟာ
+ သမယနေ့\nမြန်မာလပြည့်ရက်အလိ
+ ုက်\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-06-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300623
+DTEND;VALUE=DATE:20300624
+SUMMARY:နယုန် လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · နယုန် လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nပြဿ
+ ဒါး\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-06-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300629
+DTEND;VALUE=DATE:20300630
+SUMMARY:နယုန် လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · နယုန် လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-07-07@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300707
+DTEND;VALUE=DATE:20300708
+SUMMARY:ဝါဆို လဆန်း ၈ ရက် · ဥပုသ်န
+ ေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ဝါဆို လဆန်
+ း ၈ ရက်\nဥပုသ်နေ့\nရက်ရာဇာ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-07-14@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300714
+DTEND;VALUE=DATE:20300715
+SUMMARY:ဝါဆို လပြည့် · လပြည့်နေ့ 
+ · ဥပုသ်နေ့ · ဝါဆိုလပြည့်နေ့ 
+ · ဓမ္မစကြာနေ့ · ဝါဆိုသင်္ကန
+ ်းကပ်လှူပွဲ
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ဝါဆို လပြည
+ ့်\nလပြည့်နေ့\nဥပုသ်နေ့\nဝါဆ
+ ိုလပြည့်နေ့\nဓမ္မစကြာနေ့ · 
+ ဝါဆိုသင်္ကန်းကပ်လှူပွဲ\nရက
+ ်ရာဇာ\nနှစ်စဉ်ပြက္ခဒိန်တွက
+ ်ချက်မှု — ထပ်တိုး/အစားထို
+ းရုံးပိတ်ရက်များ မပါနိုင်
+ ပါ\nမြန်မာလပြည့်ရက်အလိုက်\n
+ ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-07-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300719
+DTEND;VALUE=DATE:20300720
+SUMMARY:ဝါဆို လပြည့်ကျော် ၅ ရက် · 
+ အာဇာနည်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ဝါဆို လပြည
+ ့်ကျော် ၅ ရက်\nအာဇာနည်နေ့\nန
+ ှစ်စဉ်ပြက္ခဒိန်တွက်ချက်မ
+ ှု — ထပ်တိုး/အစားထိုးရုံးပ
+ ိတ်ရက်များ မပါနိုင်ပါ\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-07-22@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300722
+DTEND;VALUE=DATE:20300723
+SUMMARY:ဝါဆို လပြည့်ကျော် ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ဝါဆို လပြည
+ ့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-07-29@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300729
+DTEND;VALUE=DATE:20300730
+SUMMARY:ဝါဆို လကွယ် · လကွယ်နေ့ · ဥ
+ ပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ဝါဆို လကွယ
+ ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-08-06@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300806
+DTEND;VALUE=DATE:20300807
+SUMMARY:ဝါခေါင် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ဝါခေါင် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-08-13@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300813
+DTEND;VALUE=DATE:20300814
+SUMMARY:ဝါခေါင် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့ · မေတ္တာအခါတော
+ ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nမ
+ ေတ္တာအခါတော်နေ့\nမြန်မာလပြ
+ ည့်ရက်အလိုက်\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-08-21@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300821
+DTEND;VALUE=DATE:20300822
+SUMMARY:ဝါခေါင် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ဝါခေါင် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-08-27@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300827
+DTEND;VALUE=DATE:20300828
+SUMMARY:ဝါခေါင် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ဝါခေါင် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-09-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300904
+DTEND;VALUE=DATE:20300905
+SUMMARY:တော်သလင်း လဆန်း ၈ ရက် · ဥပ
+ ုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တော်သလင်း 
+ လဆန်း ၈ ရက်\nဥပုသ်နေ့\nပြဿဒါ
+ း\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလ
+ စာရင်း၊ အခြားနှစ်များသည် ပ
+ ုံမှန်တွက်ချက်မှု။ အသစ်ကြ
+ ေညာချက်များ အလိုအလျောက်မရ
+ ယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-09-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300911
+DTEND;VALUE=DATE:20300912
+SUMMARY:တော်သလင်း လပြည့် · လပြည့
+ ်နေ့ · ဥပုသ်နေ့ · ဂရုဓမ္မအခါ
+ တော်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တော်သလင်း 
+ လပြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\
+ nဂရုဓမ္မအခါတော်နေ့\nပြဿဒါး\n
+ မြန်မာလပြည့်ရက်အလိုက်\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-09-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300919
+DTEND;VALUE=DATE:20300920
+SUMMARY:တော်သလင်း လပြည့်ကျော် ၈ 
+ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တော်သလင်း 
+ လပြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\
+ nရက်ရာဇာ\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-09-26@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20300926
+DTEND;VALUE=DATE:20300927
+SUMMARY:တော်သလင်း လကွယ် · လကွယ်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တော်သလင်း 
+ လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရ
+ က်ရာဇာ\nရုံးပိတ်ရက်များ: ၂၀
+ ၂၆ မူလစာရင်း၊ အခြားနှစ်မျာ
+ းသည် ပုံမှန်တွက်ချက်မှု။ အ
+ သစ်ကြေညာချက်များ အလိုအလျေ
+ ာက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-10-04@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301004
+DTEND;VALUE=DATE:20301005
+SUMMARY:သီတင်းကျွတ် လဆန်း ၈ ရက် · 
+ ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-10-05@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301005
+DTEND;VALUE=DATE:20301006
+SUMMARY:သီတင်းကျွတ် လဆန်း ၉ ရက် · 
+ ကမ္ဘာ့ဆရာများနေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၉ ရက်\nကမ္ဘာ့ဆရာမျာ
+ းနေ့\nရုံးပိတ်ရက်များ: ၂၀၂၆ 
+ မူလစာရင်း၊ အခြားနှစ်များသ
+ ည် ပုံမှန်တွက်ချက်မှု။ အသစ
+ ်ကြေညာချက်များ အလိုအလျောက
+ ်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-10-10@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301010
+DTEND;VALUE=DATE:20301011
+SUMMARY:သီတင်းကျွတ် လဆန်း ၁၄ ရက် 
+ · လပြည့်ပွဲတော် ဆက်စပ်ရုံး
+ ပိတ်ရက်
+DESCRIPTION:၁၃၉၂ ခုနှစ် · သီတင်းကျွ
+ တ် လဆန်း ၁၄ ရက်\nလပြည့်ပွဲတေ
+ ာ် ဆက်စပ်ရုံးပိတ်ရက်\nအဖိတ
+ ်နေ့\nရက်ရာဇာ\nပုံမှန်ရက်တွ
+ က်ချက်မှု — နှစ်အလိုက်ကြေည
+ ာချက်နှင့် စစ်ဆေးပါ\nရုံးပ
+ ိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း
+ ၊ အခြားနှစ်များသည် ပုံမှန်
+ တွက်ချက်မှု။ အသစ်ကြေညာချက
+ ်များ အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-10-11@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301011
+DTEND;VALUE=DATE:20301012
+SUMMARY:သီတင်းကျွတ် လပြည့် · လပြ
+ ည့်နေ့ · ဥပုသ်နေ့ · သီတင်းကျ
+ ွတ်လပြည့်နေ့ · သီတင်းကျွတ် 
+ မီးထွန်းပွဲ · အဘိဓမ္မာနေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်\nလပြည့်နေ့\nဥပုသ်န
+ ေ့\nသီတင်းကျွတ်လပြည့်နေ့\nသ
+ ီတင်းကျွတ် မီးထွန်းပွဲ · အဘ
+ ိဓမ္မာနေ့\nနှစ်စဉ်ပြက္ခဒိန
+ ်တွက်ချက်မှု — ထပ်တိုး/အစာ
+ းထိုးရုံးပိတ်ရက်များ မပါန
+ ိုင်ပါ\nမြန်မာလပြည့်ရက်အလိ
+ ုက်\nရုံးပိတ်ရက်များ: ၂၀၂၆ မ
+ ူလစာရင်း၊ အခြားနှစ်များသည
+ ် ပုံမှန်တွက်ချက်မှု။ အသစ်
+ ကြေညာချက်များ အလိုအလျောက်
+ မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-10-12@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301012
+DTEND;VALUE=DATE:20301013
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၁ ရက် · လပြည့်ပွဲတော် ဆက်စပ
+ ်ရုံးပိတ်ရက်
+DESCRIPTION:၁၃၉၂ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၁ ရက်\nလပြည့်
+ ပွဲတော် ဆက်စပ်ရုံးပိတ်ရက်\
+ nပုံမှန်ရက်တွက်ချက်မှု — န
+ ှစ်အလိုက်ကြေညာချက်နှင့် စ
+ စ်ဆေးပါ\nရုံးပိတ်ရက်များ: ၂
+ ၀၂၆ မူလစာရင်း၊ အခြားနှစ်မျ
+ ားသည် ပုံမှန်တွက်ချက်မှု။ 
+ အသစ်ကြေညာချက်များ အလိုအလျ
+ ောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-10-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301019
+DTEND;VALUE=DATE:20301020
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၈ ရက်\nဥပုသ်န
+ ေ့\nရုံးပိတ်ရက်များ: ၂၀၂၆ မူ
+ လစာရင်း၊ အခြားနှစ်များသည် 
+ ပုံမှန်တွက်ချက်မှု။ အသစ်က
+ ြေညာချက်များ အလိုအလျောက်မ
+ ရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-10-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301024
+DTEND;VALUE=DATE:20301025
+SUMMARY:သီတင်းကျွတ် လပြည့်ကျော်
+  ၁၃ ရက် · ကုလသမဂ္ဂနေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · သီတင်းကျွ
+ တ် လပြည့်ကျော် ၁၃ ရက်\nကုလသမ
+ ဂ္ဂနေ့\nအဖိတ်နေ့\nရက်ရာဇာ\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-10-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301025
+DTEND;VALUE=DATE:20301026
+SUMMARY:သီတင်းကျွတ် လကွယ် · လကွယ
+ ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · သီတင်းကျွ
+ တ် လကွယ်\nလကွယ်နေ့\nဥပုသ်နေ့
+ \nရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစ
+ ာရင်း၊ အခြားနှစ်များသည် ပု
+ ံမှန်တွက်ချက်မှု။ အသစ်ကြေ
+ ညာချက်များ အလိုအလျောက်မရယ
+ ူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-11-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301102
+DTEND;VALUE=DATE:20301103
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၈ ရက်\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-11-08@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301108
+DTEND;VALUE=DATE:20301109
+SUMMARY:တန်ဆောင်မုန်း လဆန်း ၁၄ ရ
+ က် · လပြည့်ပွဲတော် ဆက်စပ်ရု
+ ံးပိတ်ရက်
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လဆန်း ၁၄ ရက်\nလပြည့်ပွဲ
+ တော် ဆက်စပ်ရုံးပိတ်ရက်\nအဖ
+ ိတ်နေ့\nပုံမှန်ရက်တွက်ချက်
+ မှု — နှစ်အလိုက်ကြေညာချက်န
+ ှင့် စစ်ဆေးပါ\nရုံးပိတ်ရက်
+ များ: ၂၀၂၆ မူလစာရင်း၊ အခြား
+ နှစ်များသည် ပုံမှန်တွက်ချ
+ က်မှု။ အသစ်ကြေညာချက်များ အ
+ လိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-11-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301109
+DTEND;VALUE=DATE:20301110
+SUMMARY:တန်ဆောင်မုန်း လပြည့် · လ
+ ပြည့်နေ့ · ဥပုသ်နေ့ · တန်ဆော
+ င်မုန်းလပြည့်နေ့ · တန်ဆောင
+ ်တိုင် · မသိုးသင်္ကန်းကပ်လ
+ ှူပွဲ
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်\nလပြည့်နေ့\nဥပုသ
+ ်နေ့\nတန်ဆောင်မုန်းလပြည့်န
+ ေ့\nတန်ဆောင်တိုင် · မသိုးသင
+ ်္ကန်းကပ်လှူပွဲ\nနှစ်စဉ်ပြ
+ က္ခဒိန်တွက်ချက်မှု — ထပ်တိ
+ ုး/အစားထိုးရုံးပိတ်ရက်မျာ
+ း မပါနိုင်ပါ\nမြန်မာလပြည့်
+ ရက်အလိုက်\nရုံးပိတ်ရက်များ
+ : ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်
+ များသည် ပုံမှန်တွက်ချက်မှ
+ ု။ အသစ်ကြေညာချက်များ အလိုအ
+ လျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-11-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301117
+DTEND;VALUE=DATE:20301118
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၈ ရက် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၈ ရက်\nဥပုသ
+ ်နေ့\nရက်ရာဇာ\nရုံးပိတ်ရက်မ
+ ျား: ၂၀၂၆ မူလစာရင်း၊ အခြားန
+ ှစ်များသည် ပုံမှန်တွက်ချက
+ ်မှု။ အသစ်ကြေညာချက်များ အလ
+ ိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-11-19@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301119
+DTEND;VALUE=DATE:20301120
+SUMMARY:တန်ဆောင်မုန်း လပြည့်ကျေ
+ ာ် ၁၀ ရက် · အမျိုးသားနေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လပြည့်ကျော် ၁၀ ရက်\nအမျ
+ ိုးသားနေ့\nပြဿဒါး\nနှစ်စဉ်ပ
+ ြက္ခဒိန်တွက်ချက်မှု — ထပ်တ
+ ိုး/အစားထိုးရုံးပိတ်ရက်မျ
+ ား မပါနိုင်ပါ\nရုံးပိတ်ရက်
+ များ: ၂၀၂၆ မူလစာရင်း၊ အခြား
+ နှစ်များသည် ပုံမှန်တွက်ချ
+ က်မှု။ အသစ်ကြေညာချက်များ အ
+ လိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-11-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301124
+DTEND;VALUE=DATE:20301125
+SUMMARY:တန်ဆောင်မုန်း လကွယ် · လက
+ ွယ်နေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · တန်ဆောင်မ
+ ုန်း လကွယ်\nလကွယ်နေ့\nဥပုသ်န
+ ေ့\nရက်ရာဇာ\nရုံးပိတ်ရက်မျာ
+ း: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ
+ ်များသည် ပုံမှန်တွက်ချက်မ
+ ှု။ အသစ်ကြေညာချက်များ အလို
+ အလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-11-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301125
+DTEND;VALUE=DATE:20301126
+SUMMARY:နတ်တော် လဆန်း ၁ ရက် · စာဆိ
+ ုတော်နေ့ · ရှမ်းနှစ်သစ်ကူး
+ နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · နတ်တော် လဆ
+ န်း ၁ ရက်\nစာဆိုတော်နေ့ · ရှမ
+ ်းနှစ်သစ်ကူးနေ့\nရုံးပိတ်ရ
+ က်များ: ၂၀၂၆ မူလစာရင်း၊ အခြ
+ ားနှစ်များသည် ပုံမှန်တွက်
+ ချက်မှု။ အသစ်ကြေညာချက်မျာ
+ း အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-12-02@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301202
+DTEND;VALUE=DATE:20301203
+SUMMARY:နတ်တော် လဆန်း ၈ ရက် · ဥပုသ
+ ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · နတ်တော် လဆ
+ န်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ
+ ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အ
+ ခြားနှစ်များသည် ပုံမှန်တွ
+ က်ချက်မှု။ အသစ်ကြေညာချက်မ
+ ျား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-12-09@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301209
+DTEND;VALUE=DATE:20301210
+SUMMARY:နတ်တော် လပြည့် · လပြည့်န
+ ေ့ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · နတ်တော် လပ
+ ြည့်\nလပြည့်နေ့\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-12-17@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301217
+DTEND;VALUE=DATE:20301218
+SUMMARY:နတ်တော် လပြည့်ကျော် ၈ ရက
+ ် · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · နတ်တော် လပ
+ ြည့်ကျော် ၈ ရက်\nဥပုသ်နေ့\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-12-23@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301223
+DTEND;VALUE=DATE:20301224
+SUMMARY:နတ်တော် လကွယ် · လကွယ်နေ့ 
+ · ဥပုသ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · နတ်တော် လက
+ ွယ်\nလကွယ်နေ့\nဥပုသ်နေ့\nရုံ
+ းပိတ်ရက်များ: ၂၀၂၆ မူလစာရင
+ ်း၊ အခြားနှစ်များသည် ပုံမှ
+ န်တွက်ချက်မှု။ အသစ်ကြေညာခ
+ ျက်များ အလိုအလျောက်မရယူပါ
+ ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-12-24@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301224
+DTEND;VALUE=DATE:20301225
+SUMMARY:ပြာသို လဆန်း ၁ ရက် · ကရင်န
+ ှစ်သစ်ကူးနေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ပြာသို လဆန
+ ်း ၁ ရက်\nကရင်နှစ်သစ်ကူးနေ့\
+ nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက်
+ မှု — ထပ်တိုး/အစားထိုးရုံး
+ ပိတ်ရက်များ မပါနိုင်ပါ\nရု
+ ံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရ
+ င်း၊ အခြားနှစ်များသည် ပုံမ
+ ှန်တွက်ချက်မှု။ အသစ်ကြေညာ
+ ချက်များ အလိုအလျောက်မရယူပ
+ ါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-12-25@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301225
+DTEND;VALUE=DATE:20301226
+SUMMARY:ပြာသို လဆန်း ၂ ရက် · ခရစ္စ
+ မတ်နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ပြာသို လဆန
+ ်း ၂ ရက်\nခရစ္စမတ်နေ့\nပြဿဒါ
+ း\nနှစ်စဉ်ပြက္ခဒိန်တွက်ချက
+ ်မှု — ထပ်တိုး/အစားထိုးရုံ
+ းပိတ်ရက်များ မပါနိုင်ပါ\nရ
+ ုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာ
+ ရင်း၊ အခြားနှစ်များသည် ပုံ
+ မှန်တွက်ချက်မှု။ အသစ်ကြေည
+ ာချက်များ အလိုအလျောက်မရယူ
+ ပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:mm-calendar-2030-12-31@myanmar-calendar.local
+DTSTAMP:20261017T182726Z
+DTSTART;VALUE=DATE:20301231
+DTEND;VALUE=DATE:20310101
+SUMMARY:ပြာသို လဆန်း ၈ ရက် · ဥပုသ်
+ နေ့
+DESCRIPTION:၁၃၉၂ ခုနှစ် · ပြာသို လဆန
+ ်း ၈ ရက်\nဥပုသ်နေ့\nရုံးပိတ်
+ ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အခ
+ ြားနှစ်များသည် ပုံမှန်တွက
+ ်ချက်မှု။ အသစ်ကြေညာချက်မျ
+ ား အလိုအလျောက်မရယူပါ။
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

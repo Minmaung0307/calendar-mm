@@ -1,1 +1,8 @@
-{"private":true,"type":"module","scripts":{"test":"node tests/calendar.test.js && node tests/events.test.js"}}
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/calendar.test.js && node tests/events.test.js && node tests/export.test.js",
+    "build:feeds": "node scripts/build-feeds.js"
+  }
+}

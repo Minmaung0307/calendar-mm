@@ -1,10 +1,13 @@
-const CACHE = "mm-calendar-2026-10-v5";
+const CACHE = "mm-calendar-2026-10-v9";
 const FILES = [
   "./",
   "./index.html",
   "./fonts/NotoSansMyanmar.ttf",
   "./style.css",
+  "./upgrade.css",
   "./app.js",
+  "./calendarExport.js",
+  "./calendarConnect.js",
   "./myanmarCalendar.js",
   "./ceMmDateTime.js",
   "./config.js",
@@ -30,7 +33,7 @@ self.addEventListener("activate", (e) =>
       .keys()
       .then((keys) =>
         Promise.all(
-          keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)),
+          keys.filter((k) => k.startsWith("mm-calendar-") && k !== CACHE).map((k) => caches.delete(k)),
         ),
       )
       .then(() => self.clients.claim()),

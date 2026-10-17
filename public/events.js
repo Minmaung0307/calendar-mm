@@ -22,6 +22,8 @@ export function calendarEvents(iso,r){
  }
  r.holidays.filter(t=>t.startsWith('Thingyan')||t==="Myanmar New Year's Day").forEach(t=>{if(!out.some(e=>e.title===translate[t]))push(translate[t]||t)});
  if(r.phase===1){const lunar={2:'ညောင်ရေသွန်းပွဲ · ဗုဒ္ဓနေ့',3:'မဟာသမယနေ့',5:'မေတ္တာအခါတော်နေ့',6:'ဂရုဓမ္မအခါတော်နေ့',4:'ဓမ္မစကြာနေ့ · ဝါဆိုသင်္ကန်းကပ်လှူပွဲ',7:'သီတင်းကျွတ် မီးထွန်းပွဲ · အဘိဓမ္မာနေ့',8:'တန်ဆောင်တိုင် · မသိုးသင်္ကန်းကပ်လှူပွဲ',10:'အာနန္ဒာဘုရားပွဲ အဓိကနေ့',11:'ထမနဲပွဲကာလ',12:'တပေါင်းဘုရားပွဲ · သဲပုံစေတီပူဇော်ပွဲ'};if(lunar[r.mm])push(lunar[r.mm],'festival',r.mm===11?'ဒေသအလိုက် ကျင်းပရက်ကွာနိုင်သည်':'မြန်မာလပြည့်ရက်အလိုက်');}
+ if(iso.endsWith('-10-05'))push('ကမ္ဘာ့ဆရာများနေ့','observance');
+ if(iso.endsWith('-10-24'))push('ကုလသမဂ္ဂနေ့','observance');
  if(r.mm===9&&r.md===1)push('စာဆိုတော်နေ့ · ရှမ်းနှစ်သစ်ကူးနေ့');
  if(year===2026&&iso==='2026-11-08')push('ဒီပါဝလီ (ရက်အတည်ပြုရန်)','observance','ပွဲတော်ရက် ခန့်မှန်းစာရင်းသာဖြစ်သည်။ ရုံးပိတ်ရက်အဖြစ် အတည်မပြုထားပါ။');
  return out.filter((e,i,a)=>a.findIndex(x=>x.title===e.title&&x.type===e.type)===i);
