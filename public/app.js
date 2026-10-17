@@ -1,3 +1,5 @@
+import { drawMoon } from "./moon.js";
+import { setupObservanceSound } from "./observanceSound.js";
 import { supportLinks } from "./config.js";
 import { setupCalendarConnect } from "./calendarConnect.js";
 import { icon } from "./icons.js";
@@ -102,6 +104,7 @@ function render() {
   const [y, m] = view.split("-").map(Number),
     now = todayISO(),
     t = calendarDate(now);
+  drawMoon($(".moon-art"), t);
   $("#todayMM").textContent = title(t);
   $("#todayMeta").textContent =
     `${digits(t.my)} ခုနှစ် · ${t.myt === 2 ? "ဝါကြီးထပ်နှစ်" : t.myt === 1 ? "ဝါငယ်ထပ်နှစ်" : "ဝါမထပ်နှစ်"} · ${format(now)}`;
@@ -392,6 +395,7 @@ function setupUpgrade(){
 
 setupCalendarConnect(() => Number(view.slice(0,4)));
 setupUpgrade();
+setupObservanceSound();
 render();
 let lastToday = todayISO();
 setInterval(() => {

@@ -1,4 +1,4 @@
-const CACHE = "mm-calendar-2026-10-v9";
+const CACHE = "mm-calendar-2026-10-v10";
 const FILES = [
   "./",
   "./index.html",
@@ -6,6 +6,8 @@ const FILES = [
   "./style.css",
   "./upgrade.css",
   "./app.js",
+  "./moon.js",
+  "./observanceSound.js",
   "./calendarExport.js",
   "./calendarConnect.js",
   "./myanmarCalendar.js",
