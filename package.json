@@ -3,6 +3,8 @@
   "type": "module",
   "scripts": {
     "test": "node tests/calendar.test.js && node tests/events.test.js && node tests/export.test.js",
-    "build:feeds": "node scripts/build-feeds.js"
+    "build:feeds": "node scripts/build-feeds.js",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs"
   }
 }

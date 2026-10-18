@@ -1,3 +1,4 @@
+import { astrologyDetails } from "./dateDetails.js";
 import { drawMoon } from "./moon.js";
 import { setupObservanceSound } from "./observanceSound.js";
 import { supportLinks } from "./config.js";
@@ -147,9 +148,9 @@ function render() {
     ph.className = "phase";
     ph.dataset.short = [
       "ဆန်း " + digits(r.number),
-      "လပြည့်",
+      "ပြည့်",
       "ဆုတ် " + digits(r.number),
-      "လကွယ်",
+      "ကွယ်",
     ][r.phase];
     ph.textContent = tr(ph.dataset.short,["Waxing "+r.number,"Full moon","Waning "+r.number,"New moon"][r.phase]);
     const dot = document.createElement("span");
@@ -166,9 +167,9 @@ function render() {
         ),
       );
     if (allEvents.some((e) => e.type === "holiday"))
-      dot.append(icon("holiday", "ရုံးပိတ်ရက်"));
-    if (allEvents.some((e) => e.type !== "holiday"))
-      dot.append(icon("festival", "အထူးနေ့"));
+      dot.append(icon("holiday", "မြန်မာရုံးပိတ်ရက်"));
+    if (allEvents.some(e=>e.type!=="holiday")) dot.append(icon("festival", "အထူးနေ့"));
+    if (allEvents.some(e=>e.type==="holiday")) b.classList.add("holiday");
     b.setAttribute(
       "aria-label",
       format(s) +
@@ -179,17 +180,21 @@ function render() {
           ? " · " + allEvents.map((e) => e.title).join("၊ ")
           : ""),
     );
-    if (r.yatyaza) dot.append(marker("yatyaza", tr("ရက်ရာဇာ", "Yatyaza")));
-    if (r.pyathada) dot.append(marker("pyathada", tr("ပြဿဒါး", "Pyathada")));
+
     if (new Date(s+"T12:00:00Z").getUTCDay()===0) b.classList.add("sunday");
-    if (allEvents.some(e=>e.type==="holiday")) b.classList.add("holiday");
     mn.textContent = title(r);
     mn.setAttribute('aria-hidden', 'true');
-    b.append(n, mn, ph, dot);
+    const observance = document.createElement("span");
+    observance.className = "phase";
+    observance.textContent = r.sabbath === 1 ? tr("ဥပုသ်", "Sabbath") : r.sabbath === 2 ? tr("အဖိတ်", "Sabbath eve") : "";
+    if (r.yatyaza) dot.append(marker("yatyaza", tr("ရက်ရာဇာ", "Yatyaza")));
+    if (r.pyathada) dot.append(marker("pyathada", tr("ပြဿဒါး", "Pyathada")));
+    b.append(n, ph, dot);
     b.onclick = () => {
       selected = s;
       $("#status").textContent = "";
       render();
+      $("#dateDialog").showModal();
     };
     b.onkeydown = (e) => {
       const delta = { ArrowLeft: -1, ArrowRight: 1, ArrowUp: -7, ArrowDown: 7 }[
@@ -253,7 +258,7 @@ const policies = {
   ],
   terms: [
     "Terms · အသုံးပြုမှုစည်းကမ်း",
-    "ဤပြက္ခဒိန်ကို နေ့စဉ်ရက်စွဲကြည့်ရှုရန် အသုံးပြုနိုင်ပါသည်။ မြန်မာရက်စွဲများကို Yan Naing Aye ၏ MIT လိုင်စင်ပါ တွက်ချက်မှုဖြင့် ဖော်ပြထားပါသည်။ ထပ်မံကြေညာသော အစိုးရရုံးပိတ်ရက်များ၊ ဒေသအလိုက် ပွဲတော်များကို တရားဝင်ကြေညာချက်နှင့် ပြန်လည်တိုက်စစ်ပါ။  ပံ့ပိုးမှုနှင့် အလှူများသည် မိမိဆန္ဒအလျောက်ဖြစ်ပြီး ပြင်ပငွေပေးချေမှုစာမျက်နှာတွင် လက်ခံသူ၊ ပမာဏနှင့် ပြန်အမ်းစည်းကမ်းများကို စစ်ဆေးပါ။",
+    "ဤပြက္ခဒိန်ကို နေ့စဉ်ရက်စွဲကြည့်ရှုရန် အသုံးပြုနိုင်ပါသည်။ မြန်မာရက်စွဲများကို Yan Naing Aye ၏ MIT လိုင်စင်ပါ တွက်ချက်မှုဖြင့် ဖော်ပြထားပါသည်။ ဒေသအလိုက် ပွဲတော်များ၏ ရက်သတ်မှတ်ချက်ကို ပြန်လည်တိုက်စစ်ပါ။  ပံ့ပိုးမှုနှင့် အလှူများသည် မိမိဆန္ဒအလျောက်ဖြစ်ပြီး ပြင်ပငွေပေးချေမှုစာမျက်နှာတွင် လက်ခံသူ၊ ပမာဏနှင့် ပြန်အမ်းစည်းကမ်းများကို စစ်ဆေးပါ။",
   ],
 };
 document
@@ -328,25 +333,7 @@ function renderAgenda(y, m, days) {
   if (!count)
     $("#monthEvents").textContent =
       "ဤလအတွင်း ရက်သတ်မှတ်ထားသော အထူးနေ့စာရင်း မရှိပါ။ ရာသီပွဲတော်ကို အောက်တွင် ကြည့်နိုင်ပါသည်။";
-  if (annualView !== String(y)) {
-    annualView = String(y);
-    $("#annualSummary").textContent = digits(y) + " · ရုံးပိတ်ရက်စာရင်း";
-    $("#annualNotice").textContent =
-      y === 2026
-        ? "အတည်ပြုနိုင်သော ၂၀၂၆ ရုံးပိတ်ရက်များ။ ဒီပါဝလီရုံးပိတ်ရက်ကို ထုတ်ပြန်ချက်မရသေးသဖြင့် မထည့်တွက်ထားပါ။"
-        : "ပုံမှန်နှစ်စဉ်ရက်နှင့် မြန်မာရက်စွဲတွက်ချက်မှုစာရင်း။ ဤနှစ်၏ ထပ်တိုး/အစားထိုးရုံးပိတ်ရက်၊ အိဒ်၊ ဒီပါဝလီနှင့် တရုတ်နှစ်သစ်ကူးရက်တို့အတွက် နှစ်အလိုက်ထုတ်ပြန်ချက်ကို စစ်ဆေးပါ။";
-    $("#annualList").replaceChildren();
-    for (let mo = 1; mo <= 12; mo++) {
-      const end = new Date(Date.UTC(y, mo, 0)).getUTCDate();
-      for (let d = 1; d <= end; d++) {
-        const s = iso(y, mo, d),
-          events = calendarEvents(s, calendarDate(s)).filter(
-            (e) => e.type === "holiday",
-          );
-        if (events.length) $("#annualList").append(eventRow(s, events));
-      }
-    }
-  }
+
 }
 for (const [name, label] of [
   ["full", "လပြည့်"],
@@ -362,7 +349,7 @@ for (const [name, label] of [
 }
 
 function marker(kind,label){const el=document.createElement("i");el.className="astro-dot "+kind;el.title=label;el.setAttribute("aria-label",label);return el;}
-const astroNames={Thamanyo:"သမားညို",Amyeittasote:"အမြိတ္တစုတ်",Warameittugyi:"ဝါရမိတ္တုကြီး",Warameittunge:"ဝါရမိတ္တုငယ်",Yatpote:"ရက်ပုပ်",Thamaphyu:"သမားဖြူ",Nagapor:"နဂါးပေါ်",Yatyotema:"ရက်ယုတ်မာ",Mahayatkyan:"မဟာရက်ကြမ်း",Shanyat:"ရှမ်းရက်"};
+
 function renderDateInfo(r){
  const dt=new Date(selected+"T12:00:00Z");
  $("#selectedSummary").textContent=(selected===todayISO()?tr("ယနေ့ · ","Today · "):"")+format(selected);
@@ -374,9 +361,7 @@ function renderDateInfo(r){
  $("#detailMMNumber").textContent=language==="my"?digits(r.number):r.number;
  $("#detailPhase").textContent=tr(["လဆန်း","လပြည့်","လပြည့်ကျော်","လကွယ်"][r.phase],["Waxing","Full moon","Waning","New moon"][r.phase]);
  $("#detailYear").textContent=tr(digits(r.my)+" ခုနှစ်",r.my+" ME");
- const labels=[...r.astro.map(n=>tr(astroNames[n]||n,n)),tr("နဂါးခေါင်းလှည့်ရာ · ","Naga direction · ")+tr(["အနောက်","မြောက်","အရှေ့","တောင်"][r.nagahle],["West","North","East","South"][r.nagahle]),tr(["ဘင်္ဂဖွား","အထွန်းဖွား","ရာဇဖွား","အဓိပတိဖွား","မရဏဖွား","သိုက်ဖွား","ပုတိဖွား"][r.mahabote],["Binga","Atun","Yaza","Adipati","Marana","Thike","Puti"][r.mahabote]),tr(["ဘီလူးနက္ခတ်","နတ်နက္ခတ်","လူနက္ခတ်"][r.nakhat],["Ogre Nakhat","Elf Nakhat","Human Nakhat"][r.nakhat])];
- if(r.yatyaza)labels.unshift(tr("ရက်ရာဇာ","Yatyaza"));
- if(r.pyathada)labels.unshift(tr(r.pyathada===2?"မွန်းလွဲပြဿဒါး":"ပြဿဒါး",r.pyathada===2?"Afternoon Pyathada":"Pyathada"));
+ const labels=astrologyDetails(r,tr);
  $("#astroInfo").replaceChildren(...labels.map(t=>{const el=document.createElement("span");el.textContent=t;return el}));
  $("#prevDay").disabled=selected==="1900-01-01";$("#nextDay").disabled=selected==="2100-12-31";
 }
@@ -386,7 +371,7 @@ function setupUpgrade(){
  $("#selectedCard").onclick=()=>$("#dateDialog").showModal();
  $("#dateClose").onclick=()=>$("#dateDialog").close();
  for(const [id,delta] of [["prevDay",-1],["nextDay",1]])$("#"+id).onclick=()=>{const d=new Date(selected+"T12:00:00Z");d.setUTCDate(d.getUTCDate()+delta);const next=d.toISOString().slice(0,10);if(next<"1900-01-01"||next>"2100-12-31")return;selected=next;view=next.slice(0,7);render()};
- const applyLanguage=()=>{document.documentElement.lang=language;document.querySelectorAll("[data-my]").forEach(e=>e.textContent=e.dataset[language]);$("#today").textContent=tr("ယနေ့","Today");document.querySelector(".month-agenda summary").textContent=tr("ယခုလ ပွဲတော်နှင့် ရုံးပိတ်ရက်များ","This month · Holidays & occasions");document.querySelectorAll(".weekdays span").forEach((e,i)=>e.textContent=language==="my"?["နွေ","လာ","ဂါ","ဟူး","ကြာ","သော","နေ"][i]:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][i]);};
+ const applyLanguage=()=>{document.documentElement.lang=language;document.querySelectorAll("[data-my]").forEach(e=>e.textContent=e.dataset[language]);$("#today").textContent=tr("ယနေ့","Today");document.querySelector(".month-agenda summary").textContent=tr("ယခုလ ပွဲတော်နှင့် အထူးနေ့များ","This month · Festivals & occasions");document.querySelectorAll(".weekdays span").forEach((e,i)=>e.textContent=language==="my"?["နွေ","လာ","ဂါ","ဟူး","ကြာ","သော","နေ"][i]:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][i]);};
  $("#language").value=language;applyLanguage();$("#language").onchange=()=>{language=$("#language").value;write("mm_language",language);applyLanguage();render()};
  for(const [id,key,cls] of [["showAstro","mm_show_astro","hide-astro"],["showCulture","mm_show_culture","hide-culture"]]){const el=$("#"+id);el.checked=read(key,true)!==false;document.body.classList.toggle(cls,!el.checked);el.onchange=()=>{document.body.classList.toggle(cls,!el.checked);write(key,el.checked)}}
  const large=read("mm_large",false)===true;document.body.classList.toggle("large",large);$("#font").setAttribute("aria-pressed",String(large));$("#font").addEventListener("click",()=>write("mm_large",document.body.classList.contains("large")));

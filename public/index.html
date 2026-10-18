@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#174c43" />
     <meta
       name="description"
-      content="မြန်မာရက်စွဲ၊ ရုံးပိတ်ရက်၊ ဥပုသ်၊ ရက်ရာဇာနှင့် နေ့ရက်အသေးစိတ်"
+      content="မြန်မာရက်စွဲ၊ ဥပုသ်၊ ရက်ရာဇာနှင့် နေ့ရက်အသေးစိတ်"
     />
     <title>မြန်မာပြက္ခဒိန် · MM Calendar</title>
     <link rel="icon" type="image/svg+xml" href="icons/calendar.svg" />
@@ -59,7 +59,7 @@
           <div id="grid" class="grid"></div>
           <div class="legend" id="iconLegend"></div>
           <button id="selectedCard" class="selected-card"><span><strong id="selectedSummary"></strong><small id="selectedMM"></small></span><span aria-hidden="true">→</span></button><details class="month-agenda" open>
-            <summary>ယခုလ ပွဲတော်နှင့် ရုံးပိတ်ရက်များ</summary>
+            <summary>ယခုလ ပွဲတော်နှင့် အထူးနေ့များ</summary>
             <div id="monthEvents"></div>
           </details>
         </section>
@@ -97,22 +97,9 @@
           >
         </article>
       </section>
-      <section class="card annual-card">
-        <details id="annualDetails">
-          <summary id="annualSummary">နှစ်စဉ် ရုံးပိတ်ရက်စာရင်း</summary>
-          <p id="annualNotice" class="muted"></p>
-          <div id="annualList"></div>
-          <p class="muted">
-            ရင်းမြစ်: DICA/MyCO၊ ASEAN–Japan Centre၊ Myanmar eVisa။
-            နောက်ဆုံးစစ်ဆေးချိန် ၂၀၂၆-၁၀-၁၀။
-          </p>
-        </details>
-      </section>
       <p class="calendar-note">
         လပြည့်၊ လကွယ်နှင့် ဝါထပ်နှစ်များကို မြန်မာပြက္ခဒိန်နည်းဖြင့်
-        တွက်ချက်ထားပါသည်။ ၂၀၂၆ ရုံးပိတ်ရက်များကို ထုတ်ပြန်စာရင်းနှင့်
-        တိုက်စစ်ထားသည်။ နောက်ထပ်ကြေညာချက်များကို အလိုအလျောက် မရယူပါ။
-        အခြားနှစ်များမှာ ပုံမှန်ရက်တွက်ချက်မှုဖြစ်သည်။
+        တွက်ချက်ထားပါသည်။
       </p>
     </main>
     <footer>
@@ -145,14 +132,14 @@
     </footer>
     <dialog id="connectDialog" aria-labelledby="connectHeading">
       <div class="dialog-head"><h2 id="connectHeading">ဖုန်း Calendar ထဲ ထည့်ရန်</h2><button id="connectClose" aria-label="ပိတ်ရန်">✕</button></div>
-      <p>Calendar ထဲထည့်ခြင်းသည် အခမဲ့ဖြစ်ပြီး ငွေပေးရန် မလိုပါ။ ဤနေရာရှိ Subscription ဆိုသည်မှာ Calendar ရက်စွဲများကို ချိတ်ဆက်ရယူခြင်းသာဖြစ်ပါသည်။</p><p>iPhone / Apple Calendar နှင့် Android / Google Calendar တို့အတွက် မြန်မာရက်စွဲများကို တစ်နေကုန် event များအဖြစ် ထည့်နိုင်သည်။</p>
-      <div class="connect-options"><label for="exportMode">ထည့်မည့်အချက်အလက်</label><select id="exportMode"><option value="all">နေ့စဉ် မြန်မာရက်စွဲအားလုံး</option><option value="special">ဥပုသ်နှင့် အထူးနေ့များသာ</option></select><label for="exportYear">ဖိုင်ထုတ်မည့်နှစ်</label><select id="exportYear"></select><button id="downloadCalendar" class="primary">↓ .ics ဖိုင်ထုတ်ရန်</button></div>
-      <p class="muted">ဖိုင်သည် ရွေးထားသော တစ်နှစ်စာသာဖြစ်သည်။ Import လုပ်ပြီးနောက် အလိုအလျောက် update မဖြစ်ပါ။ Calendar အသစ်တစ်ခုထဲတွင် တစ်ကြိမ်သာ ထည့်ပါ။ ထပ်ထည့်လျှင် ရက်စွဲများ ထပ်နိုင်ပါသည်။</p>
-      <details open><summary>iPhone / Apple Calendar</summary><p>ဖိုင်ကို Mail attachment မှ ဖွင့်၍ Calendar ထဲ Import လုပ်နိုင်သည်။ အောက်ပါ Subscription link ရှိပါက Calendar → Calendars → Add Calendar → Add Subscription Calendar မှ ထည့်နိုင်သည်။</p><a href="https://support.apple.com/guide/iphone/iph3d1110d4/ios" target="_blank" rel="noopener noreferrer">Apple အသုံးပြုနည်း ↗</a></details>
-      <details open><summary>Android / Google Calendar</summary><p>ကွန်ပျူတာ browser မှ Google Calendar → Settings → Import &amp; export → .ics ဖိုင်ရွေး → Import လုပ်ပါ။ ဖုန်းတွင် တူညီသော Google account နှင့် ဝင်ပြီး ထည့်ထားသော Calendar ကို ဖော်ပြရန် ရွေးပါ။ Google Calendar mobile app မှ တိုက်ရိုက် import မလုပ်နိုင်ပါ။</p><a href="https://support.google.com/calendar/answer/37118?hl=en" target="_blank" rel="noopener noreferrer">Google အသုံးပြုနည်း ↗</a></details>
-      <h3>Subscription · 2026–2030</h3><p id="subscriptionType"></p><p class="muted">ရွေးထားသော တစ်နှစ်စာဖိုင်နှင့် မတူဘဲ subscription သည် ၂၀၂၆–၂၀၃၀ ပါဝင်သည်။ Website ကို public HTTPS ဖြင့် တင်ထားပြီးဖြစ်ရမည်။ ဖိုင်ကို website ပေါ်တွင် ပြန်တင်မွမ်းမံသည့်အခါ Calendar app က သူ့သတ်မှတ်ချိန်အလိုက် ပြန်ယူမည်။ ရုံးပိတ်ရက်အသစ်များကို အလိုအလျောက် ရှာမထည့်ပါ။</p>
-      <p id="feedUnavailable">လက်ရှိ local / preview တွင် subscription မချိတ်နိုင်သေးပါ။ .ics ဖိုင်ကို အသုံးပြုနိုင်ပါသည်။</p>
-      <div id="subscriptionControls" hidden><label for="feedURL">Public calendar URL</label><input id="feedURL" readonly><div class="date-nav"><button id="copyFeed">Link ကူးရန်</button><a id="appleSubscribe" class="connect-link">iPhone တွင် Subscribe</a></div><p>Google Calendar ကို ကွန်ပျူတာ browser မှဖွင့်ပြီး Other calendars → + → From URL တွင် Link ကို ထည့်ပါ။</p></div>
+      <p>အခမဲ့ Subscribe တစ်ကြိမ်သာ လုပ်ပါ။ နှစ်တိုင်း ထပ်ထည့်ရန် မလိုပါ။ နေ့စဉ်အချက်အလက်များကို ဖတ်ရှုနိုင်ပြီး မူရင်းရက်စွဲများကို ပြင်၍မရပါ။</p>
+      <div class="connect-options"><label for="exportMode">ချိတ်ဆက်မည့်အချက်အလက်</label><select id="exportMode"><option value="all">နေ့စဉ် မြန်မာရက်စွဲအားလုံး</option><option value="special">ဥပုသ်နှင့် အထူးနေ့များသာ</option></select></div>
+      <h3>Subscribe · 2026–2030</h3><p id="subscriptionType"></p>
+      <p class="muted">လက်ရှိတွင် ၂၀၂၆–၂၀၃၀ ပါဝင်သည်။ နှစ်သစ်ရောက်လည်း အရင်နှစ်ရက်များ မပျောက်ပါ။ နောက်နှစ်များကို ဆိုက်ပေါ်က မူရင်းဖိုင်တွင် ထပ်ဖြည့်တင်ပေးသောအခါ ယခု link တစ်ခုတည်းမှ Calendar app က ပြန်ယူနိုင်သည်။</p>
+      <p id="feedUnavailable">Localhost တွင် public Subscribe link မရသေးပါ။ အောက်က စမ်းသပ်ရန် ဖိုင်ထုတ်ခြင်းကို သုံးနိုင်ပါသည်။ ဆိုက်ကို public HTTPS ဖြင့် တင်ပြီးမှ Subscribe လုပ်နိုင်ပါမည်။</p>
+      <div id="subscriptionControls" hidden><a id="appleSubscribe" class="connect-link primary">Mac / iPhone တွင် Subscribe</a><label for="feedURL">Calendar link</label><input id="feedURL" readonly><button id="copyFeed">Link ကူးရန်</button><p>Mac တွင် Location ကို iCloud ရွေးပါ။ Auto-refresh ကို နေ့စဉ်ရွေးပြီး Ignore alerts ကို အမှန်ခြစ်ပါ။</p><p>Google Calendar ကို ကွန်ပျူတာ browser မှဖွင့်ပြီး Other calendars → + → From URL တွင် Link ကို ထည့်ပါ။</p></div>
+      <p class="muted">ထပ်မံ Subscribe မလုပ်ပါနှင့်။ ယခင် Import စမ်းထားသည့် MM Test / MM-Cal ကိုသာ ဖယ်ပြီး Subscribe calendar တစ်ခုတည်းထားပါ။</p>
+      <details><summary>Localhost စမ်းသပ်ရန် / တစ်နှစ်စာ .ics ဖိုင်</summary><div class="connect-options"><label for="exportYear">ဖိုင်ထုတ်မည့်နှစ်</label><select id="exportYear"></select><button id="downloadCalendar">↓ စမ်းသပ်ရန် .ics ဖိုင်ထုတ်ရန်</button></div><p>ဖိုင်ကို Import လုပ်ပါက ပြင်/ဖျက်နိုင်သော မိတ္တူသာဖြစ်ပြီး အလိုအလျောက် update မဖြစ်ပါ။ သီးခြား MM Test calendar ထဲတွင်သာ ထည့်ပါ။</p></details>
       <p id="connectStatus" role="status" aria-live="polite"></p>
     </dialog>
     <dialog id="dateDialog" aria-labelledby="detailHeading"><div class="dialog-head"><h2 id="detailHeading" data-my="နေ့ရက်အသေးစိတ်" data-en="Date details">နေ့ရက်အသေးစိတ်</h2><button id="dateClose" aria-label="ပိတ်ရန်">✕</button></div><section class="details"><div class="date-hero"><div><span id="detailMonth"></span><strong id="detailNumber"></strong><span id="detailWeekday"></span></div><div><span id="detailMMMonth"></span><strong id="detailMMNumber"></strong><span id="detailPhase"></span><small id="detailYear"></small></div></div><nav class="date-nav"><button id="prevDay" data-my="← ယခင်နေ့" data-en="← Previous">← ယခင်နေ့</button><button id="nextDay" data-my="နောက်နေ့ →" data-en="Next →">နောက်နေ့ →</button></nav><h3 id="selectedTitle"></h3><p id="selectedMeta"></p><div id="events"></div><h3 data-my="နေ့ရက်အချက်အလက်" data-en="Day information">နေ့ရက်အချက်အလက်</h3><div id="astroInfo" class="chips"></div><p class="muted" data-my="ရိုးရာပြက္ခဒိန်ဆိုင်ရာ အချက်အလက်များ" data-en="Traditional Myanmar calendar information">ရိုးရာပြက္ခဒိန်ဆိုင်ရာ အချက်အလက်များ</p></section></dialog>

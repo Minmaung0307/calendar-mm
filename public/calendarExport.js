@@ -1,3 +1,4 @@
+import { astrologyDetails } from "./dateDetails.js";
 import { calendarDate, digits } from './myanmarCalendar.js';
 import { calendarEvents } from './events.js';
 
@@ -28,16 +29,25 @@ export function buildCalendar({ startYear, endYear = startYear, mode = 'all', st
     if (r.sabbath === 1) labels.unshift('ဥပုသ်နေ့');
     if (r.phase === 1) labels.unshift('လပြည့်နေ့');
     if (r.phase === 3) labels.unshift('လကွယ်နေ့');
-    if (mode === 'special' && !labels.length) continue;
+
     const mm = `${r.month} ${r.phaseText}`;
+    const symbols = [];
+    if (r.phase === 1) symbols.push('🌕');
+    if (r.phase === 3) symbols.push('🌑');
+    if (r.sabbath === 2) symbols.push('🛕');
+    if (events.some(e => e.type === 'holiday')) symbols.push('🔴');
+    if (r.yatyaza) symbols.push('🔵');
+    if (r.pyathada) symbols.push('🟤');
+    if (!symbols.length) continue;
+    if (mode === 'special' && ![1,3].includes(r.phase) && r.sabbath !== 2 && !events.some(e=>e.type==='holiday')) continue;
     const next = new Date(dt); next.setUTCDate(next.getUTCDate() + 1);
     const info = [`${digits(r.my)} ခုနှစ် · ${mm}`, ...labels];
     if (r.sabbath === 2) info.push('အဖိတ်နေ့');
-    if (r.yatyaza) info.push('ရက်ရာဇာ');
-    if (r.pyathada) info.push(r.pyathada === 2 ? 'မွန်းလွဲပြဿဒါး' : 'ပြဿဒါး');
+    info.push(new Date(date+'T12:00:00Z').toLocaleDateString('my-MM',{weekday:'long',year:'numeric',month:'long',day:'numeric',timeZone:'UTC'}));
+    info.push('နေ့ရက်အချက်အလက်', ...astrologyDetails(r));
+    info.push('သင်္ကေတ: 🌕 ပြည့် · 🌑 ကွယ် · 🛕 အဖိတ် · 🔴 မြန်မာရုံးပိတ်ရက် · 🔵 ရက်ရာဇာ · 🟤 ပြဿဒါး');
     info.push(...events.map(e => e.note).filter(Boolean));
-    info.push('ရုံးပိတ်ရက်များ: ၂၀၂၆ မူလစာရင်း၊ အခြားနှစ်များသည် ပုံမှန်တွက်ချက်မှု။ အသစ်ကြေညာချက်များ အလိုအလျောက်မရယူပါ။');
-    lines.push('BEGIN:VEVENT', `UID:mm-calendar-${date}@myanmar-calendar.local`, `DTSTAMP:${dtstamp}`, `DTSTART;VALUE=DATE:${date.replace(/-/g,'')}`, `DTEND;VALUE=DATE:${next.toISOString().slice(0,10).replace(/-/g,'')}`, 'SUMMARY:' + escapeText([mm, ...labels].join(' · ')), 'DESCRIPTION:' + escapeText(info.join('\n')), 'TRANSP:TRANSPARENT', 'STATUS:CONFIRMED', 'END:VEVENT');
+    lines.push('BEGIN:VEVENT', `UID:mm-calendar-${date}@myanmar-calendar.local`, `DTSTAMP:${dtstamp}`, `DTSTART;VALUE=DATE:${date.replace(/-/g,'')}`, `DTEND;VALUE=DATE:${next.toISOString().slice(0,10).replace(/-/g,'')}`, 'SUMMARY:' + escapeText(symbols.join(' ')), 'DESCRIPTION:' + escapeText(info.join('\n')), 'TRANSP:TRANSPARENT', 'STATUS:CONFIRMED', 'END:VEVENT');
     count++;
   }
   lines.push('END:VCALENDAR');
